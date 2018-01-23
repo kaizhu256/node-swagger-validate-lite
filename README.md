@@ -1,5 +1,5 @@
 # node-swagger-validate-lite
-this zero-dependency package will provide a cli-tool to validate swagger.json
+this zero-dependency package will provide a simple cli-tool to validate swagger.json
 
 # live web demo
 - [https://kaizhu256.github.io/node-swagger-validate-lite/build..beta..travis-ci.org/app](https://kaizhu256.github.io/node-swagger-validate-lite/build..beta..travis-ci.org/app)
@@ -58,7 +58,9 @@ this zero-dependency package will provide a cli-tool to validate swagger.json
 #### todo
 - none
 
-#### changelog for v0.0.1
+#### changelog for v2018.1.21
+- npm publish v2018.1.21
+- create initial app
 - none
 
 #### this package requires
@@ -222,7 +224,7 @@ instruction
                 }, function (error, data) {
                     document.querySelector('#outputPre1').style.color = error
                         ? '#d00'
-                        : '#070';
+                        : '#090';
                     document.querySelector('#outputPre1').textContent = data;
                 });
                 break;
@@ -599,7 +601,7 @@ utility2-comment -->\n\
     "bin": {
         "swagger-validate-lite": "lib.swagger_validate.js"
     },
-    "description": "this zero-dependency package will provide a cli-tool to validate swagger.json",
+    "description": "this zero-dependency package will provide a simple cli-tool to validate swagger.json",
     "devDependencies": {
         "electron-lite": "kaizhu256/node-electron-lite#alpha",
         "utility2": "kaizhu256/node-utility2#alpha"
@@ -608,10 +610,14 @@ utility2-comment -->\n\
         "node": ">=4.0"
     },
     "homepage": "https://github.com/kaizhu256/node-swagger-validate-lite",
-    "keywords": [],
+    "keywords": [
+        "openapi-validate",
+        "swagger-validate"
+    ],
     "license": "MIT",
     "main": "lib.swagger_validate.js",
     "name": "swagger-validate-lite",
+    "nameAliasPublish": "openapi-validate",
     "nameLib": "swagger_validate",
     "nameOriginal": "swagger-validate-lite",
     "os": [
@@ -626,11 +632,12 @@ utility2-comment -->\n\
         "build-ci": "utility2 shReadmeTest build_ci.sh",
         "env": "env",
         "heroku-postbuild": "npm uninstall utility2 2>/dev/null; npm install kaizhu256/node-utility2#alpha && utility2 shDeployHeroku",
+        "nameAliasPublish": "",
         "postinstall": "[ ! -f npm_scripts.sh ] || ./npm_scripts.sh postinstall",
         "start": "PORT=${PORT:-8080} utility2 start test.js",
         "test": "PORT=$(utility2 shServerPortRandom) utility2 test test.js"
     },
-    "version": "0.0.1"
+    "version": "2018.1.21"
 }
 ```
 

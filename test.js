@@ -43,22 +43,24 @@
         // init test
         local.testRunInit(local);
     }());
-    switch (local.modeJs) {
 
 
 
-    // run node js-env code - function
-    case 'node':
+    // run shared js-env code - function
+    (function () {
         local.testCase_buildApidoc_default = function (options, onError) {
         /*
          * this function will test buildApidoc's default handling-behavior-behavior
          */
+            if (local.modeJs !== 'node') {
+                onError(null, options);
+                return;
+            }
             options = { whitelistDict: {
                 swaggerValidateFile: true,
                 validateBySwaggerJson: true
             } };
             local.buildApidoc(options, onError);
         };
-        break;
-    }
+    }());
 }());
