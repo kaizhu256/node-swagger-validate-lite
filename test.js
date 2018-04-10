@@ -1,8 +1,9 @@
 /* istanbul instrument in package swagger_validate */
+/* jslint-utility2 */
 /*jslint
     bitwise: true,
     browser: true,
-    maxerr: 8,
+    maxerr: 4,
     maxlen: 100,
     node: true,
     nomen: true,
@@ -57,8 +58,10 @@
                 return;
             }
             options = { whitelistDict: {
-                swaggerValidateFile: true,
-                validateBySwaggerJson: true
+                swaggerValidate: true,
+                swaggerValidateDataParameters: true,
+                swaggerValidateDataSchema: true,
+                swaggerValidateFile: true
             } };
             local.buildApidoc(options, onError);
         };
