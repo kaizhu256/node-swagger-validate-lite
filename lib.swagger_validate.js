@@ -37,25 +37,20 @@
                 context["_" + key + "Arguments"] = arguments;
                 consoleError("\n\n" + key);
                 consoleError.apply(console, arguments);
-                consoleError("\n");
+                consoleError(new Error().stack + "\n");
                 // return arg0 for inspection
                 return arg0;
             };
         }());
         // init local
         local = {};
-        // init modeJs
-        (function () {
-            try {
-                local.modeJs = typeof process.versions.node === 'string' &&
-                    typeof require('http').createServer === 'function' &&
-                    'node';
-            } catch (ignore) {
-            }
-            local.modeJs = local.modeJs || 'browser';
-        }());
+        // init isBrowser
+        local.isBrowser = typeof window === "object" &&
+            typeof window.XMLHttpRequest === "function" &&
+            window.document &&
+            typeof window.document.querySelectorAll === "function";
         // init global
-        local.global = local.modeJs === 'browser'
+        local.global = local.isBrowser
             ? window
             : global;
         // re-init local
@@ -70,7 +65,7 @@
             return;
         };
         // init exports
-        if (local.modeJs === 'browser') {
+        if (local.isBrowser) {
             local.global.utility2_swagger_validate = local;
         } else {
             // require builtins
@@ -78,8 +73,6 @@
             local.buffer = require('buffer');
             local.child_process = require('child_process');
             local.cluster = require('cluster');
-            local.console = require('console');
-            local.constants = require('constants');
             local.crypto = require('crypto');
             local.dgram = require('dgram');
             local.dns = require('dns');
@@ -88,12 +81,9 @@
             local.fs = require('fs');
             local.http = require('http');
             local.https = require('https');
-            local.module = require('module');
             local.net = require('net');
             local.os = require('os');
             local.path = require('path');
-            local.process = require('process');
-            local.punycode = require('punycode');
             local.querystring = require('querystring');
             local.readline = require('readline');
             local.repl = require('repl');
@@ -117,5 +107,30 @@
 
         /* validateLineSortedReset */
         return;
+    }());
+
+
+
+    // run node js-env code - init-after
+    /* istanbul ignore next */
+    (function () {
+        if (local.isBrowser) {
+            return;
+        }
+        // init cli
+        if (module !== require.main || local.global.utility2_rollup) {
+            return;
+        }
+        local.cliDict = {};
+        local.cliDict._default = function () {
+        /*
+         * <file/url>
+         * # swagger-validate <file/url>
+         */
+            local.swaggerValidateFile({ file: process.argv[2] }, function (error) {
+                process.exit(!!error);
+            });
+        };
+        local.cliRun();
     }());
 }());

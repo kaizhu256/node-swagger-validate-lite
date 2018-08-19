@@ -56,11 +56,13 @@ this zero-dependency package will provide a simple cli-tool to validate swagger.
 [![apidoc](https://kaizhu256.github.io/node-swagger-validate-lite/build/screenshot.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://kaizhu256.github.io/node-swagger-validate-lite/build..beta..travis-ci.org/apidoc.html)
 
 #### todo
-- npm publish 2018.6.19
-- update build
 - none
 
-#### changelog 2018.6.19
+#### changelog 2018.8.19
+- npm publish 2018.8.19
+- migrate from modeJs -> isBrowser
+- add validator semanticPaths3
+- update build
 - none
 
 #### this package requires
@@ -150,34 +152,31 @@ instruction
     (function () {
         // init local
         local = {};
-        // init modeJs
-        (function () {
-            try {
-                local.modeJs = typeof process.versions.node === 'string' &&
-                    typeof require('http').createServer === 'function' &&
-                    'node';
-            } catch (ignore) {
-            }
-            local.modeJs = local.modeJs || 'browser';
-        }());
+        // init isBrowser
+        local.isBrowser = typeof window === "object" &&
+            typeof window.XMLHttpRequest === "function" &&
+            window.document &&
+            typeof window.document.querySelectorAll === "function";
         // init global
-        local.global = local.modeJs === 'browser'
+        local.global = local.isBrowser
             ? window
             : global;
         // re-init local
-        local = local.global.utility2_rollup || (local.modeJs === 'browser'
+        local = local.global.utility2_rollup || (local.isBrowser
             ? local.global.utility2_swagger_validate
             : require('swagger-validate-lite'));
         // init exports
         local.global.local = local;
     }());
-    switch (local.modeJs) {
 
 
 
     // run browser js-env code - init-test
     /* istanbul ignore next */
-    case 'browser':
+    (function () {
+        if (!local.isBrowser) {
+            return;
+        }
         local.testRunBrowser = function (event) {
             if (!event || (event &&
                     event.currentTarget &&
@@ -185,9 +184,9 @@ instruction
                     event.currentTarget.className.includes &&
                     event.currentTarget.className.includes('onreset'))) {
                 // reset output
-                Array.from(
-                    document.querySelectorAll('body > .resettable')
-                ).forEach(function (element) {
+                Array.from(document.querySelectorAll(
+                    'body > .resettable'
+                )).forEach(function (element) {
                     switch (element.tagName) {
                     case 'INPUT':
                     case 'TEXTAREA':
@@ -215,12 +214,12 @@ instruction
             // custom-case
             default:
                 // validate #inputTextarea1
-                document.querySelector('#outputTextareaStdout1').value = '';
+                document.querySelector('#outputStdoutTextarea1').value = '';
                 local.swagger_validate.swaggerValidateFile({
                     data: document.querySelector('#inputTextarea1').value,
                     file: 'inputTextarea1.json'
                 }, function (error) {
-                    document.querySelector('#outputTextareaStdout1').style.color = error
+                    document.querySelector('#outputStdoutTextarea1').style.color = error
                         ? '#d00'
                         : '#070';
                 });
@@ -240,22 +239,22 @@ instruction
                 }
             }
         };
-        // log stderr and stdout to #outputTextareaStdout1
+        // log stderr and stdout to #outputStdoutTextarea1
         ['error', 'log'].forEach(function (key) {
             console[key + '_original'] = console[key];
             console[key] = function () {
                 var element;
                 console[key + '_original'].apply(console, arguments);
-                element = document.querySelector('#outputTextareaStdout1');
+                element = document.querySelector('#outputStdoutTextarea1');
                 if (!element) {
                     return;
                 }
-                // append text to #outputTextareaStdout1
+                // append text to #outputStdoutTextarea1
                 element.value += Array.from(arguments).map(function (arg) {
                     return typeof arg === 'string'
                         ? arg
                         : JSON.stringify(arg, null, 4);
-                }).join(' ') + '\n';
+                }).join(' ').replace((/\u001b\[\d*m/g), '') + '\n';
                 // scroll textarea to bottom
                 element.scrollTop = element.scrollHeight;
             };
@@ -268,13 +267,16 @@ instruction
         });
         // run tests
         local.testRunBrowser();
-        break;
+    }());
 
 
 
     // run node js-env code - init-test
     /* istanbul ignore next */
-    case 'node':
+    (function () {
+        if (local.isBrowser) {
+            return;
+        }
         // init exports
         module.exports = local;
         // require builtins
@@ -282,8 +284,6 @@ instruction
         local.buffer = require('buffer');
         local.child_process = require('child_process');
         local.cluster = require('cluster');
-        local.console = require('console');
-        local.constants = require('constants');
         local.crypto = require('crypto');
         local.dgram = require('dgram');
         local.dns = require('dns');
@@ -292,12 +292,9 @@ instruction
         local.fs = require('fs');
         local.http = require('http');
         local.https = require('https');
-        local.module = require('module');
         local.net = require('net');
         local.os = require('os');
         local.path = require('path');
-        local.process = require('process');
-        local.punycode = require('punycode');
         local.querystring = require('querystring');
         local.readline = require('readline');
         local.repl = require('repl');
@@ -333,7 +330,7 @@ instruction
 <!doctype html>\n\
 <html lang="en">\n\
 <head>\n\
-<meta charset="UTF-8">\n\
+<meta charset="utf-8">\n\
 <meta name="viewport" content="width=device-width, initial-scale=1">\n\
 <!-- "assets.utility2.template.html" -->\n\
 <title>{{env.npm_package_name}} ({{env.npm_package_version}})</title>\n\
@@ -376,20 +373,30 @@ body {\n\
     margin: 0 40px;\n\
 }\n\
 body > div,\n\
+body > form > div,\n\
+body > form > input,\n\
+body > form > pre,\n\
+body > form > textarea,\n\
+body > form > .button,\n\
+body > input,\n\
 body > pre,\n\
 body > textarea,\n\
 body > .button {\n\
     margin-bottom: 20px;\n\
 }\n\
+body > form > input,\n\
+body > form > .button,\n\
+body > input,\n\
+body > .button {\n\
+    width: 20rem;\n\
+}\n\
+body > form > textarea,\n\
 body > textarea {\n\
     height: 10rem;\n\
     width: 100%;\n\
 }\n\
 body > textarea[readonly] {\n\
     background: #ddd;\n\
-}\n\
-body > .button {\n\
-    width: 20rem;\n\
 }\n\
 code,\n\
 pre,\n\
@@ -451,7 +458,8 @@ textarea {\n\
 <body>\n\
 <div id="ajaxProgressDiv1" style="background: #d00; height: 2px; left: 0; margin: 0; padding: 0; position: fixed; top: 0; transition: background 500ms, width 1500ms; width: 0%; z-index: 1;"></div>\n\
 <div class="uiAnimateSpin" style="animation: uiAnimateSpin 2s linear infinite; border: 5px solid #999; border-radius: 50%; border-top: 5px solid #7d7; display: none; height: 25px; vertical-align: middle; width: 25px;"></div>\n\
-<code style="display: none;"></code><div class="button colorError uiAnimateShake uiAnimateSlide utility2FooterDiv zeroPixel" style="display: none;"></div><pre style="display: none;"></pre><textarea readonly style="display: none;"></textarea>\n\
+<a class="zeroPixel" download="db.persistence.json" href="" id="dbExportA1"></a>\n\
+<input class="zeroPixel" id="dbImportInput1" type="file">\n\
 <script>\n\
 /* jslint-utility2 */\n\
 /*jslint\n\
@@ -464,6 +472,25 @@ textarea {\n\
     regexp: true,\n\
     stupid: true\n\
 */\n\
+// init domOnEventWindowOnloadTimeElapsed\n\
+(function () {\n\
+/*\n\
+ * this function will measure and print the time-elapsed for window.onload\n\
+ */\n\
+    "use strict";\n\
+    if (window.domOnEventWindowOnloadTimeElapsed) {\n\
+        return;\n\
+    }\n\
+    window.domOnEventWindowOnloadTimeElapsed = Date.now() + 100;\n\
+    window.addEventListener("load", function () {\n\
+        setTimeout(function () {\n\
+            window.domOnEventWindowOnloadTimeElapsed = Date.now() -\n\
+                window.domOnEventWindowOnloadTimeElapsed;\n\
+            console.error("domOnEventWindowOnloadTimeElapsed = " +\n\
+                window.domOnEventWindowOnloadTimeElapsed);\n\
+        }, 100);\n\
+    });\n\
+}());\n\
 // init timerIntervalAjaxProgressUpdate\n\
 (function () {\n\
 /*\n\
@@ -473,7 +500,7 @@ textarea {\n\
     var ajaxProgressDiv1,\n\
         ajaxProgressState,\n\
         ajaxProgressUpdate;\n\
-    if (window.timerIntervalAjaxProgressUpdate) {\n\
+    if (window.timerIntervalAjaxProgressUpdate || !document.querySelector("#ajaxProgressDiv1")) {\n\
         return;\n\
     }\n\
     ajaxProgressDiv1 = document.querySelector("#ajaxProgressDiv1");\n\
@@ -516,7 +543,7 @@ textarea {\n\
     window.domOnEventSelectAllWithinPre = function (event) {\n\
         var range, selection;\n\
         if (event &&\n\
-                event.code === "KeyA" &&\n\
+                event.key === "a" &&\n\
                 (event.ctrlKey || event.metaKey) &&\n\
                 event.target.closest("pre")) {\n\
             range = document.createRange();\n\
@@ -560,7 +587,7 @@ JSON.stringify(JSON.parse(
 ), null, 4) +
 '</textarea>\n\
 <label>stderr and stdout</label>\n\
-<textarea id="outputTextareaStdout1" readonly></textarea>\n\
+<textarea id="outputStdoutTextarea1" readonly></textarea>\n\
 <!-- utility2-comment\n\
 {{#if isRollup}}\n\
 <script src="assets.app.js"></script>\n\
@@ -596,6 +623,7 @@ utility2-comment -->\n\
         /* validateLineSortedReset */
         local.assetsDict['/'] =
             local.assetsDict['/assets.example.html'] =
+            local.assetsDict['/index.html'] =
             local.assetsDict['/assets.index.template.html']
             .replace((/\{\{env\.(\w+?)\}\}/g), function (match0, match1) {
                 switch (match1) {
@@ -613,7 +641,7 @@ utility2-comment -->\n\
             });
         // init cli
         if (module !== require.main || local.global.utility2_rollup) {
-            break;
+            return;
         }
         local.assetsDict['/assets.example.js'] =
             local.assetsDict['/assets.example.js'] ||
@@ -626,7 +654,7 @@ utility2-comment -->\n\
         }
         // start server
         if (local.global.utility2_serverHttp1) {
-            break;
+            return;
         }
         process.env.PORT = process.env.PORT || '8081';
         console.error('server starting on port ' + process.env.PORT);
@@ -639,8 +667,7 @@ utility2-comment -->\n\
             response.statusCode = 404;
             response.end();
         }).listen(process.env.PORT);
-        break;
-    }
+    }());
 }());
 ```
 
@@ -718,6 +745,7 @@ utility2-comment -->\n\
     },
     "scripts": {
         "build-ci": "./npm_scripts.sh",
+        "env": "env",
         "eval": "./npm_scripts.sh",
         "heroku-postbuild": "./npm_scripts.sh",
         "postinstall": "./npm_scripts.sh",
@@ -725,7 +753,7 @@ utility2-comment -->\n\
         "test": "./npm_scripts.sh",
         "utility2": "./npm_scripts.sh"
     },
-    "version": "2018.6.19"
+    "version": "2018.8.19"
 }
 ```
 
