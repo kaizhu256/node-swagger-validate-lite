@@ -1,0 +1,16 @@
+{
+    "devDependencies": {
+        "electron-lite": "kaizhu256/node-electron-lite#alpha",
+        "utility2": "kaizhu256/node-utility2#alpha"
+    },
+    "name": "aa-bb",
+    "homepage": "https://github.com/kaizhu256/node-aa-bb",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/kaizhu256/node-aa-bb.git"
+    },
+    "scripts": {
+        "build-ci": "utility2 shBuildCi"
+    },
+    "version": "0.0.1"
+}
