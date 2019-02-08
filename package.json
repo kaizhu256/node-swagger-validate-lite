@@ -8,21 +8,21 @@
     "engines": {
         "node": ">=10.0"
     },
-    "homepage": "https://github.com/kaizhu256/node-aa-bb",
+    "homepage": "https://github.com/kaizhu256/node-swagger-validate-lite",
     "keywords": [],
     "license": "MIT",
-    "main": "lib.aa_bb.js",
-    "name": "aa-bb",
+    "main": "lib.swagger_validate.js",
+    "name": "swagger-validate-lite",
     "nameAliasPublish": "",
-    "nameLib": "aa_bb",
-    "nameOriginal": "aa-bb",
+    "nameLib": "swagger_validate",
+    "nameOriginal": "swagger-validate-lite",
     "os": [
         "darwin",
         "linux"
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/kaizhu256/node-aa-bb.git"
+        "url": "https://github.com/kaizhu256/node-swagger-validate-lite.git"
     },
     "scripts": {
         "build-ci": "./npm_scripts.sh",

@@ -1,14 +1,14 @@
 #!/usr/bin/env node
 /*
- * lib.aa_bb.js (0.0.1)
- * https://github.com/kaizhu256/node-aa-bb
+ * lib.swagger_validate.js (0.0.1)
+ * https://github.com/kaizhu256/node-swagger-validate-lite
  * the greatest app in the world!
  *
  */
 
 
 
-/* istanbul instrument in package aa_bb */
+/* istanbul instrument in package swagger_validate */
 /* istanbul ignore next */
 /* jslint utility2:true */
 (function (globalThis) {
@@ -169,13 +169,13 @@ local = (
 );
 // init exports
 if (local.isBrowser) {
-    globalThis.utility2_aa_bb = local;
+    globalThis.utility2_swagger_validate = local;
 } else {
     module.exports = local;
     module.exports.__dirname = __dirname;
 }
 // init lib main
-local.aa_bb = local;
+local.swagger_validate = local;
 
 
 

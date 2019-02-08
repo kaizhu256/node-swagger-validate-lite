@@ -1,23 +1,23 @@
-# aa-bb
+# swagger-validate-lite
 the greatest app in the world!
 
 # live web demo
-- [https://kaizhu256.github.io/node-aa-bb/build..beta..travis-ci.org/app](https://kaizhu256.github.io/node-aa-bb/build..beta..travis-ci.org/app)
+- [https://kaizhu256.github.io/node-swagger-validate-lite/build..beta..travis-ci.org/app](https://kaizhu256.github.io/node-swagger-validate-lite/build..beta..travis-ci.org/app)
 
 
 
-[![travis-ci.org build-status](https://api.travis-ci.org/kaizhu256/node-aa-bb.svg)](https://travis-ci.org/kaizhu256/node-aa-bb) [![coverage](https://kaizhu256.github.io/node-aa-bb/build/coverage.badge.svg)](https://kaizhu256.github.io/node-aa-bb/build/coverage.html/index.html)
+[![travis-ci.org build-status](https://api.travis-ci.org/kaizhu256/node-swagger-validate-lite.svg)](https://travis-ci.org/kaizhu256/node-swagger-validate-lite) [![coverage](https://kaizhu256.github.io/node-swagger-validate-lite/build/coverage.badge.svg)](https://kaizhu256.github.io/node-swagger-validate-lite/build/coverage.html/index.html)
 
-[![build commit status](https://kaizhu256.github.io/node-aa-bb/build/build.badge.svg)](https://travis-ci.org/kaizhu256/node-aa-bb)
+[![build commit status](https://kaizhu256.github.io/node-swagger-validate-lite/build/build.badge.svg)](https://travis-ci.org/kaizhu256/node-swagger-validate-lite)
 
-| git-branch : | [master](https://github.com/kaizhu256/node-aa-bb/tree/master) | [beta](https://github.com/kaizhu256/node-aa-bb/tree/beta) | [alpha](https://github.com/kaizhu256/node-aa-bb/tree/alpha)|
+| git-branch : | [master](https://github.com/kaizhu256/node-swagger-validate-lite/tree/master) | [beta](https://github.com/kaizhu256/node-swagger-validate-lite/tree/beta) | [alpha](https://github.com/kaizhu256/node-swagger-validate-lite/tree/alpha)|
 |--:|:--|:--|:--|
-| test-server-github : | [![github.com test-server](https://kaizhu256.github.io/node-aa-bb/GitHub-Mark-32px.png)](https://kaizhu256.github.io/node-aa-bb/build..master..travis-ci.org/app) | [![github.com test-server](https://kaizhu256.github.io/node-aa-bb/GitHub-Mark-32px.png)](https://kaizhu256.github.io/node-aa-bb/build..beta..travis-ci.org/app) | [![github.com test-server](https://kaizhu256.github.io/node-aa-bb/GitHub-Mark-32px.png)](https://kaizhu256.github.io/node-aa-bb/build..alpha..travis-ci.org/app)|
-| test-report : | [![test-report](https://kaizhu256.github.io/node-aa-bb/build..master..travis-ci.org/test-report.badge.svg)](https://kaizhu256.github.io/node-aa-bb/build..master..travis-ci.org/test-report.html) | [![test-report](https://kaizhu256.github.io/node-aa-bb/build..beta..travis-ci.org/test-report.badge.svg)](https://kaizhu256.github.io/node-aa-bb/build..beta..travis-ci.org/test-report.html) | [![test-report](https://kaizhu256.github.io/node-aa-bb/build..alpha..travis-ci.org/test-report.badge.svg)](https://kaizhu256.github.io/node-aa-bb/build..alpha..travis-ci.org/test-report.html)|
-| coverage : | [![coverage](https://kaizhu256.github.io/node-aa-bb/build..master..travis-ci.org/coverage.badge.svg)](https://kaizhu256.github.io/node-aa-bb/build..master..travis-ci.org/coverage.html/index.html) | [![coverage](https://kaizhu256.github.io/node-aa-bb/build..beta..travis-ci.org/coverage.badge.svg)](https://kaizhu256.github.io/node-aa-bb/build..beta..travis-ci.org/coverage.html/index.html) | [![coverage](https://kaizhu256.github.io/node-aa-bb/build..alpha..travis-ci.org/coverage.badge.svg)](https://kaizhu256.github.io/node-aa-bb/build..alpha..travis-ci.org/coverage.html/index.html)|
-| build-artifacts : | [![build-artifacts](https://kaizhu256.github.io/node-aa-bb/glyphicons_144_folder_open.png)](https://github.com/kaizhu256/node-aa-bb/tree/gh-pages/build..master..travis-ci.org) | [![build-artifacts](https://kaizhu256.github.io/node-aa-bb/glyphicons_144_folder_open.png)](https://github.com/kaizhu256/node-aa-bb/tree/gh-pages/build..beta..travis-ci.org) | [![build-artifacts](https://kaizhu256.github.io/node-aa-bb/glyphicons_144_folder_open.png)](https://github.com/kaizhu256/node-aa-bb/tree/gh-pages/build..alpha..travis-ci.org)|
+| test-server-github : | [![github.com test-server](https://kaizhu256.github.io/node-swagger-validate-lite/GitHub-Mark-32px.png)](https://kaizhu256.github.io/node-swagger-validate-lite/build..master..travis-ci.org/app) | [![github.com test-server](https://kaizhu256.github.io/node-swagger-validate-lite/GitHub-Mark-32px.png)](https://kaizhu256.github.io/node-swagger-validate-lite/build..beta..travis-ci.org/app) | [![github.com test-server](https://kaizhu256.github.io/node-swagger-validate-lite/GitHub-Mark-32px.png)](https://kaizhu256.github.io/node-swagger-validate-lite/build..alpha..travis-ci.org/app)|
+| test-report : | [![test-report](https://kaizhu256.github.io/node-swagger-validate-lite/build..master..travis-ci.org/test-report.badge.svg)](https://kaizhu256.github.io/node-swagger-validate-lite/build..master..travis-ci.org/test-report.html) | [![test-report](https://kaizhu256.github.io/node-swagger-validate-lite/build..beta..travis-ci.org/test-report.badge.svg)](https://kaizhu256.github.io/node-swagger-validate-lite/build..beta..travis-ci.org/test-report.html) | [![test-report](https://kaizhu256.github.io/node-swagger-validate-lite/build..alpha..travis-ci.org/test-report.badge.svg)](https://kaizhu256.github.io/node-swagger-validate-lite/build..alpha..travis-ci.org/test-report.html)|
+| coverage : | [![coverage](https://kaizhu256.github.io/node-swagger-validate-lite/build..master..travis-ci.org/coverage.badge.svg)](https://kaizhu256.github.io/node-swagger-validate-lite/build..master..travis-ci.org/coverage.html/index.html) | [![coverage](https://kaizhu256.github.io/node-swagger-validate-lite/build..beta..travis-ci.org/coverage.badge.svg)](https://kaizhu256.github.io/node-swagger-validate-lite/build..beta..travis-ci.org/coverage.html/index.html) | [![coverage](https://kaizhu256.github.io/node-swagger-validate-lite/build..alpha..travis-ci.org/coverage.badge.svg)](https://kaizhu256.github.io/node-swagger-validate-lite/build..alpha..travis-ci.org/coverage.html/index.html)|
+| build-artifacts : | [![build-artifacts](https://kaizhu256.github.io/node-swagger-validate-lite/glyphicons_144_folder_open.png)](https://github.com/kaizhu256/node-swagger-validate-lite/tree/gh-pages/build..master..travis-ci.org) | [![build-artifacts](https://kaizhu256.github.io/node-swagger-validate-lite/glyphicons_144_folder_open.png)](https://github.com/kaizhu256/node-swagger-validate-lite/tree/gh-pages/build..beta..travis-ci.org) | [![build-artifacts](https://kaizhu256.github.io/node-swagger-validate-lite/glyphicons_144_folder_open.png)](https://github.com/kaizhu256/node-swagger-validate-lite/tree/gh-pages/build..alpha..travis-ci.org)|
 
-[![npmPackageListing](https://kaizhu256.github.io/node-aa-bb/build/screenshot.npmPackageListing.svg)](https://github.com/kaizhu256/node-aa-bb)
+[![npmPackageListing](https://kaizhu256.github.io/node-swagger-validate-lite/build/screenshot.npmPackageListing.svg)](https://github.com/kaizhu256/node-swagger-validate-lite)
 
 
 
@@ -35,18 +35,18 @@ the greatest app in the world!
 
 
 # cdn download
-- [https://kaizhu256.github.io/node-aa-bb/build..beta..travis-ci.org/app/assets.aa_bb.js](https://kaizhu256.github.io/node-aa-bb/build..beta..travis-ci.org/app/assets.aa_bb.js)
+- [https://kaizhu256.github.io/node-swagger-validate-lite/build..beta..travis-ci.org/app/assets.swagger_validate.js](https://kaizhu256.github.io/node-swagger-validate-lite/build..beta..travis-ci.org/app/assets.swagger_validate.js)
 
 
 
 # documentation
 #### cli help
-![screenshot](https://kaizhu256.github.io/node-aa-bb/build/screenshot.npmPackageCliHelp.svg)
+![screenshot](https://kaizhu256.github.io/node-swagger-validate-lite/build/screenshot.npmPackageCliHelp.svg)
 
 #### api doc
-- [https://kaizhu256.github.io/node-aa-bb/build..beta..travis-ci.org/apidoc.html](https://kaizhu256.github.io/node-aa-bb/build..beta..travis-ci.org/apidoc.html)
+- [https://kaizhu256.github.io/node-swagger-validate-lite/build..beta..travis-ci.org/apidoc.html](https://kaizhu256.github.io/node-swagger-validate-lite/build..beta..travis-ci.org/apidoc.html)
 
-[![apidoc](https://kaizhu256.github.io/node-aa-bb/build/screenshot.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://kaizhu256.github.io/node-aa-bb/build..beta..travis-ci.org/apidoc.html)
+[![apidoc](https://kaizhu256.github.io/node-swagger-validate-lite/build/screenshot.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://kaizhu256.github.io/node-swagger-validate-lite/build..beta..travis-ci.org/apidoc.html)
 
 #### todo
 - none
@@ -63,14 +63,14 @@ the greatest app in the world!
 
 # quickstart standalone app
 #### to run this example, follow instruction in script below
-- [assets.app.js](https://kaizhu256.github.io/node-aa-bb/build..beta..travis-ci.org/app/assets.app.js)
+- [assets.app.js](https://kaizhu256.github.io/node-swagger-validate-lite/build..beta..travis-ci.org/app/assets.app.js)
 ```shell
 # example.sh
 
-# this shell script will download and run a web-demo of aa-bb as a standalone app
+# this shell script will download and run a web-demo of swagger-validate-lite as a standalone app
 
 # 1. download standalone app
-curl -O https://kaizhu256.github.io/node-aa-bb/build..beta..travis-ci.org/app/assets.app.js
+curl -O https://kaizhu256.github.io/node-swagger-validate-lite/build..beta..travis-ci.org/app/assets.app.js
 # 2. run standalone app
 PORT=8081 node ./assets.app.js
 # 3. open a browser to http://127.0.0.1:8081 and play with web-demo
@@ -78,35 +78,35 @@ PORT=8081 node ./assets.app.js
 ```
 
 #### output from browser
-[![screenshot](https://kaizhu256.github.io/node-aa-bb/build/screenshot.testExampleSh.browser.%252F.png)](https://kaizhu256.github.io/node-aa-bb/build/app/assets.example.html)
+[![screenshot](https://kaizhu256.github.io/node-swagger-validate-lite/build/screenshot.testExampleSh.browser.%252F.png)](https://kaizhu256.github.io/node-swagger-validate-lite/build/app/assets.example.html)
 
 #### output from shell
-![screenshot](https://kaizhu256.github.io/node-aa-bb/build/screenshot.testExampleSh.svg)
+![screenshot](https://kaizhu256.github.io/node-swagger-validate-lite/build/screenshot.testExampleSh.svg)
 
 
 
 # quickstart example.js
-[![screenshot](https://kaizhu256.github.io/node-aa-bb/build/screenshot.testExampleJs.browser.%252F.png)](https://kaizhu256.github.io/node-aa-bb/build/app/assets.example.html)
+[![screenshot](https://kaizhu256.github.io/node-swagger-validate-lite/build/screenshot.testExampleJs.browser.%252F.png)](https://kaizhu256.github.io/node-swagger-validate-lite/build/app/assets.example.html)
 
 #### to run this example, follow instruction in script below
-- [example.js](https://kaizhu256.github.io/node-aa-bb/build..beta..travis-ci.org/example.js)
+- [example.js](https://kaizhu256.github.io/node-swagger-validate-lite/build..beta..travis-ci.org/example.js)
 ```javascript
 /*
 example.js
 
-this script will run a web-demo of aa-bb
+this script will run a web-demo of swagger-validate-lite
 
 instruction
     1. save this script as example.js
     2. run shell-command:
-        $ npm install kaizhu256/node-aa-bb#alpha && PORT=8081 node example.js
+        $ npm install kaizhu256/node-swagger-validate-lite#alpha && PORT=8081 node example.js
     3. open a browser to http://127.0.0.1:8081 and play with web-demo
     4. edit this script to suit your needs
 */
 
 
 
-/* istanbul instrument in package aa_bb */
+/* istanbul instrument in package swagger_validate */
 /* istanbul ignore next */
 /* jslint utility2:true */
 (function (globalThis) {
@@ -260,8 +260,8 @@ instruction
 // init local
 local = (
     globalThis.utility2_rollup
-    || globalThis.utility2_aa_bb
-    || require("aa-bb")
+    || globalThis.utility2_swagger_validate
+    || require("swagger-validate-lite")
 );
 // init exports
 globalThis.local = local;
@@ -765,7 +765,7 @@ utility2-comment -->\n\
 <script src="assets.utility2.rollup.js"></script>\n\
 <script>window.utility2_onReadyBefore.counter += 1;</script>\n\
 <script src="jsonp.utility2.stateInit?callback=window.utility2.stateInit"></script>\n\
-<script src="assets.aa_bb.js"></script>\n\
+<script src="assets.swagger_validate.js"></script>\n\
 <script src="assets.example.js"></script>\n\
 <script src="assets.test.js"></script>\n\
 <script>window.utility2_onReadyBefore();</script>\n\
@@ -783,9 +783,9 @@ utility2-comment -->\n\
 /* jslint ignore:end */
 /* validateLineSortedReset */
 /* jslint ignore:start */
-local.assetsDict["/assets.aa_bb.js"] =
-    local.assetsDict["/assets.aa_bb.js"] ||
-    local.fs.readFileSync(local.__dirname + "/lib.aa_bb.js", "utf8"
+local.assetsDict["/assets.swagger_validate.js"] =
+    local.assetsDict["/assets.swagger_validate.js"] ||
+    local.fs.readFileSync(local.__dirname + "/lib.swagger_validate.js", "utf8"
 ).replace((/^#!\//), "// ");
 /* jslint ignore:end */
 /* validateLineSortedReset */
@@ -797,9 +797,9 @@ local.assetsDict["/"] = local.assetsDict["/assets.index.template.html"]
     case "npm_package_description":
         return "the greatest app in the world!";
     case "npm_package_name":
-        return "aa-bb";
+        return "swagger-validate-lite";
     case "npm_package_nameLib":
-        return "aa_bb";
+        return "swagger_validate";
     case "npm_package_version":
         return "0.0.1";
     default:
@@ -846,42 +846,42 @@ local.http.createServer(function (request, response) {
 ```
 
 #### output from browser
-[![screenshot](https://kaizhu256.github.io/node-aa-bb/build/screenshot.testExampleJs.browser.%252F.png)](https://kaizhu256.github.io/node-aa-bb/build/app/assets.example.html)
+[![screenshot](https://kaizhu256.github.io/node-swagger-validate-lite/build/screenshot.testExampleJs.browser.%252F.png)](https://kaizhu256.github.io/node-swagger-validate-lite/build/app/assets.example.html)
 
 #### output from shell
-![screenshot](https://kaizhu256.github.io/node-aa-bb/build/screenshot.testExampleJs.svg)
+![screenshot](https://kaizhu256.github.io/node-swagger-validate-lite/build/screenshot.testExampleJs.svg)
 
 
 
 # extra screenshots
-1. [https://kaizhu256.github.io/node-aa-bb/build/screenshot.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png](https://kaizhu256.github.io/node-aa-bb/build/screenshot.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)
-[![screenshot](https://kaizhu256.github.io/node-aa-bb/build/screenshot.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://kaizhu256.github.io/node-aa-bb/build/screenshot.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)
+1. [https://kaizhu256.github.io/node-swagger-validate-lite/build/screenshot.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png](https://kaizhu256.github.io/node-swagger-validate-lite/build/screenshot.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)
+[![screenshot](https://kaizhu256.github.io/node-swagger-validate-lite/build/screenshot.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://kaizhu256.github.io/node-swagger-validate-lite/build/screenshot.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)
 
-1. [https://kaizhu256.github.io/node-aa-bb/build/screenshot.buildCi.browser.%252Ftmp%252Fbuild%252Fcoverage.lib.html.png](https://kaizhu256.github.io/node-aa-bb/build/screenshot.buildCi.browser.%252Ftmp%252Fbuild%252Fcoverage.lib.html.png)
-[![screenshot](https://kaizhu256.github.io/node-aa-bb/build/screenshot.buildCi.browser.%252Ftmp%252Fbuild%252Fcoverage.lib.html.png)](https://kaizhu256.github.io/node-aa-bb/build/screenshot.buildCi.browser.%252Ftmp%252Fbuild%252Fcoverage.lib.html.png)
+1. [https://kaizhu256.github.io/node-swagger-validate-lite/build/screenshot.buildCi.browser.%252Ftmp%252Fbuild%252Fcoverage.lib.html.png](https://kaizhu256.github.io/node-swagger-validate-lite/build/screenshot.buildCi.browser.%252Ftmp%252Fbuild%252Fcoverage.lib.html.png)
+[![screenshot](https://kaizhu256.github.io/node-swagger-validate-lite/build/screenshot.buildCi.browser.%252Ftmp%252Fbuild%252Fcoverage.lib.html.png)](https://kaizhu256.github.io/node-swagger-validate-lite/build/screenshot.buildCi.browser.%252Ftmp%252Fbuild%252Fcoverage.lib.html.png)
 
-1. [https://kaizhu256.github.io/node-aa-bb/build/screenshot.buildCi.browser.%252Ftmp%252Fbuild%252Ftest-report.html.png](https://kaizhu256.github.io/node-aa-bb/build/screenshot.buildCi.browser.%252Ftmp%252Fbuild%252Ftest-report.html.png)
-[![screenshot](https://kaizhu256.github.io/node-aa-bb/build/screenshot.buildCi.browser.%252Ftmp%252Fbuild%252Ftest-report.html.png)](https://kaizhu256.github.io/node-aa-bb/build/screenshot.buildCi.browser.%252Ftmp%252Fbuild%252Ftest-report.html.png)
+1. [https://kaizhu256.github.io/node-swagger-validate-lite/build/screenshot.buildCi.browser.%252Ftmp%252Fbuild%252Ftest-report.html.png](https://kaizhu256.github.io/node-swagger-validate-lite/build/screenshot.buildCi.browser.%252Ftmp%252Fbuild%252Ftest-report.html.png)
+[![screenshot](https://kaizhu256.github.io/node-swagger-validate-lite/build/screenshot.buildCi.browser.%252Ftmp%252Fbuild%252Ftest-report.html.png)](https://kaizhu256.github.io/node-swagger-validate-lite/build/screenshot.buildCi.browser.%252Ftmp%252Fbuild%252Ftest-report.html.png)
 
-1. [https://kaizhu256.github.io/node-aa-bb/build/screenshot.deployGithub.browser.%252Fnode-aa-bb%252Fbuild%252Fapp%252Fassets.swgg.html.png](https://kaizhu256.github.io/node-aa-bb/build/screenshot.deployGithub.browser.%252Fnode-aa-bb%252Fbuild%252Fapp%252Fassets.swgg.html.png)
-[![screenshot](https://kaizhu256.github.io/node-aa-bb/build/screenshot.deployGithub.browser.%252Fnode-aa-bb%252Fbuild%252Fapp%252Fassets.swgg.html.png)](https://kaizhu256.github.io/node-aa-bb/build/screenshot.deployGithub.browser.%252Fnode-aa-bb%252Fbuild%252Fapp%252Fassets.swgg.html.png)
+1. [https://kaizhu256.github.io/node-swagger-validate-lite/build/screenshot.deployGithub.browser.%252Fnode-swagger-validate-lite%252Fbuild%252Fapp%252Fassets.swgg.html.png](https://kaizhu256.github.io/node-swagger-validate-lite/build/screenshot.deployGithub.browser.%252Fnode-swagger-validate-lite%252Fbuild%252Fapp%252Fassets.swgg.html.png)
+[![screenshot](https://kaizhu256.github.io/node-swagger-validate-lite/build/screenshot.deployGithub.browser.%252Fnode-swagger-validate-lite%252Fbuild%252Fapp%252Fassets.swgg.html.png)](https://kaizhu256.github.io/node-swagger-validate-lite/build/screenshot.deployGithub.browser.%252Fnode-swagger-validate-lite%252Fbuild%252Fapp%252Fassets.swgg.html.png)
 
-1. [https://kaizhu256.github.io/node-aa-bb/build/screenshot.deployGithub.browser.%252Fnode-aa-bb%252Fbuild%252Fapp.png](https://kaizhu256.github.io/node-aa-bb/build/screenshot.deployGithub.browser.%252Fnode-aa-bb%252Fbuild%252Fapp.png)
-[![screenshot](https://kaizhu256.github.io/node-aa-bb/build/screenshot.deployGithub.browser.%252Fnode-aa-bb%252Fbuild%252Fapp.png)](https://kaizhu256.github.io/node-aa-bb/build/screenshot.deployGithub.browser.%252Fnode-aa-bb%252Fbuild%252Fapp.png)
+1. [https://kaizhu256.github.io/node-swagger-validate-lite/build/screenshot.deployGithub.browser.%252Fnode-swagger-validate-lite%252Fbuild%252Fapp.png](https://kaizhu256.github.io/node-swagger-validate-lite/build/screenshot.deployGithub.browser.%252Fnode-swagger-validate-lite%252Fbuild%252Fapp.png)
+[![screenshot](https://kaizhu256.github.io/node-swagger-validate-lite/build/screenshot.deployGithub.browser.%252Fnode-swagger-validate-lite%252Fbuild%252Fapp.png)](https://kaizhu256.github.io/node-swagger-validate-lite/build/screenshot.deployGithub.browser.%252Fnode-swagger-validate-lite%252Fbuild%252Fapp.png)
 
-1. [https://kaizhu256.github.io/node-aa-bb/build/screenshot.deployGithubTest.browser.%252Fnode-aa-bb%252Fbuild%252Fapp.png](https://kaizhu256.github.io/node-aa-bb/build/screenshot.deployGithubTest.browser.%252Fnode-aa-bb%252Fbuild%252Fapp.png)
-[![screenshot](https://kaizhu256.github.io/node-aa-bb/build/screenshot.deployGithubTest.browser.%252Fnode-aa-bb%252Fbuild%252Fapp.png)](https://kaizhu256.github.io/node-aa-bb/build/screenshot.deployGithubTest.browser.%252Fnode-aa-bb%252Fbuild%252Fapp.png)
+1. [https://kaizhu256.github.io/node-swagger-validate-lite/build/screenshot.deployGithubTest.browser.%252Fnode-swagger-validate-lite%252Fbuild%252Fapp.png](https://kaizhu256.github.io/node-swagger-validate-lite/build/screenshot.deployGithubTest.browser.%252Fnode-swagger-validate-lite%252Fbuild%252Fapp.png)
+[![screenshot](https://kaizhu256.github.io/node-swagger-validate-lite/build/screenshot.deployGithubTest.browser.%252Fnode-swagger-validate-lite%252Fbuild%252Fapp.png)](https://kaizhu256.github.io/node-swagger-validate-lite/build/screenshot.deployGithubTest.browser.%252Fnode-swagger-validate-lite%252Fbuild%252Fapp.png)
 
 
 
-1. [https://kaizhu256.github.io/node-aa-bb/build/screenshot.npmTest.browser.%252F.png](https://kaizhu256.github.io/node-aa-bb/build/screenshot.npmTest.browser.%252F.png)
-[![screenshot](https://kaizhu256.github.io/node-aa-bb/build/screenshot.npmTest.browser.%252F.png)](https://kaizhu256.github.io/node-aa-bb/build/screenshot.npmTest.browser.%252F.png)
+1. [https://kaizhu256.github.io/node-swagger-validate-lite/build/screenshot.npmTest.browser.%252F.png](https://kaizhu256.github.io/node-swagger-validate-lite/build/screenshot.npmTest.browser.%252F.png)
+[![screenshot](https://kaizhu256.github.io/node-swagger-validate-lite/build/screenshot.npmTest.browser.%252F.png)](https://kaizhu256.github.io/node-swagger-validate-lite/build/screenshot.npmTest.browser.%252F.png)
 
-1. [https://kaizhu256.github.io/node-aa-bb/build/screenshot.testExampleJs.browser.%252F.png](https://kaizhu256.github.io/node-aa-bb/build/screenshot.testExampleJs.browser.%252F.png)
-[![screenshot](https://kaizhu256.github.io/node-aa-bb/build/screenshot.testExampleJs.browser.%252F.png)](https://kaizhu256.github.io/node-aa-bb/build/screenshot.testExampleJs.browser.%252F.png)
+1. [https://kaizhu256.github.io/node-swagger-validate-lite/build/screenshot.testExampleJs.browser.%252F.png](https://kaizhu256.github.io/node-swagger-validate-lite/build/screenshot.testExampleJs.browser.%252F.png)
+[![screenshot](https://kaizhu256.github.io/node-swagger-validate-lite/build/screenshot.testExampleJs.browser.%252F.png)](https://kaizhu256.github.io/node-swagger-validate-lite/build/screenshot.testExampleJs.browser.%252F.png)
 
-1. [https://kaizhu256.github.io/node-aa-bb/build/screenshot.testExampleSh.browser.%252F.png](https://kaizhu256.github.io/node-aa-bb/build/screenshot.testExampleSh.browser.%252F.png)
-[![screenshot](https://kaizhu256.github.io/node-aa-bb/build/screenshot.testExampleSh.browser.%252F.png)](https://kaizhu256.github.io/node-aa-bb/build/screenshot.testExampleSh.browser.%252F.png)
+1. [https://kaizhu256.github.io/node-swagger-validate-lite/build/screenshot.testExampleSh.browser.%252F.png](https://kaizhu256.github.io/node-swagger-validate-lite/build/screenshot.testExampleSh.browser.%252F.png)
+[![screenshot](https://kaizhu256.github.io/node-swagger-validate-lite/build/screenshot.testExampleSh.browser.%252F.png)](https://kaizhu256.github.io/node-swagger-validate-lite/build/screenshot.testExampleSh.browser.%252F.png)
 
 
 
@@ -897,21 +897,21 @@ local.http.createServer(function (request, response) {
     "engines": {
         "node": ">=10.0"
     },
-    "homepage": "https://github.com/kaizhu256/node-aa-bb",
+    "homepage": "https://github.com/kaizhu256/node-swagger-validate-lite",
     "keywords": [],
     "license": "MIT",
-    "main": "lib.aa_bb.js",
-    "name": "aa-bb",
+    "main": "lib.swagger_validate.js",
+    "name": "swagger-validate-lite",
     "nameAliasPublish": "",
-    "nameLib": "aa_bb",
-    "nameOriginal": "aa-bb",
+    "nameLib": "swagger_validate",
+    "nameOriginal": "swagger-validate-lite",
     "os": [
         "darwin",
         "linux"
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/kaizhu256/node-aa-bb.git"
+        "url": "https://github.com/kaizhu256/node-swagger-validate-lite.git"
     },
     "scripts": {
         "build-ci": "./npm_scripts.sh",
@@ -930,7 +930,7 @@ local.http.createServer(function (request, response) {
 
 
 # changelog of last 50 commits
-[![screenshot](https://kaizhu256.github.io/node-aa-bb/build/screenshot.gitLog.svg)](https://github.com/kaizhu256/node-aa-bb/commits)
+[![screenshot](https://kaizhu256.github.io/node-swagger-validate-lite/build/screenshot.gitLog.svg)](https://github.com/kaizhu256/node-swagger-validate-lite/commits)
 
 
 

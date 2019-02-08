@@ -1,4 +1,4 @@
-/* istanbul instrument in package aa_bb */
+/* istanbul instrument in package swagger_validate */
 /* istanbul ignore next */
 /* jslint utility2:true */
 (function (globalThis) {
