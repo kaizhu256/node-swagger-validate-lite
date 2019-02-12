@@ -1,6 +1,6 @@
 // usr/bin/env node
 /*
- * lib.swagger_validate.js (2018.8.19)
+ * lib.swagger_validate.js (2019.2.12)
  * https://github.com/kaizhu256/node-swagger-validate-lite
  * this zero-dependency package will provide a simple cli-tool to validate swagger.json
  *
