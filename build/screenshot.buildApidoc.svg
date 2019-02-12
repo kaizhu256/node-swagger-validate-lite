@@ -1,0 +1,116 @@
+<svg height="990" width="720" xmlns="http://www.w3.org/2000/svg">
+<rect height="990" fill="#555" width="720"></rect>
+<text fill="#7f7" font-family="Courier New" font-size="12" xml:space="preserve">
+<tspan x="10" y="26"></tspan>
+
+<tspan x="10" y="42">[MODE_BUILD=buildApidoc] - 2019-02-12T05:14:56.200Z - npm-testing /home/travis/build/kaizhu256/n\</tspan>
+<tspan x="10" y="58">ode-swagger-validate-lite</tspan>
+
+<tspan x="10" y="74"></tspan>
+
+<tspan x="10" y="90"></tspan>
+
+<tspan x="10" y="106">buildApidoc - merged test-report from file /home/travis/build/kaizhu256/node-swagger-validate-li\</tspan>
+<tspan x="10" y="122">te/tmp/build/test-report.json</tspan>
+
+<tspan x="10" y="138">&gt; http-server listening on port 51453</tspan>
+
+<tspan x="10" y="154">db - dropping database ...</tspan>
+
+<tspan x="10" y="170">apidocCreate - readExample /home/travis/build/kaizhu256/node-swagger-validate-lite/package.json</tspan>
+
+<tspan x="10" y="186">apidocCreate - readExample /home/travis/build/kaizhu256/node-swagger-validate-lite/.gitignore</tspan>
+
+<tspan x="10" y="202">apidocCreate - readExample /home/travis/build/kaizhu256/node-swagger-validate-lite/lib.swagger_v\</tspan>
+<tspan x="10" y="218">alidate.js</tspan>
+
+<tspan x="10" y="234">apidocCreate - readExample /home/travis/build/kaizhu256/node-swagger-validate-lite/LICENSE</tspan>
+
+<tspan x="10" y="250">apidocCreate - readExample /home/travis/build/kaizhu256/node-swagger-validate-lite/npm_scripts.s\</tspan>
+<tspan x="10" y="266">h</tspan>
+
+<tspan x="10" y="282">apidocCreate - readExample /home/travis/build/kaizhu256/node-swagger-validate-lite/package.json</tspan>
+
+<tspan x="10" y="298">apidocCreate - readExample /home/travis/build/kaizhu256/node-swagger-validate-lite/package-lock.\</tspan>
+<tspan x="10" y="314">json</tspan>
+
+<tspan x="10" y="330">apidocCreate - readExample /home/travis/build/kaizhu256/node-swagger-validate-lite/README.md</tspan>
+
+<tspan x="10" y="346">apidocCreate - readExample /home/travis/build/kaizhu256/node-swagger-validate-lite/test.js</tspan>
+
+<tspan x="10" y="362">apidocCreate - readExample /home/travis/build/kaizhu256/node-swagger-validate-lite/.travis.yml</tspan>
+
+<tspan x="10" y="378">apidocCreate - requiring /home/travis/build/kaizhu256/node-swagger-validate-lite ...</tspan>
+
+<tspan x="10" y="394">apidocCreate - ... required /home/travis/build/kaizhu256/node-swagger-validate-lite</tspan>
+
+<tspan x="10" y="410">created apidoc file /home/travis/build/kaizhu256/node-swagger-validate-lite/apidoc.html</tspan>
+
+<tspan x="10" y="426"></tspan>
+
+<tspan x="10" y="442">testRunDefault - 173 ms - [node test-case 1 of 1 passed] - testCase_buildApidoc_default</tspan>
+
+<tspan x="10" y="458"></tspan>
+
+<tspan x="10" y="474">buildApidoc - merged test-report from file /home/travis/build/kaizhu256/node-swagger-validate-li\</tspan>
+<tspan x="10" y="490">te/tmp/build/test-report.json</tspan>
+
+<tspan x="10" y="506">jslint - 55ms /home/travis/build/kaizhu256/node-swagger-validate-lite/lib.swagger_validate.js</tspan>
+
+<tspan x="10" y="522">jslint - 1ms /home/travis/build/kaizhu256/node-swagger-validate-lite/npm_scripts.sh</tspan>
+
+<tspan x="10" y="538">jslint - 1ms /home/travis/build/kaizhu256/node-swagger-validate-lite/package.json</tspan>
+
+<tspan x="10" y="554">jslint - 36ms /home/travis/build/kaizhu256/node-swagger-validate-lite/test.js</tspan>
+
+<tspan x="10" y="570">local-function - unused (README.md) local.onEventDomDb</tspan>
+
+<tspan x="10" y="586">jslint - 173ms /home/travis/build/kaizhu256/node-swagger-validate-lite/README.md</tspan>
+
+<tspan x="10" y="602"></tspan>
+
+<tspan x="10" y="618">buildApidoc - merged test-report from file /home/travis/build/kaizhu256/node-swagger-validate-li\</tspan>
+<tspan x="10" y="634">te/tmp/build/test-report.json</tspan>
+
+<tspan x="10" y="650"></tspan>
+
+<tspan x="10" y="666">-------------------------------------------------------</tspan>
+
+<tspan x="10" y="682">| test-report - buildApidoc - node - linux v11.9.0 - 2019-02-12T05:14:56.387Z</tspan>
+
+<tspan x="10" y="698">|     173 ms            0 failed        1 passed      |</tspan>
+
+<tspan x="10" y="714">-------------------------------------------------------</tspan>
+
+<tspan x="10" y="730">| test-report - npmTest - browser - / - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTM\</tspan>
+<tspan x="10" y="746">L, like Gecko) Chrome/61.0.3163.100 Electron/2.0.16 Safari/537.36 - 2019-02-12T05:14:48.155Z</tspan>
+
+<tspan x="10" y="762">|    1005 ms            0 failed        2 passed      |</tspan>
+
+<tspan x="10" y="778">-------------------------------------------------------</tspan>
+
+<tspan x="10" y="794">| test-report - npmTest - node - linux v11.9.0 - 2019-02-12T05:14:45.954Z</tspan>
+
+<tspan x="10" y="810">|    7530 ms            0 failed        7 passed      |</tspan>
+
+<tspan x="10" y="826">-------------------------------------------------------</tspan>
+
+<tspan x="10" y="842"></tspan>
+
+<tspan x="10" y="858">created test-report file /home/travis/build/kaizhu256/node-swagger-validate-lite/tmp/build/test-\</tspan>
+<tspan x="10" y="874">report.html</tspan>
+
+<tspan x="10" y="890"></tspan>
+
+<tspan x="10" y="906"></tspan>
+
+<tspan x="10" y="922">buildApidoc - 0 failed tests</tspan>
+
+<tspan x="10" y="938"></tspan>
+
+<tspan x="10" y="954"></tspan>
+
+<tspan x="10" y="970">[MODE_BUILD=buildApidoc] - 2019-02-12T05:14:57.922Z - EXIT_CODE - 0</tspan>
+
+</text>
+</svg>

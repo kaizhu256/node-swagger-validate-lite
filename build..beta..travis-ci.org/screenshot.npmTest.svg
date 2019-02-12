@@ -1,0 +1,411 @@
+<svg height="4110" width="720" xmlns="http://www.w3.org/2000/svg">
+<rect height="4110" fill="#555" width="720"></rect>
+<text fill="#7f7" font-family="Courier New" font-size="12" xml:space="preserve">
+<tspan x="10" y="26"></tspan>
+
+<tspan x="10" y="42">[MODE_BUILD=npmTest] - 2018-08-19T19:07:46.720Z - npm-testing /home/travis/build/kaizhu256/node-\</tspan>
+<tspan x="10" y="58">swagger-validate-lite</tspan>
+
+<tspan x="10" y="74"></tspan>
+
+<tspan x="10" y="90"></tspan>
+
+<tspan x="10" y="106">covering $ /home/travis/.nvm/versions/node/v10.9.0/bin/node /home/travis/build/kaizhu256/node-sw\</tspan>
+<tspan x="10" y="122">agger-validate-lite/test.js</tspan>
+
+<tspan x="10" y="138"></tspan>
+
+<tspan x="10" y="154">npmTest - merged test-report from file /home/travis/build/kaizhu256/node-swagger-validate-lite/t\</tspan>
+<tspan x="10" y="170">mp/build/test-report.json</tspan>
+
+<tspan x="10" y="186">&gt; server listening on http-port 38344</tspan>
+
+<tspan x="10" y="202">apidocCreate - readExample /home/travis/build/kaizhu256/node-swagger-validate-lite/package.json</tspan>
+
+<tspan x="10" y="218">apidocCreate - readExample /home/travis/build/kaizhu256/node-swagger-validate-lite/.gitignore</tspan>
+
+<tspan x="10" y="234">apidocCreate - readExample /home/travis/build/kaizhu256/node-swagger-validate-lite/lib.swagger_v\</tspan>
+<tspan x="10" y="250">alidate.js</tspan>
+
+<tspan x="10" y="266">apidocCreate - readExample /home/travis/build/kaizhu256/node-swagger-validate-lite/LICENSE</tspan>
+
+<tspan x="10" y="282">apidocCreate - readExample /home/travis/build/kaizhu256/node-swagger-validate-lite/npm_scripts.s\</tspan>
+<tspan x="10" y="298">h</tspan>
+
+<tspan x="10" y="314">apidocCreate - readExample /home/travis/build/kaizhu256/node-swagger-validate-lite/package.json</tspan>
+
+<tspan x="10" y="330">apidocCreate - readExample /home/travis/build/kaizhu256/node-swagger-validate-lite/package-lock.\</tspan>
+<tspan x="10" y="346">json</tspan>
+
+<tspan x="10" y="362">apidocCreate - readExample /home/travis/build/kaizhu256/node-swagger-validate-lite/README.md</tspan>
+
+<tspan x="10" y="378">apidocCreate - readExample /home/travis/build/kaizhu256/node-swagger-validate-lite/test.js</tspan>
+
+<tspan x="10" y="394">apidocCreate - readExample /home/travis/build/kaizhu256/node-swagger-validate-lite/.travis.yml</tspan>
+
+<tspan x="10" y="410">apidocCreate - requiring /home/travis/build/kaizhu256/node-swagger-validate-lite ...</tspan>
+
+<tspan x="10" y="426">apidocCreate - ... required /home/travis/build/kaizhu256/node-swagger-validate-lite</tspan>
+
+<tspan x="10" y="442">created apidoc file /home/travis/build/kaizhu256/node-swagger-validate-lite/tmp/build/apidoc.htm\</tspan>
+<tspan x="10" y="458">l</tspan>
+
+<tspan x="10" y="474"></tspan>
+
+<tspan x="10" y="490">[node test-case 1 of 8 passed] - testCase_buildApidoc_default</tspan>
+
+<tspan x="10" y="506">[node test-case 2 of 8 passed] - testCase_buildCustomOrg_default</tspan>
+
+<tspan x="10" y="522">[node test-case 3 of 8 passed] - testCase_buildLib_default</tspan>
+
+<tspan x="10" y="538">[node test-case 4 of 8 passed] - testCase_buildReadme_default</tspan>
+
+<tspan x="10" y="554">[node test-case 5 of 8 passed] - testCase_buildTest_default</tspan>
+
+<tspan x="10" y="570">[node test-case 6 of 8 passed] - testCase_nop_default</tspan>
+
+<tspan x="10" y="586"></tspan>
+
+<tspan x="10" y="602">browserTest - created electron entry-page /home/travis/build/kaizhu256/node-swagger-validate-lit\</tspan>
+<tspan x="10" y="618">e/tmp/electron.16553960d0c0.6d90539b5284d.html</tspan>
+
+<tspan x="10" y="634"></tspan>
+
+<tspan x="10" y="650">(node:5607) ExperimentalWarning: The http2 module is an experimental API.</tspan>
+
+<tspan x="10" y="666">(node:5607) [DEP0025] DeprecationWarning: sys is deprecated. Use util instead.</tspan>
+
+<tspan x="10" y="682">(node:5607) [DEP0084] DeprecationWarning: Requiring Node.js-bundled 'v8/tools/splaytree' module \</tspan>
+<tspan x="10" y="698">is deprecated. Please install the necessary module locally.</tspan>
+
+<tspan x="10" y="714">(node:5607) [DEP0084] DeprecationWarning: Requiring Node.js-bundled 'v8/tools/codemap' module is\</tspan>
+<tspan x="10" y="730"> deprecated. Please install the necessary module locally.</tspan>
+
+<tspan x="10" y="746">(node:5607) [DEP0084] DeprecationWarning: Requiring Node.js-bundled 'v8/tools/consarray' module \</tspan>
+<tspan x="10" y="762">is deprecated. Please install the necessary module locally.</tspan>
+
+<tspan x="10" y="778">(node:5607) [DEP0084] DeprecationWarning: Requiring Node.js-bundled 'v8/tools/csvparser' module \</tspan>
+<tspan x="10" y="794">is deprecated. Please install the necessary module locally.</tspan>
+
+<tspan x="10" y="810">(node:5607) [DEP0084] DeprecationWarning: Requiring Node.js-bundled 'v8/tools/profile' module is\</tspan>
+<tspan x="10" y="826"> deprecated. Please install the necessary module locally.</tspan>
+
+<tspan x="10" y="842">(node:5607) [DEP0084] DeprecationWarning: Requiring Node.js-bundled 'v8/tools/profile_view' modu\</tspan>
+<tspan x="10" y="858">le is deprecated. Please install the necessary module locally.</tspan>
+
+<tspan x="10" y="874">(node:5607) [DEP0084] DeprecationWarning: Requiring Node.js-bundled 'v8/tools/logreader' module \</tspan>
+<tspan x="10" y="890">is deprecated. Please install the necessary module locally.</tspan>
+
+<tspan x="10" y="906">(node:5607) [DEP0084] DeprecationWarning: Requiring Node.js-bundled 'v8/tools/arguments' module \</tspan>
+<tspan x="10" y="922">is deprecated. Please install the necessary module locally.</tspan>
+
+<tspan x="10" y="938">(node:5607) [DEP0084] DeprecationWarning: Requiring Node.js-bundled 'v8/tools/tickprocessor' mod\</tspan>
+<tspan x="10" y="954">ule is deprecated. Please install the necessary module locally.</tspan>
+
+<tspan x="10" y="970">(node:5607) [DEP0084] DeprecationWarning: Requiring Node.js-bundled 'v8/tools/SourceMap' module \</tspan>
+<tspan x="10" y="986">is deprecated. Please install the necessary module locally.</tspan>
+
+<tspan x="10" y="1002">(node:5607) [DEP0084] DeprecationWarning: Requiring Node.js-bundled 'v8/tools/tickprocessor-driv\</tspan>
+<tspan x="10" y="1018">er' module is deprecated. Please install the necessary module locally.</tspan>
+
+<tspan x="10" y="1034">(node:5607) [DEP0084] DeprecationWarning: Requiring Node.js-bundled 'node-inspect/lib/_inspect' \</tspan>
+<tspan x="10" y="1050">module is deprecated. Please install the necessary module locally.</tspan>
+
+<tspan x="10" y="1066">(node:5607) [DEP0084] DeprecationWarning: Requiring Node.js-bundled 'node-inspect/lib/internal/i\</tspan>
+<tspan x="10" y="1082">nspect_client' module is deprecated. Please install the necessary module locally.</tspan>
+
+<tspan x="10" y="1098">(node:5607) [DEP0084] DeprecationWarning: Requiring Node.js-bundled 'node-inspect/lib/internal/i\</tspan>
+<tspan x="10" y="1114">nspect_repl' module is deprecated. Please install the necessary module locally.</tspan>
+
+<tspan x="10" y="1130">Xlib:  extension "RANDR" missing on display ":99.0".</tspan>
+
+<tspan x="10" y="1146">Xlib:  extension "RANDR" missing on display ":99.0".</tspan>
+
+<tspan x="10" y="1162">[5674:0819/190747.906016:WARNING:audio_manager.cc(295)] Multiple instances of AudioManager detec\</tspan>
+<tspan x="10" y="1178">ted</tspan>
+
+<tspan x="10" y="1194">[5674:0819/190747.906080:WARNING:audio_manager.cc(254)] Multiple instances of AudioManager detec\</tspan>
+<tspan x="10" y="1210">ted</tspan>
+
+<tspan x="10" y="1226">[5706:0819/190748.006825:ERROR:sandbox_linux.cc(343)] InitializeSandbox() called with multiple t\</tspan>
+<tspan x="10" y="1242">hreads in process gpu-process. </tspan>
+
+<tspan x="10" y="1258">[5674:0819/190748.013546:ERROR:browser_gpu_channel_host_factory.cc(125)] Failed to create channe\</tspan>
+<tspan x="10" y="1274">l.</tspan>
+
+<tspan x="10" y="1290">[5674:0819/190748.013598:ERROR:browser_gpu_channel_host_factory.cc(125)] Failed to create channe\</tspan>
+<tspan x="10" y="1306">l.</tspan>
+
+<tspan x="10" y="1322">[5674:0819/190748.013623:ERROR:browser_gpu_channel_host_factory.cc(125)] Failed to create channe\</tspan>
+<tspan x="10" y="1338">l.</tspan>
+
+<tspan x="10" y="1354">[5674:0819/190748.013646:ERROR:browser_gpu_channel_host_factory.cc(125)] Failed to create channe\</tspan>
+<tspan x="10" y="1370">l.</tspan>
+
+<tspan x="10" y="1386">[5674:0819/190748.013672:ERROR:browser_gpu_channel_host_factory.cc(125)] Failed to create channe\</tspan>
+<tspan x="10" y="1402">l.</tspan>
+
+<tspan x="10" y="1418">&gt; server listening on http-port 49626</tspan>
+
+<tspan x="10" y="1434"></tspan>
+
+<tspan x="10" y="1450">browserTest - opened http://127.0.0.1:38344?modeTest=1&amp;timeoutDefault=30000</tspan>
+
+<tspan x="10" y="1466"></tspan>
+
+<tspan x="10" y="1482">[5674:0819/190748.644941:INFO:CONSOLE(284)] "swagger-validate - failed - inputTextarea1.json</tspan>
+
+<tspan x="10" y="1498">error.itemEnum - string swaggerJson["swagger"] = "example error" can only have items from the li\</tspan>
+<tspan x="10" y="1514">st ["2.0"]", source: file:///home/travis/build/kaizhu256/node-swagger-validate-lite/tmp/electron\</tspan>
+<tspan x="10" y="1530">.16553960d0c0.6d90539b5284d.html (284)</tspan>
+
+<tspan x="10" y="1546">[5674:0819/190748.675469:INFO:CONSOLE(284)] "[browser test-case 1 of 8 passed] - testCase_buildA\</tspan>
+<tspan x="10" y="1562">pidoc_default", source: file:///home/travis/build/kaizhu256/node-swagger-validate-lite/tmp/elect\</tspan>
+<tspan x="10" y="1578">ron.16553960d0c0.6d90539b5284d.html (284)</tspan>
+
+<tspan x="10" y="1594">[5674:0819/190748.689380:INFO:CONSOLE(284)] "[browser test-case 2 of 8 passed] - testCase_buildA\</tspan>
+<tspan x="10" y="1610">pp_default", source: file:///home/travis/build/kaizhu256/node-swagger-validate-lite/tmp/electron\</tspan>
+<tspan x="10" y="1626">.16553960d0c0.6d90539b5284d.html (284)</tspan>
+
+<tspan x="10" y="1642">[5674:0819/190748.690292:INFO:CONSOLE(284)] "[browser test-case 3 of 8 passed] - testCase_buildC\</tspan>
+<tspan x="10" y="1658">ustomOrg_default", source: file:///home/travis/build/kaizhu256/node-swagger-validate-lite/tmp/el\</tspan>
+<tspan x="10" y="1674">ectron.16553960d0c0.6d90539b5284d.html (284)</tspan>
+
+<tspan x="10" y="1690">[5674:0819/190748.691461:INFO:CONSOLE(284)] "[browser test-case 4 of 8 passed] - testCase_buildL\</tspan>
+<tspan x="10" y="1706">ib_default", source: file:///home/travis/build/kaizhu256/node-swagger-validate-lite/tmp/electron\</tspan>
+<tspan x="10" y="1722">.16553960d0c0.6d90539b5284d.html (284)</tspan>
+
+<tspan x="10" y="1738">[5674:0819/190748.692764:INFO:CONSOLE(284)] "[browser test-case 5 of 8 passed] - testCase_buildR\</tspan>
+<tspan x="10" y="1754">eadme_default", source: file:///home/travis/build/kaizhu256/node-swagger-validate-lite/tmp/elect\</tspan>
+<tspan x="10" y="1770">ron.16553960d0c0.6d90539b5284d.html (284)</tspan>
+
+<tspan x="10" y="1786">[5674:0819/190748.697955:INFO:CONSOLE(284)] "[browser test-case 6 of 8 passed] - testCase_buildT\</tspan>
+<tspan x="10" y="1802">est_default", source: file:///home/travis/build/kaizhu256/node-swagger-validate-lite/tmp/electro\</tspan>
+<tspan x="10" y="1818">n.16553960d0c0.6d90539b5284d.html (284)</tspan>
+
+<tspan x="10" y="1834">[5674:0819/190748.699556:INFO:CONSOLE(284)] "[browser test-case 7 of 8 passed] - testCase_nop_de\</tspan>
+<tspan x="10" y="1850">fault", source: file:///home/travis/build/kaizhu256/node-swagger-validate-lite/tmp/electron.1655\</tspan>
+<tspan x="10" y="1866">3960d0c0.6d90539b5284d.html (284)</tspan>
+
+<tspan x="10" y="1882">[5674:0819/190748.712190:INFO:CONSOLE(284)] "domStyleValidateUnmatched 0. 1 pre,", source: file:\</tspan>
+<tspan x="10" y="1898">///home/travis/build/kaizhu256/node-swagger-validate-lite/tmp/electron.16553960d0c0.6d90539b5284\</tspan>
+<tspan x="10" y="1914">d.html (284)</tspan>
+
+<tspan x="10" y="1930">[5674:0819/190748.712381:INFO:CONSOLE(284)] "domStyleValidateUnmatched 1. 1 pre,", source: file:\</tspan>
+<tspan x="10" y="1946">///home/travis/build/kaizhu256/node-swagger-validate-lite/tmp/electron.16553960d0c0.6d90539b5284\</tspan>
+<tspan x="10" y="1962">d.html (284)</tspan>
+
+<tspan x="10" y="1978">[5674:0819/190748.712455:INFO:CONSOLE(284)] "domStyleValidateUnmatched 2. 1 pre {", source: file\</tspan>
+<tspan x="10" y="1994">:///home/travis/build/kaizhu256/node-swagger-validate-lite/tmp/electron.16553960d0c0.6d90539b528\</tspan>
+<tspan x="10" y="2010">4d.html (284)</tspan>
+
+<tspan x="10" y="2026">[5674:0819/190748.712486:INFO:CONSOLE(284)] "domStyleValidateUnmatched 3. 1 pre {", source: file\</tspan>
+<tspan x="10" y="2042">:///home/travis/build/kaizhu256/node-swagger-validate-lite/tmp/electron.16553960d0c0.6d90539b528\</tspan>
+<tspan x="10" y="2058">4d.html (284)</tspan>
+
+<tspan x="10" y="2074">[5674:0819/190748.712522:INFO:CONSOLE(284)] "domStyleValidateUnmatched 4. 1 body {", source: fil\</tspan>
+<tspan x="10" y="2090">e:///home/travis/build/kaizhu256/node-swagger-validate-lite/tmp/electron.16553960d0c0.6d90539b52\</tspan>
+<tspan x="10" y="2106">84d.html (284)</tspan>
+
+<tspan x="10" y="2122">[5674:0819/190748.712548:INFO:CONSOLE(284)] "domStyleValidateUnmatched 5. 1 body {", source: fil\</tspan>
+<tspan x="10" y="2138">e:///home/travis/build/kaizhu256/node-swagger-validate-lite/tmp/electron.16553960d0c0.6d90539b52\</tspan>
+<tspan x="10" y="2154">84d.html (284)</tspan>
+
+<tspan x="10" y="2170">[5674:0819/190748.712947:INFO:CONSOLE(284)] "domStyleValidateUnmatched 6. 1 body &gt; textarea[read\</tspan>
+<tspan x="10" y="2186">only] {", source: file:///home/travis/build/kaizhu256/node-swagger-validate-lite/tmp/electron.16\</tspan>
+<tspan x="10" y="2202">553960d0c0.6d90539b5284d.html (284)</tspan>
+
+<tspan x="10" y="2218">[5674:0819/190748.713243:INFO:CONSOLE(284)] "domStyleValidateUnmatched 7. 1 body &gt; textarea[read\</tspan>
+<tspan x="10" y="2234">only] {", source: file:///home/travis/build/kaizhu256/node-swagger-validate-lite/tmp/electron.16\</tspan>
+<tspan x="10" y="2250">553960d0c0.6d90539b5284d.html (284)</tspan>
+
+<tspan x="10" y="2266">[5674:0819/190748.714068:INFO:CONSOLE(284)] "domStyleValidateUnmatched 8. 1 body &gt; input,", sour\</tspan>
+<tspan x="10" y="2282">ce: file:///home/travis/build/kaizhu256/node-swagger-validate-lite/tmp/electron.16553960d0c0.6d9\</tspan>
+<tspan x="10" y="2298">0539b5284d.html (284)</tspan>
+
+<tspan x="10" y="2314">[5674:0819/190748.715580:INFO:CONSOLE(284)] "domStyleValidateUnmatched 9. 1 body &gt; input,", sour\</tspan>
+<tspan x="10" y="2330">ce: file:///home/travis/build/kaizhu256/node-swagger-validate-lite/tmp/electron.16553960d0c0.6d9\</tspan>
+<tspan x="10" y="2346">0539b5284d.html (284)</tspan>
+
+<tspan x="10" y="2362">[5674:0819/190748.717342:INFO:CONSOLE(284)] "domStyleValidateUnmatched 10. 1 body &gt; input,", sou\</tspan>
+<tspan x="10" y="2378">rce: file:///home/travis/build/kaizhu256/node-swagger-validate-lite/tmp/electron.16553960d0c0.6d\</tspan>
+<tspan x="10" y="2394">90539b5284d.html (284)</tspan>
+
+<tspan x="10" y="2410">[5674:0819/190748.718943:INFO:CONSOLE(284)] "domStyleValidateUnmatched 11. 1 body &gt; input,", sou\</tspan>
+<tspan x="10" y="2426">rce: file:///home/travis/build/kaizhu256/node-swagger-validate-lite/tmp/electron.16553960d0c0.6d\</tspan>
+<tspan x="10" y="2442">90539b5284d.html (284)</tspan>
+
+<tspan x="10" y="2458">[5674:0819/190748.720790:INFO:CONSOLE(284)] "domStyleValidateUnmatched 12. 1 .utility2FooterDiv \</tspan>
+<tspan x="10" y="2474">{", source: file:///home/travis/build/kaizhu256/node-swagger-validate-lite/tmp/electron.16553960\</tspan>
+<tspan x="10" y="2490">d0c0.6d90539b5284d.html (284)</tspan>
+
+<tspan x="10" y="2506">[5674:0819/190748.722600:INFO:CONSOLE(284)] "domStyleValidateUnmatched 13. 1 .utility2FooterDiv \</tspan>
+<tspan x="10" y="2522">{", source: file:///home/travis/build/kaizhu256/node-swagger-validate-lite/tmp/electron.16553960\</tspan>
+<tspan x="10" y="2538">d0c0.6d90539b5284d.html (284)</tspan>
+
+<tspan x="10" y="2554">[5674:0819/190748.724564:INFO:CONSOLE(284)] "domStyleValidateUnmatched 14. 1 .uiAnimateSlide {",\</tspan>
+<tspan x="10" y="2570"> source: file:///home/travis/build/kaizhu256/node-swagger-validate-lite/tmp/electron.16553960d0c\</tspan>
+<tspan x="10" y="2586">0.6d90539b5284d.html (284)</tspan>
+
+<tspan x="10" y="2602">[5674:0819/190748.726634:INFO:CONSOLE(284)] "domStyleValidateUnmatched 15. 1 .uiAnimateSlide {",\</tspan>
+<tspan x="10" y="2618"> source: file:///home/travis/build/kaizhu256/node-swagger-validate-lite/tmp/electron.16553960d0c\</tspan>
+<tspan x="10" y="2634">0.6d90539b5284d.html (284)</tspan>
+
+<tspan x="10" y="2650">[5674:0819/190748.728739:INFO:CONSOLE(284)] "domStyleValidateUnmatched 16. 1 .testReportDiv pre \</tspan>
+<tspan x="10" y="2666">{", source: file:///home/travis/build/kaizhu256/node-swagger-validate-lite/tmp/electron.16553960\</tspan>
+<tspan x="10" y="2682">d0c0.6d90539b5284d.html (284)</tspan>
+
+<tspan x="10" y="2698">[5674:0819/190748.735462:INFO:CONSOLE(284)] "domStyleValidateUnmatched 17. 1 .testReportDiv .sum\</tspan>
+<tspan x="10" y="2714">mary {", source: file:///home/travis/build/kaizhu256/node-swagger-validate-lite/tmp/electron.165\</tspan>
+<tspan x="10" y="2730">53960d0c0.6d90539b5284d.html (284)</tspan>
+
+<tspan x="10" y="2746">[5674:0819/190748.736025:INFO:CONSOLE(284)] "domStyleValidateUnmatched 18. 1 .testReportDiv .foo\</tspan>
+<tspan x="10" y="2762">ter {", source: file:///home/travis/build/kaizhu256/node-swagger-validate-lite/tmp/electron.1655\</tspan>
+<tspan x="10" y="2778">3960d0c0.6d90539b5284d.html (284)</tspan>
+
+<tspan x="10" y="2794">[5674:0819/190748.736318:INFO:CONSOLE(284)] "domStyleValidateUnmatched 19. 1 .testReportDiv .dis\</tspan>
+<tspan x="10" y="2810">playNone {", source: file:///home/travis/build/kaizhu256/node-swagger-validate-lite/tmp/electron\</tspan>
+<tspan x="10" y="2826">.16553960d0c0.6d90539b5284d.html (284)</tspan>
+
+<tspan x="10" y="2842">[5674:0819/190748.736574:INFO:CONSOLE(284)] "[browser test-case 8 of 8 passed] - testCase_webpag\</tspan>
+<tspan x="10" y="2858">e_default", source: file:///home/travis/build/kaizhu256/node-swagger-validate-lite/tmp/electron.\</tspan>
+<tspan x="10" y="2874">16553960d0c0.6d90539b5284d.html (284)</tspan>
+
+<tspan x="10" y="2890">[5674:0819/190748.778902:INFO:CONSOLE(284)] "domOnEventWindowOnloadTimeElapsed = 376", source: f\</tspan>
+<tspan x="10" y="2906">ile:///home/travis/build/kaizhu256/node-swagger-validate-lite/tmp/electron.16553960d0c0.6d90539b\</tspan>
+<tspan x="10" y="2922">5284d.html (284)</tspan>
+
+<tspan x="10" y="2938">[5674:0819/190749.745884:INFO:CONSOLE(284)] "----------|-----------|-----------|-----------|----\</tspan>
+<tspan x="10" y="2954">-------|</tspan>
+
+<tspan x="10" y="2970">File      |   % Stmts |% Branches |   % Funcs |   % Lines |</tspan>
+
+<tspan x="10" y="2986">----------|-----------|-----------|-----------|-----------|</tspan>
+
+<tspan x="10" y="3002">----------|-----------|-----------|-----------|-----------|</tspan>
+
+<tspan x="10" y="3018">All files |       100 |       100 |       100 |       100 |</tspan>
+
+<tspan x="10" y="3034">----------|-----------|-----------|-----------|-----------|</tspan>
+
+<tspan x="10" y="3050">", source: file:///home/travis/build/kaizhu256/node-swagger-validate-lite/tmp/electron.16553960d\</tspan>
+<tspan x="10" y="3066">0c0.6d90539b5284d.html (284)</tspan>
+
+<tspan x="10" y="3082">[5674:0819/190749.752987:INFO:CONSOLE(284)] "created coverage file /tmp/build/coverage.html/inde\</tspan>
+<tspan x="10" y="3098">x.html", source: file:///home/travis/build/kaizhu256/node-swagger-validate-lite/tmp/electron.165\</tspan>
+<tspan x="10" y="3114">53960d0c0.6d90539b5284d.html (284)</tspan>
+
+<tspan x="10" y="3130">[node test-case 7 of 8 passed] - testCase_buildApp_default</tspan>
+
+<tspan x="10" y="3146"></tspan>
+
+<tspan x="10" y="3162">browserTest - created screenshot file /home/travis/build/kaizhu256/node-swagger-validate-lite/tm\</tspan>
+<tspan x="10" y="3178">p/build/screenshot.npmTest.browser.%2F.png</tspan>
+
+<tspan x="10" y="3194"></tspan>
+
+<tspan x="10" y="3210">browserTest - created screenshot file /home/travis/build/kaizhu256/node-swagger-validate-lite/tm\</tspan>
+<tspan x="10" y="3226">p/build/screenshot.npmTest.browser.%2F.html</tspan>
+
+<tspan x="10" y="3242"></tspan>
+
+<tspan x="10" y="3258">browserTest - exit-code 0 - http://127.0.0.1:38344?modeTest=1&amp;timeoutDefault=30000</tspan>
+
+<tspan x="10" y="3274"></tspan>
+
+<tspan x="10" y="3290"></tspan>
+
+<tspan x="10" y="3306">browserTest - merged coverage from file /home/travis/build/kaizhu256/node-swagger-validate-lite/\</tspan>
+<tspan x="10" y="3322">tmp/coverage.npmTest.browser.%2F.json</tspan>
+
+<tspan x="10" y="3338"></tspan>
+
+<tspan x="10" y="3354"></tspan>
+
+<tspan x="10" y="3370">browserTest - merged test-report from file /home/travis/build/kaizhu256/node-swagger-validate-li\</tspan>
+<tspan x="10" y="3386">te/tmp/test-report.npmTest.browser.%2F.json</tspan>
+
+<tspan x="10" y="3402"></tspan>
+
+<tspan x="10" y="3418">[node test-case 8 of 8 passed] - testCase_webpage_default</tspan>
+
+<tspan x="10" y="3434">-------------------------------|-----------|-----------|-----------|-----------|</tspan>
+
+<tspan x="10" y="3450">File                           |   % Stmts |% Branches |   % Funcs |   % Lines |</tspan>
+
+<tspan x="10" y="3466">-------------------------------|-----------|-----------|-----------|-----------|</tspan>
+
+<tspan x="10" y="3482">   node-swagger-validate-lite/ |       100 |       100 |       100 |       100 |</tspan>
+
+<tspan x="10" y="3498">      example.js               |       100 |       100 |       100 |       100 |</tspan>
+
+<tspan x="10" y="3514">      lib.swagger_validate.js  |       100 |       100 |       100 |       100 |</tspan>
+
+<tspan x="10" y="3530">      test.js                  |       100 |       100 |       100 |       100 |</tspan>
+
+<tspan x="10" y="3546">-------------------------------|-----------|-----------|-----------|-----------|</tspan>
+
+<tspan x="10" y="3562">All files                      |       100 |       100 |       100 |       100 |</tspan>
+
+<tspan x="10" y="3578">-------------------------------|-----------|-----------|-----------|-----------|</tspan>
+
+<tspan x="10" y="3594"></tspan>
+
+<tspan x="10" y="3610">created coverage file /home/travis/build/kaizhu256/node-swagger-validate-lite/tmp/build/coverage\</tspan>
+<tspan x="10" y="3626">.html/index.html</tspan>
+
+<tspan x="10" y="3642"></tspan>
+
+<tspan x="10" y="3658">npmTest - merged test-report from file /home/travis/build/kaizhu256/node-swagger-validate-lite/t\</tspan>
+<tspan x="10" y="3674">mp/build/test-report.json</tspan>
+
+<tspan x="10" y="3690"></tspan>
+
+<tspan x="10" y="3706">-------------------------------------------------------</tspan>
+
+<tspan x="10" y="3722">| test-report - npmTest - browser - / - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTM\</tspan>
+<tspan x="10" y="3738">L, like Gecko) Chrome/58.0.3029.110 Electron/1.7.15 Safari/537.36 - 2018-08-19T19:07:48.585Z</tspan>
+
+<tspan x="10" y="3754">|      69 ms            0 failed        8 passed      |</tspan>
+
+<tspan x="10" y="3770">-------------------------------------------------------</tspan>
+
+<tspan x="10" y="3786">| test-report - npmTest - node - linux v10.9.0 - 2018-08-19T19:07:46.955Z</tspan>
+
+<tspan x="10" y="3802">|   16285 ms            0 failed        8 passed      |</tspan>
+
+<tspan x="10" y="3818">-------------------------------------------------------</tspan>
+
+<tspan x="10" y="3834">| test-report - npmTestPublished - browser - / - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537\</tspan>
+<tspan x="10" y="3850">.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Electron/1.7.15 Safari/537.36 - 2018-08-19T19:06:42\</tspan>
+<tspan x="10" y="3866">.280Z</tspan>
+
+<tspan x="10" y="3882">|      90 ms            0 failed        8 passed      |</tspan>
+
+<tspan x="10" y="3898">-------------------------------------------------------</tspan>
+
+<tspan x="10" y="3914">| test-report - npmTestPublished - node - linux v10.9.0 - 2018-08-19T19:06:39.958Z</tspan>
+
+<tspan x="10" y="3930">|   17054 ms            0 failed        8 passed      |</tspan>
+
+<tspan x="10" y="3946">-------------------------------------------------------</tspan>
+
+<tspan x="10" y="3962"></tspan>
+
+<tspan x="10" y="3978">created test-report file /home/travis/build/kaizhu256/node-swagger-validate-lite/tmp/build/test-\</tspan>
+<tspan x="10" y="3994">report.html</tspan>
+
+<tspan x="10" y="4010"></tspan>
+
+<tspan x="10" y="4026"></tspan>
+
+<tspan x="10" y="4042">npmTest - 0 failed tests</tspan>
+
+<tspan x="10" y="4058"></tspan>
+
+<tspan x="10" y="4074"></tspan>
+
+<tspan x="10" y="4090">[MODE_BUILD=npmTest] - 2018-08-19T19:08:04.744Z - EXIT_CODE - 0</tspan>
+
+</text>
+</svg>
