@@ -270,7 +270,11 @@ pre {
             break;
         }
         // reset output
-        if (event.targetOnEvent.dataset.oneventResetOutput) {
+        if (
+            !event.ctrlKey
+            && !event.metaKey
+            && event.targetOnEvent.dataset.oneventResetOutput
+        ) {
             Array.from(document.querySelectorAll(
                 ".onevent-reset-output"
             )).forEach(function (element) {
@@ -410,10 +414,10 @@ pre {
 <h4>
     <span>version</span>-
         2019.2.12<br>
-    <span>test date</span>- 2019-02-12T06:18:50.012Z<br>
+    <span>test date</span>- 2019-02-12T06:32:48.478Z<br>
     <span>commit info</span>-
         
-        275a1062c68be73ffcbc7338401515e5b15c190d - <br>
+        71d3a7f33709f1b284e337a76dda34bacff3be83 - <br>
         
 </h4>
 <table>
@@ -426,7 +430,7 @@ pre {
     </tr>
 </thead>
 <tbody><tr>
-    <td>11536 ms</td>
+    <td>11291 ms</td>
     <td class="testPassed">0</td>
     <td>10</td>
     <td>0</td>
@@ -436,10 +440,10 @@ pre {
 
 <div class="platform">
 <h4>
-    1. buildApidoc - node - linux v11.9.0 - 2019-02-12T06:18:50.003Z<br>
+    1. buildApidoc - node - linux v11.9.0 - 2019-02-12T06:32:48.471Z<br>
     
     
-    <span>time-elapsed</span>- 1418 ms<br>
+    <span>time-elapsed</span>- 1390 ms<br>
     <span>tests failed</span>- 0<br>
     <span>tests passed</span>- 1<br>
     <span>tests pending</span>- 0<br>
@@ -455,7 +459,7 @@ pre {
 
 <tr>
     <td>1</td>
-    <td>189 ms</td>
+    <td>193 ms</td>
     <td class="testPassed">passed</td>
     <td>testCase_buildApidoc_default</td>
 </tr>
@@ -468,7 +472,7 @@ pre {
 
 <div class="platform">
 <h4>
-    2. npmTest - browser - / - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Electron/2.0.16 Safari/537.36 - 2019-02-12T06:18:41.535Z<br>
+    2. npmTest - browser - / - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Electron/2.0.16 Safari/537.36 - 2019-02-12T06:32:40.161Z<br>
     
     <a href="screenshot.npmTest.browser.%252F.png">
         <img alt="screenshot.npmTest.browser.%252F.png" src="screenshot.npmTest.browser.%252F.png">
@@ -476,7 +480,7 @@ pre {
     <br>
     
     
-    <span>time-elapsed</span>- 9553 ms<br>
+    <span>time-elapsed</span>- 9310 ms<br>
     <span>tests failed</span>- 0<br>
     <span>tests passed</span>- 2<br>
     <span>tests pending</span>- 0<br>
@@ -492,14 +496,14 @@ pre {
 
 <tr>
     <td>2</td>
-    <td>1 ms</td>
+    <td>0 ms</td>
     <td class="testPassed">passed</td>
     <td>testCase_buildApidoc_default</td>
 </tr>
 
 <tr>
     <td>3</td>
-    <td>1 ms</td>
+    <td>0 ms</td>
     <td class="testPassed">passed</td>
     <td>testCase_nop_default</td>
 </tr>
@@ -512,10 +516,10 @@ pre {
 
 <div class="platform">
 <h4>
-    3. npmTest - node - linux v11.9.0 - 2019-02-12T06:18:39.666Z<br>
+    3. npmTest - node - linux v11.9.0 - 2019-02-12T06:32:38.430Z<br>
     
     
-    <span>time-elapsed</span>- 11536 ms<br>
+    <span>time-elapsed</span>- 11291 ms<br>
     <span>tests failed</span>- 0<br>
     <span>tests passed</span>- 7<br>
     <span>tests pending</span>- 0<br>
@@ -531,14 +535,14 @@ pre {
 
 <tr>
     <td>4</td>
-    <td>137 ms</td>
+    <td>131 ms</td>
     <td class="testPassed">passed</td>
     <td>testCase_buildApidoc_default</td>
 </tr>
 
 <tr>
     <td>5</td>
-    <td>5563 ms</td>
+    <td>5464 ms</td>
     <td class="testPassed">passed</td>
     <td>testCase_buildApp_default</td>
 </tr>
@@ -552,7 +556,7 @@ pre {
 
 <tr>
     <td>7</td>
-    <td>8 ms</td>
+    <td>7 ms</td>
     <td class="testPassed">passed</td>
     <td>testCase_buildReadme_default</td>
 </tr>
@@ -573,7 +577,7 @@ pre {
 
 <tr>
     <td>10</td>
-    <td>6993 ms</td>
+    <td>6984 ms</td>
     <td class="testPassed">passed</td>
     <td>testCase_webpage_default</td>
 </tr>

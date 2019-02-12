@@ -585,7 +585,11 @@ pre {
             break;
         }
         // reset output
-        if (event.targetOnEvent.dataset.oneventResetOutput) {
+        if (
+            !event.ctrlKey
+            && !event.metaKey
+            && event.targetOnEvent.dataset.oneventResetOutput
+        ) {
             Array.from(document.querySelectorAll(
                 ".onevent-reset-output"
             )).forEach(function (element) {
