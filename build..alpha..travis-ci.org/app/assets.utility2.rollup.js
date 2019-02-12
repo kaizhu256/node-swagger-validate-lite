@@ -19473,7 +19473,6 @@ pre {\n\
         "change",\n\
         "click",\n\
         "keydown",\n\
-        "keyup",\n\
         "submit"\n\
     ].forEach(function (eventType) {\n\
         document.addEventListener(\n\
@@ -19599,7 +19598,7 @@ utility2-comment -->\n\
 \n\
 \n\
 <label>stderr and stdout</label>\n\
-<textarea class="onevent-reset-output readonly textarea" id="outputStdout1"></textarea>\n\
+<pre class="onevent-reset-output readonly textarea" id="outputStdout1" tabIndex="0"></pre>\n\
 <!-- utility2-comment\n\
 {{#if isRollup}}\n\
 <script src="assets.app.js"></script>\n\
@@ -34132,7 +34131,6 @@ pre {\\n\\\n\
         \"change\",\\n\\\n\
         \"click\",\\n\\\n\
         \"keydown\",\\n\\\n\
-        \"keyup\",\\n\\\n\
         \"submit\"\\n\\\n\
     ].forEach(function (eventType) {\\n\\\n\
         document.addEventListener(\\n\\\n\
@@ -34670,7 +34668,6 @@ pre {\n\
         \"change\",\n\
         \"click\",\n\
         \"keydown\",\n\
-        \"keyup\",\n\
         \"submit\"\n\
     ].forEach(function (eventType) {\n\
         document.addEventListener(\n\
