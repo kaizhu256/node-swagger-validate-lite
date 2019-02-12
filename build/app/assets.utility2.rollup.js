@@ -15997,7 +15997,7 @@ local.jslintAndPrint = function (code, file, option) {
                 "diff",
                 ["-u", file + ".autofix.old", file],
                 {
-                    stdio: ["ignore", 1, "ignore"]
+                    stdio: ["ignore", 2, "ignore"]
                 }
             );
             local.fs.unlinkSync(file + ".autofix.old");
