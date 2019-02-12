@@ -163,8 +163,8 @@
 // init local
 local = (
     globalThis.utility2_rollup
-    // || globalThis.utility2_rollup_old
-    // || require("./assets.utility2.rollup.js")
+    || globalThis.utility2_rollup_old
+    || require("./assets.utility2.rollup.js")
     || globalThis.globalLocal
 );
 // init exports

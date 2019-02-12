@@ -22511,12 +22511,10 @@ local.buildLib = function (option, onError) {
         local.fs.existsSync("./assets.utility2.rollup.js")
         && local.env.npm_package_nameLib !== "swgg"
     ) {
-        option.dataTo = option.dataTo
-        .replace(
+        option.dataTo = option.dataTo.replace(
             "    // || globalThis.utility2_rollup_old",
             "    || globalThis.utility2_rollup_old"
-        )
-        .replace(
+        ).replace(
             "    // || require(\"./assets.utility2.rollup.js\")",
             "    || require(\"./assets.utility2.rollup.js\")"
         );
@@ -23574,6 +23572,20 @@ local.jslintAutofixLocalFunction = function (code, file) {
             /\n\/\*\u0020istanbul\u0020instrument\u0020in\u0020package\u0020[\S\s]*?\n\/\*\u0020validateLineSortedReset\u0020\*\/\n/
         )
     );
+    // customize local for assets.utility2.rollup.js
+    if (
+        file === "lib." + process.env.npm_package_nameLib + ".js"
+        && local.fs.existsSync("./assets.utility2.rollup.js")
+        && local.env.npm_package_nameLib !== "swgg"
+    ) {
+        code = code.replace(
+            "    // || globalThis.utility2_rollup_old",
+            "    || globalThis.utility2_rollup_old"
+        ).replace(
+            "    // || require(\"./assets.utility2.rollup.js\")",
+            "    || require(\"./assets.utility2.rollup.js\")"
+        );
+    }
     // init functionAllDict and functionBaseDict
     [
         ["utility2", "swgg"],
@@ -23636,8 +23648,7 @@ local.jslintAutofixLocalFunction = function (code, file) {
     });
     // comment
     code2 = code;
-    code2 = code2
-    .replace((
+    code2 = code2.replace((
         /^\u0020*?\/\*[\S\s]*?\*\/|^\u0020*?(?:\/\/.*?|.*?\\)$/gm
     ), "");
     // local-function - update dictFnc and dictProp
