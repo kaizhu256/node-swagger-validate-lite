@@ -1,116 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*
 example.js
 
@@ -119,7 +6,7 @@ this script will run a web-demo of swagger-validate-lite
 instruction
     1. save this script as example.js
     2. run shell-command:
-        $ npm install kaizhu256/node-swagger-validate-lite#alpha && PORT=8081 node example.js
+        $ npm install swagger-validate-lite && PORT=8081 node example.js
     3. open a browser to http://127.0.0.1:8081 and play with web-demo
     4. edit this script to suit your needs
 */
@@ -342,28 +229,8 @@ local.testRunBrowser = function (event) {
         )
     ) {
     // custom-case
-    case "click.inputTextarea1":
-    case "keyup.inputTextarea1":
     case true:
-        // validate #inputTextarea1
-        document.querySelector(
-            "#outputStdout1"
-        ).value = "";
-        local.swagger_validate.swaggerValidateFile({
-            data: document.querySelector(
-                "#inputTextarea1"
-            ).value,
-            file: "inputTextarea1.json"
-        }, function (err) {
-            document.querySelector(
-                "#outputStdout1"
-            ).style.color = (
-                err
-                ? "#d00"
-                : "#070"
-            );
-        });
-        break;
+        return;
     // run browser-tests
     default:
         if (
@@ -813,46 +680,8 @@ utility2-comment -->\n\
 \n\
 \n\
 \n\
-<label>edit or paste swagger.json data below to validate</label>\n\
-<textarea class="textarea" data-onevent="testRunBrowser" data-onevent-reset-output="1" id="inputTextarea1">{\n\
-    "swagger": "this is an example error",\n\
-    "info": {\n\
-        "title": "Swagger Petstore",\n\
-        "version": "0.0.1"\n\
-    },\n\
-    "paths": {\n\
-        "/pet/{petId}": {\n\
-            "get": {\n\
-                "operationId": "getPetById",\n\
-                "parameters": [\n\
-                    {\n\
-                        "name": "petId",\n\
-                        "in": "path",\n\
-                        "description": "ID of pet to return",\n\
-                        "required": true,\n\
-                        "type": "integer",\n\
-                        "format": "int64"\n\
-                    }\n\
-                ],\n\
-                "responses": {\n\
-                    "200": {\n\
-                        "description": "successful operation"\n\
-                    }\n\
-                },\n\
-                "tags": [\n\
-                    "pet"\n\
-                ]\n\
-            }\n\
-        }\n\
-    },\n\
-    "tags": [\n\
-        {\n\
-            "name": "pet"\n\
-        }\n\
-    ]\n\
-}</textarea>\n\
 <label>stderr and stdout</label>\n\
-<pre class="onevent-reset-output readonly textarea" id="outputStdout1"></pre>\n\
+<textarea class="onevent-reset-output readonly textarea" id="outputStdout1"></textarea>\n\
 <!-- utility2-comment\n\
 {{#if isRollup}}\n\
 <script src="assets.app.js"></script>\n\

@@ -229,8 +229,7 @@ local.testRunBrowser = function (event) {
         )
     ) {
     // custom-case
-    case "click.inputTextarea1":
-    case "keyup.inputTextarea1":
+    case "keydown.inputTextarea1":
     case true:
         // validate #inputTextarea1
         document.querySelector(

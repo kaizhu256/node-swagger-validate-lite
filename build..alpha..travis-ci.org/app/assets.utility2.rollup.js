@@ -34101,7 +34101,11 @@ pre {\\n\\\n\
             break;\\n\\\n\
         }\\n\\\n\
         // reset output\\n\\\n\
-        if (event.targetOnEvent.dataset.oneventResetOutput) {\\n\\\n\
+        if (\\n\\\n\
+            !event.ctrlKey\\n\\\n\
+            && !event.metaKey\\n\\\n\
+            && event.targetOnEvent.dataset.oneventResetOutput\\n\\\n\
+        ) {\\n\\\n\
             Array.from(document.querySelectorAll(\\n\\\n\
                 \".onevent-reset-output\"\\n\\\n\
             )).forEach(function (element) {\\n\\\n\
@@ -34635,7 +34639,11 @@ pre {\n\
             break;\n\
         }\n\
         // reset output\n\
-        if (event.targetOnEvent.dataset.oneventResetOutput) {\n\
+        if (\n\
+            !event.ctrlKey\n\
+            && !event.metaKey\n\
+            && event.targetOnEvent.dataset.oneventResetOutput\n\
+        ) {\n\
             Array.from(document.querySelectorAll(\n\
                 \".onevent-reset-output\"\n\
             )).forEach(function (element) {\n\
