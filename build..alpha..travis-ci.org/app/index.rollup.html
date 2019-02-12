@@ -254,7 +254,6 @@ pre {
         "change",
         "click",
         "keydown",
-        "keyup",
         "submit"
     ].forEach(function (eventType) {
         document.addEventListener(
@@ -379,8 +378,46 @@ pre {
 
 
 
+<label>edit or paste swagger.json data below to validate</label>
+<textarea class="textarea" data-onevent="testRunBrowser" data-onevent-reset-output="1" id="inputTextarea1">{
+    "swagger": "this is an example error",
+    "info": {
+        "title": "Swagger Petstore",
+        "version": "0.0.1"
+    },
+    "paths": {
+        "/pet/{petId}": {
+            "get": {
+                "operationId": "getPetById",
+                "parameters": [
+                    {
+                        "name": "petId",
+                        "in": "path",
+                        "description": "ID of pet to return",
+                        "required": true,
+                        "type": "integer",
+                        "format": "int64"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                },
+                "tags": [
+                    "pet"
+                ]
+            }
+        }
+    },
+    "tags": [
+        {
+            "name": "pet"
+        }
+    ]
+}</textarea>
 <label>stderr and stdout</label>
-<textarea class="onevent-reset-output readonly textarea" id="outputStdout1"></textarea>
+<pre class="onevent-reset-output readonly textarea" id="outputStdout1" tabIndex="0"></pre>
 
 
 <script src="assets.app.js"></script>

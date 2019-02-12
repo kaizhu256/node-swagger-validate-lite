@@ -1,9 +1,9 @@
-<svg height="766" width="720" xmlns="http://www.w3.org/2000/svg">
-<rect height="766" fill="#555" width="720"></rect>
+<svg height="750" width="720" xmlns="http://www.w3.org/2000/svg">
+<rect height="750" fill="#555" width="720"></rect>
 <text fill="#7f7" font-family="Courier New" font-size="12" xml:space="preserve">
 <tspan x="10" y="26"></tspan>
 
-<tspan x="10" y="42">[MODE_BUILD=buildApp] - 2019-02-12T06:41:59.016Z - npm-testing /home/travis/build/kaizhu256/node\</tspan>
+<tspan x="10" y="42">[MODE_BUILD=buildApp] - 2019-02-12T06:58:22.945Z - npm-testing /home/travis/build/kaizhu256/node\</tspan>
 <tspan x="10" y="58">-swagger-validate-lite</tspan>
 
 <tspan x="10" y="74"></tspan>
@@ -13,7 +13,7 @@
 <tspan x="10" y="106">buildApp - merged test-report from file /home/travis/build/kaizhu256/node-swagger-validate-lite/\</tspan>
 <tspan x="10" y="122">tmp/build/test-report.json</tspan>
 
-<tspan x="10" y="138">&gt; http-server listening on port 62623</tspan>
+<tspan x="10" y="138">&gt; http-server listening on port 42254</tspan>
 
 <tspan x="10" y="154">db - dropping database ...</tspan>
 
@@ -22,70 +22,68 @@
 <tspan x="10" y="186">buildApp - merged test-report from file /home/travis/build/kaizhu256/node-swagger-validate-lite/\</tspan>
 <tspan x="10" y="202">tmp/build/test-report.json</tspan>
 
-<tspan x="10" y="218">jslint - 125ms /home/travis/build/kaizhu256/node-swagger-validate-lite/lib.swagger_validate.js</tspan>
+<tspan x="10" y="218">jslint - 96ms /home/travis/build/kaizhu256/node-swagger-validate-lite/lib.swagger_validate.js</tspan>
 
-<tspan x="10" y="234">jslint - 2ms /home/travis/build/kaizhu256/node-swagger-validate-lite/npm_scripts.sh</tspan>
+<tspan x="10" y="234">jslint - 1ms /home/travis/build/kaizhu256/node-swagger-validate-lite/npm_scripts.sh</tspan>
 
-<tspan x="10" y="250">jslint - 1ms /home/travis/build/kaizhu256/node-swagger-validate-lite/package.json</tspan>
+<tspan x="10" y="250">jslint - 0ms /home/travis/build/kaizhu256/node-swagger-validate-lite/package.json</tspan>
 
-<tspan x="10" y="266">jslint - 92ms /home/travis/build/kaizhu256/node-swagger-validate-lite/test.js</tspan>
+<tspan x="10" y="266">jslint - 71ms /home/travis/build/kaizhu256/node-swagger-validate-lite/test.js</tspan>
 
 <tspan x="10" y="282">local-function - unused (README.md) local.onEventDomDb</tspan>
 
-<tspan x="10" y="298">jslint - 378ms /home/travis/build/kaizhu256/node-swagger-validate-lite/README.md</tspan>
+<tspan x="10" y="298">jslint - 351ms /home/travis/build/kaizhu256/node-swagger-validate-lite/README.md</tspan>
 
-<tspan x="10" y="314">http-server listening on port 55101</tspan>
+<tspan x="10" y="314">http-server listening on port 55968</tspan>
 
-<tspan x="10" y="330">testRunDefault - 25575 ms - testCase pending - testCase_buildApp_default ...</tspan>
+<tspan x="10" y="330">testRunDefault - 25414 ms - testCase pending - testCase_buildApp_default ...</tspan>
 
-<tspan x="10" y="346">testRunDefault - 29824 ms - [node test-case 1 of 1 passed] - testCase_buildApp_default</tspan>
+<tspan x="10" y="346">testRunDefault - 28366 ms - [node test-case 1 of 1 passed] - testCase_buildApp_default</tspan>
 
-<tspan x="10" y="362">testRunDefault - 30587 ms - testCase pending -  ...</tspan>
+<tspan x="10" y="362"></tspan>
 
-<tspan x="10" y="378"></tspan>
+<tspan x="10" y="378">buildApp - merged test-report from file /home/travis/build/kaizhu256/node-swagger-validate-lite/\</tspan>
+<tspan x="10" y="394">tmp/build/test-report.json</tspan>
 
-<tspan x="10" y="394">buildApp - merged test-report from file /home/travis/build/kaizhu256/node-swagger-validate-lite/\</tspan>
-<tspan x="10" y="410">tmp/build/test-report.json</tspan>
+<tspan x="10" y="410"></tspan>
 
-<tspan x="10" y="426"></tspan>
+<tspan x="10" y="426">-------------------------------------------------------</tspan>
 
-<tspan x="10" y="442">-------------------------------------------------------</tspan>
+<tspan x="10" y="442">| test-report - buildApidoc - node - linux v11.9.0 - 2019-02-12T06:58:02.068Z</tspan>
 
-<tspan x="10" y="458">| test-report - buildApidoc - node - linux v11.9.0 - 2019-02-12T06:41:37.446Z</tspan>
+<tspan x="10" y="458">|   28367 ms            0 failed        1 passed      |</tspan>
 
-<tspan x="10" y="474">|   29825 ms            0 failed        1 passed      |</tspan>
+<tspan x="10" y="474">-------------------------------------------------------</tspan>
 
-<tspan x="10" y="490">-------------------------------------------------------</tspan>
+<tspan x="10" y="490">| test-report - npmTest - browser - / - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTM\</tspan>
+<tspan x="10" y="506">L, like Gecko) Chrome/61.0.3163.100 Electron/2.0.16 Safari/537.36 - 2019-02-12T06:57:53.700Z</tspan>
 
-<tspan x="10" y="506">| test-report - npmTest - browser - / - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTM\</tspan>
-<tspan x="10" y="522">L, like Gecko) Chrome/61.0.3163.100 Electron/2.0.16 Safari/537.36 - 2019-02-12T06:41:29.088Z</tspan>
+<tspan x="10" y="522">|    1006 ms            0 failed        2 passed      |</tspan>
 
-<tspan x="10" y="538">|    1006 ms            0 failed        2 passed      |</tspan>
+<tspan x="10" y="538">-------------------------------------------------------</tspan>
 
-<tspan x="10" y="554">-------------------------------------------------------</tspan>
+<tspan x="10" y="554">| test-report - npmTest - node - linux v11.9.0 - 2019-02-12T06:57:51.496Z</tspan>
 
-<tspan x="10" y="570">| test-report - npmTest - node - linux v11.9.0 - 2019-02-12T06:41:27.187Z</tspan>
+<tspan x="10" y="570">|    7545 ms            0 failed        7 passed      |</tspan>
 
-<tspan x="10" y="586">|    7324 ms            0 failed        7 passed      |</tspan>
+<tspan x="10" y="586">-------------------------------------------------------</tspan>
 
-<tspan x="10" y="602">-------------------------------------------------------</tspan>
+<tspan x="10" y="602"></tspan>
 
-<tspan x="10" y="618"></tspan>
+<tspan x="10" y="618">created test-report file /home/travis/build/kaizhu256/node-swagger-validate-lite/tmp/build/test-\</tspan>
+<tspan x="10" y="634">report.html</tspan>
 
-<tspan x="10" y="634">created test-report file /home/travis/build/kaizhu256/node-swagger-validate-lite/tmp/build/test-\</tspan>
-<tspan x="10" y="650">report.html</tspan>
+<tspan x="10" y="650"></tspan>
 
 <tspan x="10" y="666"></tspan>
 
-<tspan x="10" y="682"></tspan>
+<tspan x="10" y="682">buildApp - 0 failed tests</tspan>
 
-<tspan x="10" y="698">buildApp - 0 failed tests</tspan>
+<tspan x="10" y="698"></tspan>
 
 <tspan x="10" y="714"></tspan>
 
-<tspan x="10" y="730"></tspan>
-
-<tspan x="10" y="746">[MODE_BUILD=buildApp] - 2019-02-12T06:42:08.658Z - EXIT_CODE - 0</tspan>
+<tspan x="10" y="730">[MODE_BUILD=buildApp] - 2019-02-12T06:58:31.821Z - EXIT_CODE - 0</tspan>
 
 </text>
 </svg>
