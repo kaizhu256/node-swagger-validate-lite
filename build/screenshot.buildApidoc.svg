@@ -1,9 +1,9 @@
-<svg height="990" width="720" xmlns="http://www.w3.org/2000/svg">
-<rect height="990" fill="#555" width="720"></rect>
+<svg height="1118" width="720" xmlns="http://www.w3.org/2000/svg">
+<rect height="1118" fill="#555" width="720"></rect>
 <text fill="#7f7" font-family="Courier New" font-size="12" xml:space="preserve">
 <tspan x="10" y="26"></tspan>
 
-<tspan x="10" y="42">[MODE_BUILD=buildApidoc] - 2019-02-16T18:51:50.313Z - npm-testing /home/travis/build/kaizhu256/n\</tspan>
+<tspan x="10" y="42">[MODE_BUILD=buildApidoc] - 2019-02-16T18:59:40.977Z - npm-testing /home/travis/build/kaizhu256/n\</tspan>
 <tspan x="10" y="58">ode-swagger-validate-lite</tspan>
 
 <tspan x="10" y="74"></tspan>
@@ -13,7 +13,7 @@
 <tspan x="10" y="106">buildApidoc - merged test-report from file /home/travis/build/kaizhu256/node-swagger-validate-li\</tspan>
 <tspan x="10" y="122">te/tmp/build/test-report.json</tspan>
 
-<tspan x="10" y="138">&gt; http-server listening on port 52878</tspan>
+<tspan x="10" y="138">&gt; http-server listening on port 63936</tspan>
 
 <tspan x="10" y="154">db - dropping database ...</tspan>
 
@@ -48,24 +48,24 @@
 
 <tspan x="10" y="426"></tspan>
 
-<tspan x="10" y="442">testRunDefault - 205 ms - [node test-case 1 of 1 passed] - testCase_buildApidoc_default</tspan>
+<tspan x="10" y="442">testRunDefault - 211 ms - [node test-case 1 of 1 passed] - testCase_buildApidoc_default</tspan>
 
 <tspan x="10" y="458"></tspan>
 
 <tspan x="10" y="474">buildApidoc - merged test-report from file /home/travis/build/kaizhu256/node-swagger-validate-li\</tspan>
 <tspan x="10" y="490">te/tmp/build/test-report.json</tspan>
 
-<tspan x="10" y="506">jslint - 52ms /home/travis/build/kaizhu256/node-swagger-validate-lite/lib.swagger_validate.js</tspan>
+<tspan x="10" y="506">jslint - 55ms /home/travis/build/kaizhu256/node-swagger-validate-lite/lib.swagger_validate.js</tspan>
 
 <tspan x="10" y="522">jslint - 1ms /home/travis/build/kaizhu256/node-swagger-validate-lite/npm_scripts.sh</tspan>
 
 <tspan x="10" y="538">jslint - 0ms /home/travis/build/kaizhu256/node-swagger-validate-lite/package.json</tspan>
 
-<tspan x="10" y="554">jslint - 38ms /home/travis/build/kaizhu256/node-swagger-validate-lite/test.js</tspan>
+<tspan x="10" y="554">jslint - 35ms /home/travis/build/kaizhu256/node-swagger-validate-lite/test.js</tspan>
 
 <tspan x="10" y="570">local-function - unused (README.md) local.onEventDomDb</tspan>
 
-<tspan x="10" y="586">jslint - 189ms /home/travis/build/kaizhu256/node-swagger-validate-lite/README.md</tspan>
+<tspan x="10" y="586">jslint - 183ms /home/travis/build/kaizhu256/node-swagger-validate-lite/README.md</tspan>
 
 <tspan x="10" y="602"></tspan>
 
@@ -76,41 +76,55 @@
 
 <tspan x="10" y="666">-------------------------------------------------------</tspan>
 
-<tspan x="10" y="682">| test-report - buildApidoc - node - linux v11.10.0 - 2019-02-16T18:51:50.501Z</tspan>
+<tspan x="10" y="682">| test-report - buildApidoc - node - linux v11.10.0 - 2019-02-16T18:59:41.173Z</tspan>
 
-<tspan x="10" y="698">|     206 ms            0 failed        1 passed      |</tspan>
+<tspan x="10" y="698">|     214 ms            0 failed        1 passed      |</tspan>
 
 <tspan x="10" y="714">-------------------------------------------------------</tspan>
 
 <tspan x="10" y="730">| test-report - npmTest - browser - / - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTM\</tspan>
-<tspan x="10" y="746">L, like Gecko) Chrome/61.0.3163.100 Electron/2.0.16 Safari/537.36 - 2019-02-16T18:51:42.244Z</tspan>
+<tspan x="10" y="746">L, like Gecko) Chrome/61.0.3163.100 Electron/2.0.16 Safari/537.36 - 2019-02-16T18:59:32.865Z</tspan>
 
-<tspan x="10" y="762">|    1005 ms            0 failed        2 passed      |</tspan>
+<tspan x="10" y="762">|    1004 ms            0 failed        2 passed      |</tspan>
 
 <tspan x="10" y="778">-------------------------------------------------------</tspan>
 
-<tspan x="10" y="794">| test-report - npmTest - node - linux v11.10.0 - 2019-02-16T18:51:40.055Z</tspan>
+<tspan x="10" y="794">| test-report - npmTest - node - linux v11.10.0 - 2019-02-16T18:59:30.576Z</tspan>
 
-<tspan x="10" y="810">|    7531 ms            0 failed        7 passed      |</tspan>
+<tspan x="10" y="810">|    7568 ms            0 failed        7 passed      |</tspan>
 
 <tspan x="10" y="826">-------------------------------------------------------</tspan>
 
-<tspan x="10" y="842"></tspan>
+<tspan x="10" y="842">| test-report - npmTestPublished - browser - / - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537\</tspan>
+<tspan x="10" y="858">.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Electron/2.0.16 Safari/537.36 - 2019-02-16T18:58:34\</tspan>
+<tspan x="10" y="874">.113Z</tspan>
 
-<tspan x="10" y="858">created test-report file /home/travis/build/kaizhu256/node-swagger-validate-lite/tmp/build/test-\</tspan>
-<tspan x="10" y="874">report.html</tspan>
+<tspan x="10" y="890">|    1006 ms            0 failed        2 passed      |</tspan>
 
-<tspan x="10" y="890"></tspan>
+<tspan x="10" y="906">-------------------------------------------------------</tspan>
 
-<tspan x="10" y="906"></tspan>
+<tspan x="10" y="922">| test-report - npmTestPublished - node - linux v11.10.0 - 2019-02-16T18:58:31.296Z</tspan>
 
-<tspan x="10" y="922">buildApidoc - 0 failed tests</tspan>
+<tspan x="10" y="938">|    8355 ms            0 failed        7 passed      |</tspan>
 
-<tspan x="10" y="938"></tspan>
+<tspan x="10" y="954">-------------------------------------------------------</tspan>
 
-<tspan x="10" y="954"></tspan>
+<tspan x="10" y="970"></tspan>
 
-<tspan x="10" y="970">[MODE_BUILD=buildApidoc] - 2019-02-16T18:51:52.070Z - EXIT_CODE - 0</tspan>
+<tspan x="10" y="986">created test-report file /home/travis/build/kaizhu256/node-swagger-validate-lite/tmp/build/test-\</tspan>
+<tspan x="10" y="1002">report.html</tspan>
+
+<tspan x="10" y="1018"></tspan>
+
+<tspan x="10" y="1034"></tspan>
+
+<tspan x="10" y="1050">buildApidoc - 0 failed tests</tspan>
+
+<tspan x="10" y="1066"></tspan>
+
+<tspan x="10" y="1082"></tspan>
+
+<tspan x="10" y="1098">[MODE_BUILD=buildApidoc] - 2019-02-16T18:59:42.780Z - EXIT_CODE - 0</tspan>
 
 </text>
 </svg>

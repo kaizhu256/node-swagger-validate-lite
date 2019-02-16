@@ -1,384 +1,242 @@
-<svg height="3870" width="720" xmlns="http://www.w3.org/2000/svg">
-<rect height="3870" fill="#555" width="720"></rect>
+<svg height="2270" width="720" xmlns="http://www.w3.org/2000/svg">
+<rect height="2270" fill="#555" width="720"></rect>
 <text fill="#7f7" font-family="Courier New" font-size="12" xml:space="preserve">
 <tspan x="10" y="26"></tspan>
 
-<tspan x="10" y="42">[MODE_BUILD=npmTestPublished] - 2018-09-02T08:18:25.863Z - npm-testing /tmp/npmTestPublished/nod\</tspan>
+<tspan x="10" y="42">[MODE_BUILD=npmTestPublished] - 2019-02-16T18:58:31.031Z - npm-testing /tmp/npmTestPublished/nod\</tspan>
 <tspan x="10" y="58">e_modules/swagger-validate-lite</tspan>
 
 <tspan x="10" y="74"></tspan>
 
 <tspan x="10" y="90"></tspan>
 
-<tspan x="10" y="106">covering $ /home/travis/.nvm/versions/node/v10.9.0/bin/node /tmp/npmTestPublished/node_modules/s\</tspan>
-<tspan x="10" y="122">wagger-validate-lite/test.js</tspan>
+<tspan x="10" y="106">covering $ /home/travis/.nvm/versions/node/v11.10.0/bin/node /tmp/npmTestPublished/node_modules/\</tspan>
+<tspan x="10" y="122">swagger-validate-lite/test.js</tspan>
 
-<tspan x="10" y="138">&gt; server listening on http-port 32936</tspan>
+<tspan x="10" y="138">&gt; http-server listening on port 60909</tspan>
 
-<tspan x="10" y="154">apidocCreate - readExample /tmp/npmTestPublished/node_modules/swagger-validate-lite/package.json</tspan>
+<tspan x="10" y="154">db - dropping database ...</tspan>
 
-<tspan x="10" y="170">apidocCreate - readExample /tmp/npmTestPublished/node_modules/swagger-validate-lite/lib.swagger_\</tspan>
-<tspan x="10" y="186">validate.js</tspan>
+<tspan x="10" y="170">jslint - 106ms /tmp/npmTestPublished/node_modules/swagger-validate-lite/lib.swagger_validate.js</tspan>
 
-<tspan x="10" y="202">apidocCreate - readExample /tmp/npmTestPublished/node_modules/swagger-validate-lite/LICENSE</tspan>
+<tspan x="10" y="186">jslint - 1ms /tmp/npmTestPublished/node_modules/swagger-validate-lite/npm_scripts.sh</tspan>
 
-<tspan x="10" y="218">apidocCreate - readExample /tmp/npmTestPublished/node_modules/swagger-validate-lite/npm_scripts.\</tspan>
-<tspan x="10" y="234">sh</tspan>
+<tspan x="10" y="202">jslint - 0ms /tmp/npmTestPublished/node_modules/swagger-validate-lite/package.json</tspan>
 
-<tspan x="10" y="250">apidocCreate - readExample /tmp/npmTestPublished/node_modules/swagger-validate-lite/package.json</tspan>
+<tspan x="10" y="218">testRunDefault - 177 ms - [node test-case 1 of 7 passed] - testCase_buildApidoc_default</tspan>
 
-<tspan x="10" y="266">apidocCreate - readExample /tmp/npmTestPublished/node_modules/swagger-validate-lite/package-lock\</tspan>
-<tspan x="10" y="282">.json</tspan>
+<tspan x="10" y="234">testRunDefault - 216 ms - [node test-case 2 of 7 passed] - testCase_buildLib_default</tspan>
 
-<tspan x="10" y="298">apidocCreate - readExample /tmp/npmTestPublished/node_modules/swagger-validate-lite/README.md</tspan>
+<tspan x="10" y="250">testRunDefault - 223 ms - [node test-case 3 of 7 passed] - testCase_buildReadme_default</tspan>
 
-<tspan x="10" y="314">apidocCreate - readExample /tmp/npmTestPublished/node_modules/swagger-validate-lite/test.js</tspan>
+<tspan x="10" y="266">testRunDefault - 224 ms - [node test-case 4 of 7 passed] - testCase_buildTest_default</tspan>
 
-<tspan x="10" y="330">apidocCreate - requiring /tmp/npmTestPublished/node_modules/swagger-validate-lite ...</tspan>
+<tspan x="10" y="282">testRunDefault - 225 ms - [node test-case 5 of 7 passed] - testCase_nop_default</tspan>
 
-<tspan x="10" y="346">apidocCreate - ... required /tmp/npmTestPublished/node_modules/swagger-validate-lite</tspan>
+<tspan x="10" y="298">jslint - 92ms /tmp/npmTestPublished/node_modules/swagger-validate-lite/test.js</tspan>
 
-<tspan x="10" y="362">created apidoc file /home/travis/build/kaizhu256/node-swagger-validate-lite/tmp/build/apidoc.htm\</tspan>
-<tspan x="10" y="378">l</tspan>
+<tspan x="10" y="314">local-function - unused (README.md) local.onEventDomDb</tspan>
 
-<tspan x="10" y="394"></tspan>
+<tspan x="10" y="330">jslint - 463ms /tmp/npmTestPublished/node_modules/swagger-validate-lite/README.md</tspan>
 
-<tspan x="10" y="410">[node test-case 1 of 8 passed] - testCase_buildApidoc_default</tspan>
+<tspan x="10" y="346">http-server listening on port 36556</tspan>
 
-<tspan x="10" y="426">[node test-case 2 of 8 passed] - testCase_buildCustomOrg_default</tspan>
+<tspan x="10" y="362">Xlib:  extension "RANDR" missing on display ":99.0".</tspan>
 
-<tspan x="10" y="442">[node test-case 3 of 8 passed] - testCase_buildLib_default</tspan>
+<tspan x="10" y="378">[5443:0216/185833.370276:ERROR:bus.cc(395)] Failed to connect to the bus: Could not parse server\</tspan>
+<tspan x="10" y="394"> address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")</tspan>
 
-<tspan x="10" y="458">[node test-case 4 of 8 passed] - testCase_buildReadme_default</tspan>
+<tspan x="10" y="410">[5443:0216/185833.382244:ERROR:bus.cc(395)] Failed to connect to the bus: Could not parse server\</tspan>
+<tspan x="10" y="426"> address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")</tspan>
 
-<tspan x="10" y="474">[node test-case 5 of 8 passed] - testCase_buildTest_default</tspan>
+<tspan x="10" y="442">[5505:0216/185833.564271:ERROR:sandbox_linux.cc(344)] InitializeSandbox() called with multiple t\</tspan>
+<tspan x="10" y="458">hreads in process gpu-process.</tspan>
 
-<tspan x="10" y="490">[node test-case 6 of 8 passed] - testCase_nop_default</tspan>
+<tspan x="10" y="474">[5443:0216/185833.811203:INFO:CONSOLE(188)] "%cElectron Security Warning (Insecure Content-Secur\</tspan>
+<tspan x="10" y="490">ity-Policy)", source: /tmp/npmTestPublished/node_modules/swagger-validate-lite/node_modules/elec\</tspan>
+<tspan x="10" y="506">tron-lite/external/resources/electron.asar/renderer/security-warnings.js (188)</tspan>
 
-<tspan x="10" y="506"></tspan>
+<tspan x="10" y="522">[5443:0216/185833.813294:INFO:CONSOLE(188)] "%cElectron Security Warning (Insecure Content-Secur\</tspan>
+<tspan x="10" y="538">ity-Policy)", source: /tmp/npmTestPublished/node_modules/swagger-validate-lite/node_modules/elec\</tspan>
+<tspan x="10" y="554">tron-lite/external/resources/electron.asar/renderer/security-warnings.js (188)</tspan>
 
-<tspan x="10" y="522">browserTest - created electron entry-page /tmp/npmTestPublished/node_modules/swagger-validate-li\</tspan>
-<tspan x="10" y="538">te/tmp/electron.165995c961d0.b89a17f918aee.html</tspan>
+<tspan x="10" y="570">[5443:0216/185834.558063:INFO:CONSOLE(8)] "swagger-validate - failed - inputTextarea1.json</tspan>
 
-<tspan x="10" y="554"></tspan>
+<tspan x="10" y="586">error.itemEnum - string swaggerJson["swagger"] = "this is an example error" can only have items \</tspan>
+<tspan x="10" y="602">from the list ["2.0"]", source: http://127.0.0.1:60909/assets.example.js (8)</tspan>
 
-<tspan x="10" y="570">(node:5020) ExperimentalWarning: The http2 module is an experimental API.</tspan>
+<tspan x="10" y="618">[5443:0216/185834.569445:INFO:CONSOLE(8)] "db - dropping database ...", source: http://127.0.0.1\</tspan>
+<tspan x="10" y="634">:60909/assets.example.js (8)</tspan>
 
-<tspan x="10" y="586">(node:5020) [DEP0025] DeprecationWarning: sys is deprecated. Use util instead.</tspan>
+<tspan x="10" y="650">[5443:0216/185834.597367:INFO:CONSOLE(128)] "%cElectron Security Warning (Insecure Resources)", \</tspan>
+<tspan x="10" y="666">source: /tmp/npmTestPublished/node_modules/swagger-validate-lite/node_modules/electron-lite/exte\</tspan>
+<tspan x="10" y="682">rnal/resources/electron.asar/renderer/security-warnings.js (128)</tspan>
 
-<tspan x="10" y="602">(node:5020) [DEP0084] DeprecationWarning: Requiring Node.js-bundled 'v8/tools/splaytree' module \</tspan>
-<tspan x="10" y="618">is deprecated. Please install the necessary module locally.</tspan>
+<tspan x="10" y="698">[5443:0216/185834.598943:WARNING:quota_manager.cc(1629)] No storage quota provided in QuotaSetti\</tspan>
+<tspan x="10" y="714">ngs.</tspan>
 
-<tspan x="10" y="634">(node:5020) [DEP0084] DeprecationWarning: Requiring Node.js-bundled 'v8/tools/codemap' module is\</tspan>
-<tspan x="10" y="650"> deprecated. Please install the necessary module locally.</tspan>
+<tspan x="10" y="730">[5443:0216/185834.614124:INFO:CONSOLE(188)] "%cElectron Security Warning (Insecure Content-Secur\</tspan>
+<tspan x="10" y="746">ity-Policy)", source: /tmp/npmTestPublished/node_modules/swagger-validate-lite/node_modules/elec\</tspan>
+<tspan x="10" y="762">tron-lite/external/resources/electron.asar/renderer/security-warnings.js (188)</tspan>
 
-<tspan x="10" y="666">(node:5020) [DEP0084] DeprecationWarning: Requiring Node.js-bundled 'v8/tools/consarray' module \</tspan>
-<tspan x="10" y="682">is deprecated. Please install the necessary module locally.</tspan>
+<tspan x="10" y="778">[5443:0216/185834.635291:INFO:CONSOLE(8)] "swagger-validate - failed - inputTextarea1.json</tspan>
 
-<tspan x="10" y="698">(node:5020) [DEP0084] DeprecationWarning: Requiring Node.js-bundled 'v8/tools/csvparser' module \</tspan>
-<tspan x="10" y="714">is deprecated. Please install the necessary module locally.</tspan>
+<tspan x="10" y="794">error.itemEnum - string swaggerJson["swagger"] = "this is an example error" can only have items \</tspan>
+<tspan x="10" y="810">from the list ["2.0"]", source: http://127.0.0.1:60909/assets.example.js (8)</tspan>
 
-<tspan x="10" y="730">(node:5020) [DEP0084] DeprecationWarning: Requiring Node.js-bundled 'v8/tools/profile' module is\</tspan>
-<tspan x="10" y="746"> deprecated. Please install the necessary module locally.</tspan>
+<tspan x="10" y="826">[5443:0216/185834.645167:INFO:CONSOLE(8)] "db - dropping database ...", source: http://127.0.0.1\</tspan>
+<tspan x="10" y="842">:60909/assets.example.js (8)</tspan>
 
-<tspan x="10" y="762">(node:5020) [DEP0084] DeprecationWarning: Requiring Node.js-bundled 'v8/tools/profile_view' modu\</tspan>
-<tspan x="10" y="778">le is deprecated. Please install the necessary module locally.</tspan>
+<tspan x="10" y="858">[5443:0216/185834.655416:INFO:CONSOLE(8)] "testRunDefault - 7 ms - [browser test-case 1 of 2 pas\</tspan>
+<tspan x="10" y="874">sed] - testCase_buildApidoc_default", source: http://127.0.0.1:60909/assets.example.js (8)</tspan>
 
-<tspan x="10" y="794">(node:5020) [DEP0084] DeprecationWarning: Requiring Node.js-bundled 'v8/tools/logreader' module \</tspan>
-<tspan x="10" y="810">is deprecated. Please install the necessary module locally.</tspan>
+<tspan x="10" y="890">[5443:0216/185834.668826:INFO:CONSOLE(8)] "testRunDefault - 21 ms - [browser test-case 2 of 2 pa\</tspan>
+<tspan x="10" y="906">ssed] - testCase_nop_default", source: http://127.0.0.1:60909/assets.example.js (8)</tspan>
 
-<tspan x="10" y="826">(node:5020) [DEP0084] DeprecationWarning: Requiring Node.js-bundled 'v8/tools/arguments' module \</tspan>
-<tspan x="10" y="842">is deprecated. Please install the necessary module locally.</tspan>
+<tspan x="10" y="922">[5443:0216/185834.672888:INFO:CONSOLE(128)] "%cElectron Security Warning (Insecure Resources)", \</tspan>
+<tspan x="10" y="938">source: /tmp/npmTestPublished/node_modules/swagger-validate-lite/node_modules/electron-lite/exte\</tspan>
+<tspan x="10" y="954">rnal/resources/electron.asar/renderer/security-warnings.js (128)</tspan>
 
-<tspan x="10" y="858">(node:5020) [DEP0084] DeprecationWarning: Requiring Node.js-bundled 'v8/tools/tickprocessor' mod\</tspan>
-<tspan x="10" y="874">ule is deprecated. Please install the necessary module locally.</tspan>
+<tspan x="10" y="970">[5443:0216/185834.677120:INFO:CONSOLE(188)] "%cElectron Security Warning (Insecure Content-Secur\</tspan>
+<tspan x="10" y="986">ity-Policy)", source: /tmp/npmTestPublished/node_modules/swagger-validate-lite/node_modules/elec\</tspan>
+<tspan x="10" y="1002">tron-lite/external/resources/electron.asar/renderer/security-warnings.js (188)</tspan>
 
-<tspan x="10" y="890">(node:5020) [DEP0084] DeprecationWarning: Requiring Node.js-bundled 'v8/tools/SourceMap' module \</tspan>
-<tspan x="10" y="906">is deprecated. Please install the necessary module locally.</tspan>
+<tspan x="10" y="1018">[5443:0216/185834.704223:INFO:CONSOLE(8)] "testRunDefault - 5 ms - [browser test-case 1 of 2 pas\</tspan>
+<tspan x="10" y="1034">sed] - testCase_buildApidoc_default", source: http://127.0.0.1:60909/assets.example.js (8)</tspan>
 
-<tspan x="10" y="922">(node:5020) [DEP0084] DeprecationWarning: Requiring Node.js-bundled 'v8/tools/tickprocessor-driv\</tspan>
-<tspan x="10" y="938">er' module is deprecated. Please install the necessary module locally.</tspan>
+<tspan x="10" y="1050">[5443:0216/185834.713792:INFO:CONSOLE(8)] "testRunDefault - 15 ms - [browser test-case 2 of 2 pa\</tspan>
+<tspan x="10" y="1066">ssed] - testCase_nop_default", source: http://127.0.0.1:60909/assets.example.js (8)</tspan>
 
-<tspan x="10" y="954">(node:5020) [DEP0084] DeprecationWarning: Requiring Node.js-bundled 'node-inspect/lib/_inspect' \</tspan>
-<tspan x="10" y="970">module is deprecated. Please install the necessary module locally.</tspan>
+<tspan x="10" y="1082">[5443:0216/185835.676525:INFO:CONSOLE(8)] "----------|-----------|-----------|-----------|------\</tspan>
+<tspan x="10" y="1098">-----|</tspan>
 
-<tspan x="10" y="986">(node:5020) [DEP0084] DeprecationWarning: Requiring Node.js-bundled 'node-inspect/lib/internal/i\</tspan>
-<tspan x="10" y="1002">nspect_client' module is deprecated. Please install the necessary module locally.</tspan>
+<tspan x="10" y="1114">File      |   % Stmts |% Branches |   % Funcs |   % Lines |</tspan>
 
-<tspan x="10" y="1018">(node:5020) [DEP0084] DeprecationWarning: Requiring Node.js-bundled 'node-inspect/lib/internal/i\</tspan>
-<tspan x="10" y="1034">nspect_repl' module is deprecated. Please install the necessary module locally.</tspan>
+<tspan x="10" y="1130">----------|-----------|-----------|-----------|-----------|</tspan>
 
-<tspan x="10" y="1050">Xlib:  extension "RANDR" missing on display ":99.0".</tspan>
+<tspan x="10" y="1146">----------|-----------|-----------|-----------|-----------|</tspan>
 
-<tspan x="10" y="1066">&gt; server listening on http-port 60828</tspan>
+<tspan x="10" y="1162">All files |       100 |       100 |       100 |       100 |</tspan>
 
-<tspan x="10" y="1082">Xlib:  extension "RANDR" missing on display ":99.0".</tspan>
+<tspan x="10" y="1178">----------|-----------|-----------|-----------|-----------|</tspan>
 
-<tspan x="10" y="1098">[5088:0902/081827.604337:WARNING:audio_manager.cc(295)] Multiple instances of AudioManager detec\</tspan>
-<tspan x="10" y="1114">ted</tspan>
+<tspan x="10" y="1194">", source: http://127.0.0.1:60909/assets.example.js (8)</tspan>
 
-<tspan x="10" y="1130">[5088:0902/081827.604411:WARNING:audio_manager.cc(254)] Multiple instances of AudioManager detec\</tspan>
-<tspan x="10" y="1146">ted</tspan>
+<tspan x="10" y="1210">[5443:0216/185835.682399:INFO:CONSOLE(8)] "created coverage file /tmp/build/coverage.html/index.\</tspan>
+<tspan x="10" y="1226">html", source: http://127.0.0.1:60909/assets.example.js (8)</tspan>
 
-<tspan x="10" y="1162">[5125:0902/081827.643317:ERROR:sandbox_linux.cc(343)] InitializeSandbox() called with multiple t\</tspan>
-<tspan x="10" y="1178">hreads in process gpu-process. </tspan>
+<tspan x="10" y="1242">[5443:0216/185835.721341:INFO:CONSOLE(8)] "----------|-----------|-----------|-----------|------\</tspan>
+<tspan x="10" y="1258">-----|</tspan>
 
-<tspan x="10" y="1194">[5088:0902/081827.738173:ERROR:browser_gpu_channel_host_factory.cc(125)] Failed to create channe\</tspan>
-<tspan x="10" y="1210">l.</tspan>
+<tspan x="10" y="1274">File      |   % Stmts |% Branches |   % Funcs |   % Lines |</tspan>
 
-<tspan x="10" y="1226">[5088:0902/081827.739467:ERROR:browser_gpu_channel_host_factory.cc(125)] Failed to create channe\</tspan>
-<tspan x="10" y="1242">l.</tspan>
+<tspan x="10" y="1290">----------|-----------|-----------|-----------|-----------|</tspan>
 
-<tspan x="10" y="1258">[5088:0902/081827.740246:ERROR:browser_gpu_channel_host_factory.cc(125)] Failed to create channe\</tspan>
-<tspan x="10" y="1274">l.</tspan>
+<tspan x="10" y="1306">----------|-----------|-----------|-----------|-----------|</tspan>
 
-<tspan x="10" y="1290">[5088:0902/081827.740398:ERROR:browser_gpu_channel_host_factory.cc(125)] Failed to create channe\</tspan>
-<tspan x="10" y="1306">l.</tspan>
+<tspan x="10" y="1322">All files |       100 |       100 |       100 |       100 |</tspan>
 
-<tspan x="10" y="1322">[5088:0902/081827.740494:ERROR:browser_gpu_channel_host_factory.cc(125)] Failed to create channe\</tspan>
-<tspan x="10" y="1338">l.</tspan>
+<tspan x="10" y="1338">----------|-----------|-----------|-----------|-----------|</tspan>
 
-<tspan x="10" y="1354"></tspan>
+<tspan x="10" y="1354">", source: http://127.0.0.1:60909/assets.example.js (8)</tspan>
 
-<tspan x="10" y="1370">browserTest - opened http://127.0.0.1:32936?modeTest=1&amp;timeoutDefault=30000</tspan>
+<tspan x="10" y="1370">[5443:0216/185835.728788:INFO:CONSOLE(8)] "created coverage file /tmp/build/coverage.html/index.\</tspan>
+<tspan x="10" y="1386">html", source: http://127.0.0.1:60909/assets.example.js (8)</tspan>
 
-<tspan x="10" y="1386"></tspan>
+<tspan x="10" y="1402">testRunDefault - 5017 ms - testCase pending - testCase_buildApp_default, testCase_webpage_defaul\</tspan>
+<tspan x="10" y="1418">t ...</tspan>
 
-<tspan x="10" y="1402">[5088:0902/081828.409553:INFO:CONSOLE(284)] "swagger-validate - failed - inputTextarea1.json</tspan>
+<tspan x="10" y="1434">testRunDefault - 5916 ms - [node test-case 6 of 7 passed] - testCase_buildApp_default</tspan>
 
-<tspan x="10" y="1418">error.itemEnum - string swaggerJson["swagger"] = "example error" can only have items from the li\</tspan>
-<tspan x="10" y="1434">st ["2.0"]", source: file:///tmp/npmTestPublished/node_modules/swagger-validate-lite/tmp/electro\</tspan>
-<tspan x="10" y="1450">n.165995c961d0.b89a17f918aee.html (284)</tspan>
+<tspan x="10" y="1450">[5443:0216/185839.583565:INFO:CONSOLE(8)] "null", source: http://127.0.0.1:60909/assets.example.\</tspan>
+<tspan x="10" y="1466">js (8)</tspan>
 
-<tspan x="10" y="1466">[5088:0902/081828.438480:INFO:CONSOLE(284)] "[browser test-case 1 of 8 passed] - testCase_buildA\</tspan>
-<tspan x="10" y="1482">pidoc_default", source: file:///tmp/npmTestPublished/node_modules/swagger-validate-lite/tmp/elec\</tspan>
-<tspan x="10" y="1498">tron.165995c961d0.b89a17f918aee.html (284)</tspan>
+<tspan x="10" y="1482">[5443:0216/185839.882286:INFO:CONSOLE(8)] "Error: ENOENT: no such file or directory, rename '/tm\</tspan>
+<tspan x="10" y="1498">p/npmTestPublished/node_modules/swagger-validate-lite/tmp/electron.168f7ac9f450.904ad3aefc5fa.ht\</tspan>
+<tspan x="10" y="1514">ml' -&gt; '/tmp/npmTestPublished/node_modules/swagger-validate-lite/tmp/electron.html'", source: ht\</tspan>
+<tspan x="10" y="1530">tp://127.0.0.1:60909/assets.example.js (8)</tspan>
 
-<tspan x="10" y="1514">[5088:0902/081828.447826:INFO:CONSOLE(284)] "[browser test-case 2 of 8 passed] - testCase_buildA\</tspan>
-<tspan x="10" y="1530">pp_default", source: file:///tmp/npmTestPublished/node_modules/swagger-validate-lite/tmp/electro\</tspan>
-<tspan x="10" y="1546">n.165995c961d0.b89a17f918aee.html (284)</tspan>
+<tspan x="10" y="1546"></tspan>
 
-<tspan x="10" y="1562">[5088:0902/081828.450057:INFO:CONSOLE(284)] "[browser test-case 3 of 8 passed] - testCase_buildC\</tspan>
-<tspan x="10" y="1578">ustomOrg_default", source: file:///tmp/npmTestPublished/node_modules/swagger-validate-lite/tmp/e\</tspan>
-<tspan x="10" y="1594">lectron.165995c961d0.b89a17f918aee.html (284)</tspan>
+<tspan x="10" y="1562">browserTest - created screenshot file /home/travis/build/kaizhu256/node-swagger-validate-lite/tm\</tspan>
+<tspan x="10" y="1578">p/build/screenshot.npmTestPublished.browser.%2F.png</tspan>
 
-<tspan x="10" y="1610">[5088:0902/081828.452294:INFO:CONSOLE(284)] "[browser test-case 4 of 8 passed] - testCase_buildL\</tspan>
-<tspan x="10" y="1626">ib_default", source: file:///tmp/npmTestPublished/node_modules/swagger-validate-lite/tmp/electro\</tspan>
-<tspan x="10" y="1642">n.165995c961d0.b89a17f918aee.html (284)</tspan>
+<tspan x="10" y="1594"></tspan>
 
-<tspan x="10" y="1658">[5088:0902/081828.454655:INFO:CONSOLE(284)] "[browser test-case 5 of 8 passed] - testCase_buildR\</tspan>
-<tspan x="10" y="1674">eadme_default", source: file:///tmp/npmTestPublished/node_modules/swagger-validate-lite/tmp/elec\</tspan>
-<tspan x="10" y="1690">tron.165995c961d0.b89a17f918aee.html (284)</tspan>
+<tspan x="10" y="1610">browserTest - created screenshot file /home/travis/build/kaizhu256/node-swagger-validate-lite/tm\</tspan>
+<tspan x="10" y="1626">p/build/screenshot.npmTestPublished.browser.%2F.html</tspan>
 
-<tspan x="10" y="1706">[5088:0902/081828.457209:INFO:CONSOLE(284)] "[browser test-case 6 of 8 passed] - testCase_buildT\</tspan>
-<tspan x="10" y="1722">est_default", source: file:///tmp/npmTestPublished/node_modules/swagger-validate-lite/tmp/electr\</tspan>
-<tspan x="10" y="1738">on.165995c961d0.b89a17f918aee.html (284)</tspan>
+<tspan x="10" y="1642"></tspan>
 
-<tspan x="10" y="1754">[5088:0902/081828.459389:INFO:CONSOLE(284)] "[browser test-case 7 of 8 passed] - testCase_nop_de\</tspan>
-<tspan x="10" y="1770">fault", source: file:///tmp/npmTestPublished/node_modules/swagger-validate-lite/tmp/electron.165\</tspan>
-<tspan x="10" y="1786">995c961d0.b89a17f918aee.html (284)</tspan>
+<tspan x="10" y="1658">browserTest - created screenshot file /home/travis/build/kaizhu256/node-swagger-validate-lite/tm\</tspan>
+<tspan x="10" y="1674">p/build/screenshot.npmTestPublished.browser.%2F.png</tspan>
 
-<tspan x="10" y="1802">[5088:0902/081828.463417:INFO:CONSOLE(284)] "domStyleValidateUnmatched 0. 1 pre,", source: file:\</tspan>
-<tspan x="10" y="1818">///tmp/npmTestPublished/node_modules/swagger-validate-lite/tmp/electron.165995c961d0.b89a17f918a\</tspan>
-<tspan x="10" y="1834">ee.html (284)</tspan>
+<tspan x="10" y="1690"></tspan>
 
-<tspan x="10" y="1850">[5088:0902/081828.465657:INFO:CONSOLE(284)] "domStyleValidateUnmatched 1. 1 pre,", source: file:\</tspan>
-<tspan x="10" y="1866">///tmp/npmTestPublished/node_modules/swagger-validate-lite/tmp/electron.165995c961d0.b89a17f918a\</tspan>
-<tspan x="10" y="1882">ee.html (284)</tspan>
+<tspan x="10" y="1706">browserTest - created screenshot file /home/travis/build/kaizhu256/node-swagger-validate-lite/tm\</tspan>
+<tspan x="10" y="1722">p/build/screenshot.npmTestPublished.browser.%2F.html</tspan>
 
-<tspan x="10" y="1898">[5088:0902/081828.467838:INFO:CONSOLE(284)] "domStyleValidateUnmatched 2. 1 pre {", source: file\</tspan>
-<tspan x="10" y="1914">:///tmp/npmTestPublished/node_modules/swagger-validate-lite/tmp/electron.165995c961d0.b89a17f918\</tspan>
-<tspan x="10" y="1930">aee.html (284)</tspan>
+<tspan x="10" y="1738">testRunDefault - 8348 ms - [node test-case 7 of 7 passed] - testCase_webpage_default</tspan>
 
-<tspan x="10" y="1946">[5088:0902/081828.470048:INFO:CONSOLE(284)] "domStyleValidateUnmatched 3. 1 pre {", source: file\</tspan>
-<tspan x="10" y="1962">:///tmp/npmTestPublished/node_modules/swagger-validate-lite/tmp/electron.165995c961d0.b89a17f918\</tspan>
-<tspan x="10" y="1978">aee.html (284)</tspan>
+<tspan x="10" y="1754">------------------------------|-----------|-----------|-----------|-----------|</tspan>
 
-<tspan x="10" y="1994">[5088:0902/081828.471978:INFO:CONSOLE(284)] "domStyleValidateUnmatched 4. 1 body {", source: fil\</tspan>
-<tspan x="10" y="2010">e:///tmp/npmTestPublished/node_modules/swagger-validate-lite/tmp/electron.165995c961d0.b89a17f91\</tspan>
-<tspan x="10" y="2026">8aee.html (284)</tspan>
+<tspan x="10" y="1770">File                          |   % Stmts |% Branches |   % Funcs |   % Lines |</tspan>
 
-<tspan x="10" y="2042">[5088:0902/081828.474047:INFO:CONSOLE(284)] "domStyleValidateUnmatched 5. 1 body {", source: fil\</tspan>
-<tspan x="10" y="2058">e:///tmp/npmTestPublished/node_modules/swagger-validate-lite/tmp/electron.165995c961d0.b89a17f91\</tspan>
-<tspan x="10" y="2074">8aee.html (284)</tspan>
+<tspan x="10" y="1786">------------------------------|-----------|-----------|-----------|-----------|</tspan>
 
-<tspan x="10" y="2090">[5088:0902/081828.476108:INFO:CONSOLE(284)] "domStyleValidateUnmatched 6. 1 body &gt; textarea[read\</tspan>
-<tspan x="10" y="2106">only] {", source: file:///tmp/npmTestPublished/node_modules/swagger-validate-lite/tmp/electron.1\</tspan>
-<tspan x="10" y="2122">65995c961d0.b89a17f918aee.html (284)</tspan>
+<tspan x="10" y="1802">   swagger-validate-lite/     |       100 |       100 |       100 |       100 |</tspan>
 
-<tspan x="10" y="2138">[5088:0902/081828.478679:INFO:CONSOLE(284)] "domStyleValidateUnmatched 7. 1 body &gt; textarea[read\</tspan>
-<tspan x="10" y="2154">only] {", source: file:///tmp/npmTestPublished/node_modules/swagger-validate-lite/tmp/electron.1\</tspan>
-<tspan x="10" y="2170">65995c961d0.b89a17f918aee.html (284)</tspan>
+<tspan x="10" y="1818">      example.js              |       100 |       100 |       100 |       100 |</tspan>
 
-<tspan x="10" y="2186">[5088:0902/081828.480706:INFO:CONSOLE(284)] "domStyleValidateUnmatched 8. 1 body &gt; input,", sour\</tspan>
-<tspan x="10" y="2202">ce: file:///tmp/npmTestPublished/node_modules/swagger-validate-lite/tmp/electron.165995c961d0.b8\</tspan>
-<tspan x="10" y="2218">9a17f918aee.html (284)</tspan>
+<tspan x="10" y="1834">      lib.swagger_validate.js |       100 |       100 |       100 |       100 |</tspan>
 
-<tspan x="10" y="2234">[5088:0902/081828.483066:INFO:CONSOLE(284)] "domStyleValidateUnmatched 9. 1 body &gt; input,", sour\</tspan>
-<tspan x="10" y="2250">ce: file:///tmp/npmTestPublished/node_modules/swagger-validate-lite/tmp/electron.165995c961d0.b8\</tspan>
-<tspan x="10" y="2266">9a17f918aee.html (284)</tspan>
+<tspan x="10" y="1850">      test.js                 |       100 |       100 |       100 |       100 |</tspan>
 
-<tspan x="10" y="2282">[5088:0902/081828.485230:INFO:CONSOLE(284)] "domStyleValidateUnmatched 10. 1 body &gt; input,", sou\</tspan>
-<tspan x="10" y="2298">rce: file:///tmp/npmTestPublished/node_modules/swagger-validate-lite/tmp/electron.165995c961d0.b\</tspan>
-<tspan x="10" y="2314">89a17f918aee.html (284)</tspan>
+<tspan x="10" y="1866">------------------------------|-----------|-----------|-----------|-----------|</tspan>
 
-<tspan x="10" y="2330">[5088:0902/081828.487363:INFO:CONSOLE(284)] "domStyleValidateUnmatched 11. 1 body &gt; input,", sou\</tspan>
-<tspan x="10" y="2346">rce: file:///tmp/npmTestPublished/node_modules/swagger-validate-lite/tmp/electron.165995c961d0.b\</tspan>
-<tspan x="10" y="2362">89a17f918aee.html (284)</tspan>
+<tspan x="10" y="1882">All files                     |       100 |       100 |       100 |       100 |</tspan>
 
-<tspan x="10" y="2378">[5088:0902/081828.489498:INFO:CONSOLE(284)] "domStyleValidateUnmatched 12. 1 .utility2FooterDiv \</tspan>
-<tspan x="10" y="2394">{", source: file:///tmp/npmTestPublished/node_modules/swagger-validate-lite/tmp/electron.165995c\</tspan>
-<tspan x="10" y="2410">961d0.b89a17f918aee.html (284)</tspan>
+<tspan x="10" y="1898">------------------------------|-----------|-----------|-----------|-----------|</tspan>
 
-<tspan x="10" y="2426">[5088:0902/081828.491800:INFO:CONSOLE(284)] "domStyleValidateUnmatched 13. 1 .utility2FooterDiv \</tspan>
-<tspan x="10" y="2442">{", source: file:///tmp/npmTestPublished/node_modules/swagger-validate-lite/tmp/electron.165995c\</tspan>
-<tspan x="10" y="2458">961d0.b89a17f918aee.html (284)</tspan>
+<tspan x="10" y="1914"></tspan>
 
-<tspan x="10" y="2474">[5088:0902/081828.494187:INFO:CONSOLE(284)] "domStyleValidateUnmatched 14. 1 .uiAnimateSlide {",\</tspan>
-<tspan x="10" y="2490"> source: file:///tmp/npmTestPublished/node_modules/swagger-validate-lite/tmp/electron.165995c961\</tspan>
-<tspan x="10" y="2506">d0.b89a17f918aee.html (284)</tspan>
+<tspan x="10" y="1930">created coverage file /tmp/npmTestPublished/node_modules/swagger-validate-lite/tmp/build/coverag\</tspan>
+<tspan x="10" y="1946">e.html/index.html</tspan>
 
-<tspan x="10" y="2522">[5088:0902/081828.496506:INFO:CONSOLE(284)] "domStyleValidateUnmatched 15. 1 .uiAnimateSlide {",\</tspan>
-<tspan x="10" y="2538"> source: file:///tmp/npmTestPublished/node_modules/swagger-validate-lite/tmp/electron.165995c961\</tspan>
-<tspan x="10" y="2554">d0.b89a17f918aee.html (284)</tspan>
+<tspan x="10" y="1962"></tspan>
 
-<tspan x="10" y="2570">[5088:0902/081828.499730:INFO:CONSOLE(284)] "domStyleValidateUnmatched 16. 1 .testReportDiv pre \</tspan>
-<tspan x="10" y="2586">{", source: file:///tmp/npmTestPublished/node_modules/swagger-validate-lite/tmp/electron.165995c\</tspan>
-<tspan x="10" y="2602">961d0.b89a17f918aee.html (284)</tspan>
+<tspan x="10" y="1978">-------------------------------------------------------</tspan>
 
-<tspan x="10" y="2618">[5088:0902/081828.501723:INFO:CONSOLE(284)] "domStyleValidateUnmatched 17. 1 .testReportDiv .sum\</tspan>
-<tspan x="10" y="2634">mary {", source: file:///tmp/npmTestPublished/node_modules/swagger-validate-lite/tmp/electron.16\</tspan>
-<tspan x="10" y="2650">5995c961d0.b89a17f918aee.html (284)</tspan>
+<tspan x="10" y="1994">| test-report - npmTestPublished - browser - / - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537\</tspan>
+<tspan x="10" y="2010">.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Electron/2.0.16 Safari/537.36 - 2019-02-16T18:58:34\</tspan>
+<tspan x="10" y="2026">.113Z</tspan>
 
-<tspan x="10" y="2666">[5088:0902/081828.504124:INFO:CONSOLE(284)] "domStyleValidateUnmatched 18. 1 .testReportDiv .foo\</tspan>
-<tspan x="10" y="2682">ter {", source: file:///tmp/npmTestPublished/node_modules/swagger-validate-lite/tmp/electron.165\</tspan>
-<tspan x="10" y="2698">995c961d0.b89a17f918aee.html (284)</tspan>
+<tspan x="10" y="2042">|    1006 ms            0 failed        2 passed      |</tspan>
 
-<tspan x="10" y="2714">[5088:0902/081828.506653:INFO:CONSOLE(284)] "domStyleValidateUnmatched 19. 1 .testReportDiv .dis\</tspan>
-<tspan x="10" y="2730">playNone {", source: file:///tmp/npmTestPublished/node_modules/swagger-validate-lite/tmp/electro\</tspan>
-<tspan x="10" y="2746">n.165995c961d0.b89a17f918aee.html (284)</tspan>
+<tspan x="10" y="2058">-------------------------------------------------------</tspan>
 
-<tspan x="10" y="2762">[5088:0902/081828.509163:INFO:CONSOLE(284)] "[browser test-case 8 of 8 passed] - testCase_webpag\</tspan>
-<tspan x="10" y="2778">e_default", source: file:///tmp/npmTestPublished/node_modules/swagger-validate-lite/tmp/electron\</tspan>
-<tspan x="10" y="2794">.165995c961d0.b89a17f918aee.html (284)</tspan>
+<tspan x="10" y="2074">| test-report - npmTestPublished - node - linux v11.10.0 - 2019-02-16T18:58:31.296Z</tspan>
 
-<tspan x="10" y="2810">[5088:0902/081828.531659:INFO:CONSOLE(284)] "domOnEventWindowOnloadTimeElapsed = 351", source: f\</tspan>
-<tspan x="10" y="2826">ile:///tmp/npmTestPublished/node_modules/swagger-validate-lite/tmp/electron.165995c961d0.b89a17f\</tspan>
-<tspan x="10" y="2842">918aee.html (284)</tspan>
+<tspan x="10" y="2090">|    8355 ms            0 failed        7 passed      |</tspan>
 
-<tspan x="10" y="2858">[5088:0902/081829.517195:INFO:CONSOLE(284)] "----------|-----------|-----------|-----------|----\</tspan>
-<tspan x="10" y="2874">-------|</tspan>
+<tspan x="10" y="2106">-------------------------------------------------------</tspan>
 
-<tspan x="10" y="2890">File      |   % Stmts |% Branches |   % Funcs |   % Lines |</tspan>
+<tspan x="10" y="2122"></tspan>
 
-<tspan x="10" y="2906">----------|-----------|-----------|-----------|-----------|</tspan>
+<tspan x="10" y="2138">created test-report file /tmp/npmTestPublished/node_modules/swagger-validate-lite/tmp/build/test\</tspan>
+<tspan x="10" y="2154">-report.html</tspan>
 
-<tspan x="10" y="2922">----------|-----------|-----------|-----------|-----------|</tspan>
+<tspan x="10" y="2170"></tspan>
 
-<tspan x="10" y="2938">All files |       100 |       100 |       100 |       100 |</tspan>
+<tspan x="10" y="2186"></tspan>
 
-<tspan x="10" y="2954">----------|-----------|-----------|-----------|-----------|</tspan>
+<tspan x="10" y="2202">npmTestPublished - 0 failed tests</tspan>
 
-<tspan x="10" y="2970">", source: file:///tmp/npmTestPublished/node_modules/swagger-validate-lite/tmp/electron.165995c9\</tspan>
-<tspan x="10" y="2986">61d0.b89a17f918aee.html (284)</tspan>
+<tspan x="10" y="2218"></tspan>
 
-<tspan x="10" y="3002">[5088:0902/081829.525989:INFO:CONSOLE(284)] "created coverage file /tmp/build/coverage.html/inde\</tspan>
-<tspan x="10" y="3018">x.html", source: file:///tmp/npmTestPublished/node_modules/swagger-validate-lite/tmp/electron.16\</tspan>
-<tspan x="10" y="3034">5995c961d0.b89a17f918aee.html (284)</tspan>
+<tspan x="10" y="2234"></tspan>
 
-<tspan x="10" y="3050">[node test-case 7 of 8 passed] - testCase_buildApp_default</tspan>
-
-<tspan x="10" y="3066"></tspan>
-
-<tspan x="10" y="3082">browserTest - created screenshot file /home/travis/build/kaizhu256/node-swagger-validate-lite/tm\</tspan>
-<tspan x="10" y="3098">p/build/screenshot.npmTestPublished.browser.%2F.png</tspan>
-
-<tspan x="10" y="3114"></tspan>
-
-<tspan x="10" y="3130">browserTest - created screenshot file /home/travis/build/kaizhu256/node-swagger-validate-lite/tm\</tspan>
-<tspan x="10" y="3146">p/build/screenshot.npmTestPublished.browser.%2F.html</tspan>
-
-<tspan x="10" y="3162"></tspan>
-
-<tspan x="10" y="3178">browserTest - exit-code 0 - http://127.0.0.1:32936?modeTest=1&amp;timeoutDefault=30000</tspan>
-
-<tspan x="10" y="3194"></tspan>
-
-<tspan x="10" y="3210"></tspan>
-
-<tspan x="10" y="3226">browserTest - merged coverage from file /tmp/npmTestPublished/node_modules/swagger-validate-lite\</tspan>
-<tspan x="10" y="3242">/tmp/coverage.npmTestPublished.browser.%2F.json</tspan>
-
-<tspan x="10" y="3258"></tspan>
-
-<tspan x="10" y="3274"></tspan>
-
-<tspan x="10" y="3290">browserTest - merged test-report from file /tmp/npmTestPublished/node_modules/swagger-validate-l\</tspan>
-<tspan x="10" y="3306">ite/tmp/test-report.npmTestPublished.browser.%2F.json</tspan>
-
-<tspan x="10" y="3322"></tspan>
-
-<tspan x="10" y="3338">[node test-case 8 of 8 passed] - testCase_webpage_default</tspan>
-
-<tspan x="10" y="3354">------------------------------|-----------|-----------|-----------|-----------|</tspan>
-
-<tspan x="10" y="3370">File                          |   % Stmts |% Branches |   % Funcs |   % Lines |</tspan>
-
-<tspan x="10" y="3386">------------------------------|-----------|-----------|-----------|-----------|</tspan>
-
-<tspan x="10" y="3402">   swagger-validate-lite/     |       100 |       100 |       100 |       100 |</tspan>
-
-<tspan x="10" y="3418">      example.js              |       100 |       100 |       100 |       100 |</tspan>
-
-<tspan x="10" y="3434">      lib.swagger_validate.js |       100 |       100 |       100 |       100 |</tspan>
-
-<tspan x="10" y="3450">      test.js                 |       100 |       100 |       100 |       100 |</tspan>
-
-<tspan x="10" y="3466">------------------------------|-----------|-----------|-----------|-----------|</tspan>
-
-<tspan x="10" y="3482">All files                     |       100 |       100 |       100 |       100 |</tspan>
-
-<tspan x="10" y="3498">------------------------------|-----------|-----------|-----------|-----------|</tspan>
-
-<tspan x="10" y="3514"></tspan>
-
-<tspan x="10" y="3530">created coverage file /tmp/npmTestPublished/node_modules/swagger-validate-lite/tmp/build/coverag\</tspan>
-<tspan x="10" y="3546">e.html/index.html</tspan>
-
-<tspan x="10" y="3562"></tspan>
-
-<tspan x="10" y="3578">-------------------------------------------------------</tspan>
-
-<tspan x="10" y="3594">| test-report - npmTestPublished - browser - / - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537\</tspan>
-<tspan x="10" y="3610">.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Electron/1.7.16 Safari/537.36 - 2018-09-02T08:18:28\</tspan>
-<tspan x="10" y="3626">.349Z</tspan>
-
-<tspan x="10" y="3642">|      80 ms            0 failed        8 passed      |</tspan>
-
-<tspan x="10" y="3658">-------------------------------------------------------</tspan>
-
-<tspan x="10" y="3674">| test-report - npmTestPublished - node - linux v10.9.0 - 2018-09-02T08:18:26.087Z</tspan>
-
-<tspan x="10" y="3690">|   16957 ms            0 failed        8 passed      |</tspan>
-
-<tspan x="10" y="3706">-------------------------------------------------------</tspan>
-
-<tspan x="10" y="3722"></tspan>
-
-<tspan x="10" y="3738">created test-report file /home/travis/build/kaizhu256/node-swagger-validate-lite/tmp/build/test-\</tspan>
-<tspan x="10" y="3754">report.html</tspan>
-
-<tspan x="10" y="3770"></tspan>
-
-<tspan x="10" y="3786"></tspan>
-
-<tspan x="10" y="3802">npmTestPublished - 0 failed tests</tspan>
-
-<tspan x="10" y="3818"></tspan>
-
-<tspan x="10" y="3834"></tspan>
-
-<tspan x="10" y="3850">[MODE_BUILD=npmTestPublished] - 2018-09-02T08:18:44.549Z - EXIT_CODE - 0</tspan>
+<tspan x="10" y="2250">[MODE_BUILD=npmTestPublished] - 2019-02-16T18:58:42.234Z - EXIT_CODE - 0</tspan>
 
 </text>
 </svg>

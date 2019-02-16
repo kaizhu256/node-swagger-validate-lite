@@ -52,7 +52,7 @@
 
         href="https://github.com/kaizhu256/node-swagger-validate-lite"
 
-    >swagger-validate-lite (2018.8.19)</a>
+    >swagger-validate-lite (2019.2.12)</a>
 </h1>
 <h4>this zero-dependency package will provide a simple cli-tool to validate swagger.json</h4>
 <div class="apidocSectionDiv"><a
@@ -75,7 +75,7 @@
 
             <a class="apidocElementLiA" href="#apidoc.element.swagger-validate-lite.swaggerValidateDataParameters">
             function <span class="apidocSignatureSpan">swagger-validate-lite.</span>swaggerValidateDataParameters
-            <span class="apidocSignatureSpan">(options)</span>
+            <span class="apidocSignatureSpan">(option)</span>
             </a>
 
         </li>
@@ -84,7 +84,7 @@
 
             <a class="apidocElementLiA" href="#apidoc.element.swagger-validate-lite.swaggerValidateDataSchema">
             function <span class="apidocSignatureSpan">swagger-validate-lite.</span>swaggerValidateDataSchema
-            <span class="apidocSignatureSpan">(options)</span>
+            <span class="apidocSignatureSpan">(option)</span>
             </a>
 
         </li>
@@ -93,7 +93,7 @@
 
             <a class="apidocElementLiA" href="#apidoc.element.swagger-validate-lite.swaggerValidateFile">
             function <span class="apidocSignatureSpan">swagger-validate-lite.</span>swaggerValidateFile
-            <span class="apidocSignatureSpan">(options, onError)</span>
+            <span class="apidocSignatureSpan">(option, onError)</span>
             </a>
 
         </li>
@@ -123,49 +123,58 @@
 <span class="apidocCodeCommentSpan">/*
  * this function will validate the json-object swaggerJson
  */
-</span>    var operation, operationIdDict, pathDict, prefix, test, tmp;
+</span>    var operation;
+    var operationIdDict;
+    var pathDict;
+    var prefix;
+    var test;
+    var tmp;
     operationIdDict = {};
     swaggerJson = swaggerJson || {};
     local.swaggerValidateDataSchema({
         data: swaggerJson,
         modeSchema: true,
-        prefix: [&apos;swaggerJson&apos;],
+        prefix: [&quot;swaggerJson&quot;],
         schema: local.swaggerSchemaJson,
         swaggerJson: swaggerJson
     });
     pathDict = {};
     Object.keys(swaggerJson.paths).forEach(function (path) {
-        prefix = [&apos;swaggerJson&apos;, &apos;paths&apos;, path];
+        prefix = [&quot;swaggerJson&quot;, &quot;paths&quot;, path];
         // validate semanticPaths1
-        test = path.indexOf(&apos;?&apos;) &lt; 0;
+        test = path.indexOf(&quot;?&quot;) &lt; 0;
         local.throwSwaggerError(!test &amp;&amp; {
-            errorType: &apos;semanticPaths1&apos;,
+            errorType: &quot;semanticPaths1&quot;,
             prefix: prefix
         });
-        tmp = path.replace((/\{.*?\}/g), &apos;{}&apos;);
+        tmp = path.replace((
+            /\{.*?\}/g
+        ), &quot;{}&quot;);
         // validate semanticPaths2
         test = !pathDict[tmp];
         local.throwSwaggerError(!test &amp;&amp; {
-            errorType: &apos;semanticPaths2&apos;,
+            errorType: &quot;semanticPaths2&quot;,
             pathList: [pathDict[tmp], path],
             prefix: prefix
         });
         pathDict[tmp] = path;
         // validate semanticPaths3
         tmp = {};
-        path.replace((/\{.*?\}/g), function (match0) {
+        path.replace((
+            /\{.*?\}/g
+        ), function (match0) {
             test = !tmp[match0];
             local.throwSwaggerError(!test &amp;&amp; {
-                errorType: &apos;semanticPaths3&apos;,
+                errorType: &quot;semanticPaths3&quot;,
                 name: match0,
                 prefix: prefix
             });
             tmp[match0] = true;
         });
         // validate semanticPaths5
-        test = path.indexOf(&apos;{}&apos;) &lt; 0;
+        test = path.indexOf(&quot;{}&quot;) &lt; 0;
         local.throwSwaggerError(!test &amp;&amp; {
-            errorType: &apos;semanticPaths5&apos;,
+            errorType: &quot;semanticPaths5&quot;,
             prefix: prefix
         });
     });
@@ -174,14 +183,14 @@
         tmp = local.swaggerValidateDataSchema({
             // dereference definition
             modeDereference: true,
-            prefix: [&apos;swaggerJson&apos;, &apos;definitions&apos;, schemaName],
+            prefix: [&quot;swaggerJson&quot;, &quot;definitions&quot;, schemaName],
             schema: swaggerJson.definitions[schemaName],
             swaggerJson: swaggerJson
         });
         Object.keys(tmp.properties || {}).forEach(function (key) {
             local.swaggerValidateDataSchema({
                 modeDefault: true,
-                prefix: [&apos;swaggerJson&apos;, &apos;definitions&apos;, schemaName, &apos;properties&apos;, key],
+                prefix: [&quot;swaggerJson&quot;, &quot;definitions&quot;, schemaName, &quot;properties&quot;, key],
                 schema: tmp.properties[key],
                 swaggerJson: swaggerJson
             });
@@ -191,7 +200,7 @@
     Object.keys(swaggerJson.parameters || []).forEach(function (key) {
         local.swaggerValidateDataSchema({
             modeDefault: true,
-            prefix: [&apos;swaggerJson&apos;, &apos;parameters&apos;, key],
+            prefix: [&quot;swaggerJson&quot;, &quot;parameters&quot;, key],
             schema: swaggerJson.parameters[key],
             swaggerJson: swaggerJson
         });
@@ -199,7 +208,7 @@
     // validate swaggerJson.paths[key][key].parameters[ii].default
     Object.keys(swaggerJson.paths).forEach(function (path) {
         Object.keys(swaggerJson.paths[path]).forEach(function (method) {
-            prefix = [&apos;swaggerJson&apos;, &apos;paths&apos;, path, method];
+            prefix = [&quot;swaggerJson&quot;, &quot;paths&quot;, path, method];
             operation = local.swaggerValidateDataSchema({
                 // dereference operation
                 modeDereference: true,
@@ -211,12 +220,10 @@
             test = !operationIdDict[operation.operationId];
             local.throwSwaggerError(!test &amp;&amp; {
                 data: operation.operationId,
-                errorType: &apos;semanticOperationIds1&apos;,
-                prefix: prefix.concat([&apos;operationId&apos;])
+                errorType: &quot;semanticOperationIds1&quot;,
+                prefix: prefix.concat([&quot;operationId&quot;])
             });
-            operationIdDict[operation.operationId] = true;
-            tmp = { in: {}, name: {}, path: {}, type: {} };
-            path...</pre></li>
+            operationIdDict[operation.operationId]...</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
 
@@ -225,31 +232,32 @@
     <h2>
         <a href="#apidoc.element.swagger-validate-lite.swaggerValidateDataParameters" id="apidoc.element.swagger-validate-lite.swaggerValidateDataParameters">
         function <span class="apidocSignatureSpan">swagger-validate-lite.</span>swaggerValidateDataParameters
-        <span class="apidocSignatureSpan">(options)</span>
+        <span class="apidocSignatureSpan">(option)</span>
         </a>
     </h2>
     <ul>
-    <li>description and source-code<pre class="apidocCodePre">swaggerValidateDataParameters = function (options) {
+    <li>description and source-code<pre class="apidocCodePre">swaggerValidateDataParameters = function (option) {
 <span class="apidocCodeCommentSpan">/*
- * this function will validate the items in options.paramDict
- * against the schemaP&apos;s in options.parameters
+ * this function will validate the items in option.paramDict
+ * against the schemaP&apos;s in option.parameters
  */
 </span>    var errorList;
     errorList = [];
-    options.parameters.forEach(function (schemaP) {
+    option.parameters.forEach(function (schemaP) {
         local.tryCatchOnError(function () {
             local.swaggerValidateDataSchema({
-                data: options.data[schemaP.name],
+                data: option.data[schemaP.name],
                 dataReadonlyRemove: [
-                    options.dataReadonlyRemove || {},
+                    option.dataReadonlyRemove || {},
                     schemaP.name,
-                    (options.dataReadonlyRemove || {})[schemaP.name]
+                    option.dataReadonlyRemove &amp;&amp; option.dataReadonlyRemove[schemaP.name]
                 ],
-                prefix: options.prefix.concat([schemaP.name]),
+                prefix: option.prefix.concat([schemaP.name]),
                 schema: schemaP,
                 swaggerJson: local.swaggerJson
             });
         }, function (errorCaught) {
+            console.error(errorCaught.message);
             errorList.push(errorCaught);
             errorCaught.errorList = errorList;
         });
@@ -264,96 +272,114 @@
     <h2>
         <a href="#apidoc.element.swagger-validate-lite.swaggerValidateDataSchema" id="apidoc.element.swagger-validate-lite.swaggerValidateDataSchema">
         function <span class="apidocSignatureSpan">swagger-validate-lite.</span>swaggerValidateDataSchema
-        <span class="apidocSignatureSpan">(options)</span>
+        <span class="apidocSignatureSpan">(option)</span>
         </a>
     </h2>
     <ul>
-    <li>description and source-code<pre class="apidocCodePre">swaggerValidateDataSchema = function (options) {
-<span class="apidocCodeCommentSpan">       /*
-        * this function will validate options.data against the swagger options.schema
-        * http://json-schema.org/draft-04/json-schema-validation.html#rfc.section.5
-        */
-</span>           var $ref,
-               circularList,
-               data,
-               dataReadonlyRemove2,
-               ii,
-               list,
-               oneOf,
-               schema,
-               test,
-               tmp;
-           if (!options.schema) {
-               return;
-           }
-           data = options.data;
-           options.dataReadonlyRemove = options.dataReadonlyRemove || [{}, &apos;&apos;, null];
-           dataReadonlyRemove2 = options.dataReadonlyRemove[2] || {};
-           schema = options.schema;
-           circularList = [];
-           while (true) {
-               // dereference schema.schema
-               while (schema.schema) {
-                   schema = schema.schema;
-               }
-               // dereference schema.oneOf
-               oneOf = (data &amp;&amp; schema.oneOf) || [];
-               for (ii = 0; ii &lt; oneOf.length; ii += 1) {
-                   tmp = String(oneOf[ii] &amp;&amp; oneOf[ii].$ref)
-                       .replace(&apos;http://json-schema.org/draft-04/schema#&apos;, &apos;#&apos;);
-                   switch (tmp + &apos; &apos; + (!local.isNullOrUndefined(data.$ref) || data.in)) {
-                   case &apos;#/definitions/bodyParameter body&apos;:
-                   case &apos;#/definitions/formDataParameterSubSchema formData&apos;:
-                   case &apos;#/definitions/headerParameterSubSchema header&apos;:
-                   case &apos;#/definitions/jsonReference true&apos;:
-                   case &apos;#/definitions/pathParameterSubSchema path&apos;:
-                   case &apos;#/definitions/queryParameterSubSchema query&apos;:
-                       schema = local.swaggerSchemaJson.definitions[tmp.split(&apos;/&apos;)[2]];
-                       break;
-                   default:
-                       switch (tmp) {
-                       case &apos;#/definitions/bodyParameter&apos;:
-                       case &apos;#/definitions/jsonReference&apos;:
-                           schema = oneOf[ii ^ 1];
-                           break;
-                       }
-                   }
-                   if (!schema.oneOf) {
-                       break;
-                   }
-               }
-               // dereference schema.$ref
-               $ref = schema &amp;&amp; schema.$ref;
-               if (!$ref) {
-                   break;
-               }
-               test = circularList.indexOf($ref) &lt; 0;
-               local.throwSwaggerError(!test &amp;&amp; {
-                   data: data,
-                   errorType: &apos;schemaDereferenceCircular&apos;,
-                   prefix: options.prefix,
-                   schema: schema
-               });
-               circularList.push($ref);
-               // validate semanticWalker6
-               test = $ref.indexOf(&apos;#/&apos;) === 0 ||
-                   $ref.indexOf(&apos;http://json-schema.org/draft-04/schema#/&apos;) === 0;
-               local.throwSwaggerError(!test &amp;&amp; {
-                   data: $ref,
-                   errorType: &apos;semanticWalker6&apos;,
-                   prefix: options.prefix.concat([&apos;$ref&apos;])
-               });
-               switch (options.modeSchema &amp;&amp; $ref) {
-               case &apos;http://json-schema.org/draft-04/schema#/definitions/parameter&apos;:
-                   // validate semanticFormData1
-                   test = data.in !== &apos;formdata&apos;;
-                   local.throwSwaggerError(!test &amp;&amp; {
-                       data: data.in,
-                       errorType: &apos;semanticFormData1&apos;,
-                       prefix: options.prefix.concat([&apos;in&apos;])
-                   });
-                   // validate semanticFormData3
-                   test = data.type !== &apos;file&apos; || data.in === &ap...</pre></li>
+    <li>description and source-code<pre class="apidocCodePre">swaggerValidateDataSchema = function (option) {
+<span class="apidocCodeCommentSpan">/*
+ * this function will validate option.data against the swagger option.schema
+ * http://json-schema.org/draft-04/json-schema-validation.html#rfc.section.5
+ */
+</span>    var $ref;
+    var circularSet;
+    var data;
+    var dataReadonlyRemove2;
+    var ii;
+    var list;
+    var oneOf;
+    var schema;
+    var test;
+    var tmp;
+    if (!option.schema) {
+        return;
+    }
+    data = option.data;
+    option.dataReadonlyRemove = option.dataReadonlyRemove || [{}, &quot;&quot;, null];
+    dataReadonlyRemove2 = option.dataReadonlyRemove[2] || {};
+    schema = option.schema;
+    circularSet = new Set();
+    while (true) {
+        // dereference schema.schema
+        while (schema.schema) {
+            schema = schema.schema;
+        }
+        // dereference schema.oneOf
+        oneOf = (data &amp;&amp; schema.oneOf) || [];
+        ii = 0;
+        while (ii &lt; oneOf.length) {
+            tmp = String(oneOf[ii] &amp;&amp; oneOf[ii].$ref)
+            .replace(&quot;http://json-schema.org/draft-04/schema#&quot;, &quot;#&quot;);
+            switch (tmp + &quot; &quot; + (!local.isNullOrUndefined(data.$ref) || data.in)) {
+            case &quot;#/definitions/bodyParameter body&quot;:
+            case &quot;#/definitions/formDataParameterSubSchema formData&quot;:
+            case &quot;#/definitions/headerParameterSubSchema header&quot;:
+            case &quot;#/definitions/jsonReference true&quot;:
+            case &quot;#/definitions/pathParameterSubSchema path&quot;:
+            case &quot;#/definitions/queryParameterSubSchema query&quot;:
+                schema = local.swaggerSchemaJson.definitions[tmp.split(&quot;/&quot;)[2]];
+                break;
+            default:
+                switch (tmp) {
+                case &quot;#/definitions/bodyParameter&quot;:
+                case &quot;#/definitions/jsonReference&quot;:
+                    schema = oneOf[ii ^ 1];
+                    break;
+                }
+            }
+            if (!schema.oneOf) {
+                break;
+            }
+            ii += 1;
+        }
+        // dereference schema.$ref
+        $ref = schema &amp;&amp; schema.$ref;
+        if (!$ref) {
+            break;
+        }
+        test = !circularSet.has($ref);
+        local.throwSwaggerError(!test &amp;&amp; {
+            data: data,
+            errorType: &quot;schemaDereferenceCircular&quot;,
+            prefix: option.prefix,
+            schema: schema
+        });
+        circularSet.add($ref);
+        // validate semanticWalker6
+        test = (
+            $ref.indexOf(&quot;#/&quot;) === 0
+            || $ref.indexOf(&quot;http://json-schema.org/draft-04/schema#/&quot;) === 0
+        );
+        local.throwSwaggerError(!test &amp;&amp; {
+            data: $ref,
+            errorType: &quot;semanticWalker6&quot;,
+            prefix: option.prefix.concat([&quot;$ref&quot;])
+        });
+        switch (option.modeSchema &amp;&amp; $ref) {
+        case &quot;http://json-schema.org/draft-04/schema#/definitions/parameter&quot;:
+            // validate semanticFormData1
+            test = data.in !== &quot;formdata&quot;;
+            local.throwSwaggerError(!test &amp;&amp; {
+                data: data.in,
+                errorType: &quot;semanticFormData1&quot;,
+                prefix: option.prefix.concat([&quot;in&quot;])
+            });
+            // validate semanticFormData3
+            test = data.type !== &quot;file&quot; || data.in === &quot;formData&quot;;
+            local.throwSwaggerError(!test &amp;&amp; {
+                data: data,
+                errorType: &quot;semanticFormData3&quot;,
+                prefix: option.prefix
+            });
+            // validate semanticParameters2
+            test = data.in === &quot;body&quot; || !local.isNullOrUndefined(data.type);
+            local.throwSwaggerError(!test &amp;&amp; {
+                data: data,
+                errorType: &quot;semanticParameters2&quot;,
+                prefix: option.prefix
+            });
+            break;
+        case...</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
 
@@ -362,68 +388,77 @@
     <h2>
         <a href="#apidoc.element.swagger-validate-lite.swaggerValidateFile" id="apidoc.element.swagger-validate-lite.swaggerValidateFile">
         function <span class="apidocSignatureSpan">swagger-validate-lite.</span>swaggerValidateFile
-        <span class="apidocSignatureSpan">(options, onError)</span>
+        <span class="apidocSignatureSpan">(option, onError)</span>
         </a>
     </h2>
     <ul>
-    <li>description and source-code<pre class="apidocCodePre">swaggerValidateFile = function (options, onError) {
+    <li>description and source-code<pre class="apidocCodePre">swaggerValidateFile = function (option, onError) {
 <span class="apidocCodeCommentSpan">/*
- * this function will validate the json-file options.file
+ * this function will validate the json-file option.file
  */
-</span>    local.onNext(options, function (error, data) {
-        switch (options.modeNext) {
+</span>    local.onNext(option, function (error, data) {
+        switch (option.modeNext) {
         case 1:
-            if (typeof options.data === &apos;string&apos;) {
-                options.onNext(null, options.data);
+            if (typeof option.data === &quot;string&quot;) {
+                option.onNext(null, option.data);
                 return;
             }
             // fetch url
-            if ((/^(?:http|https):\/\//).test(options.file)) {
-                local.ajax({ url: options.file }, function (error, xhr) {
-                    options.onNext(error, xhr &amp;&amp; xhr.responseText);
+            if ((
+                /^(?:http|https):\/\//
+            ).test(option.file)) {
+                local.ajax({
+                    url: option.file
+                }, function (error, xhr) {
+                    option.onNext(error, xhr &amp;&amp; xhr.responseText);
                 });
                 return;
             }
             // read file
-            local.fs.readFile(options.file, &apos;utf8&apos;, options.onNext);
+            local.fs.readFile(option.file, &quot;utf8&quot;, option.onNext);
             break;
         case 2:
             // jslint
-            local.jslint.jslintAndPrint(data, options.file);
-            local.assert(
-                !local.jslint.errorText,
-                local.jslint.errorText.replace((/\u001b\[\d*m/g), &apos;&apos;)
+            local.jslint.jslintAndPrint(data, option.file);
+            local.assertThrow(
+                !local.jslint.jslintResult.errorText,
+                local.jslint.jslintResult.errorText.replace((
+                    /\u001b\[\d*m/g
+                ), &quot;&quot;)
             );
             // validate
             local.swgg.swaggerValidate(JSON.parse(data));
-            options.onNext();
+            option.onNext();
             break;
         default:
-            console.error(error
-                ? &apos;\u001b[31mswagger-validate - failed - &apos; + options.file + &apos;\n&apos; +
-                    error.message + &apos;\u001b[39m&apos;
-                : &apos;swagger-validate - passed - &apos; + options.file);
+            console.error(
+                error
+                ? &quot;\u001b[31mswagger-validate - failed - &quot; + option.file + &quot;\n&quot;
+                + error.message + &quot;\u001b[39m&quot;
+                : &quot;swagger-validate - passed - &quot; + option.file
+            );
             onError(error);
         }
     });
-    options.modeNext = 0;
-    options.onNext();
+    option.modeNext = 0;
+    option.onNext();
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-        }
-        local.cliDict = {};
-        local.cliDict._default = function () {
-        /*
-         * &lt;file/url&gt;
-         * # swagger-validate &lt;file/url&gt;
-         */
-            local.<span class="apidocCodeKeywordSpan">swaggerValidateFile</span>({ file: process.argv[2] }, function (error) {
-                process.exit(!!error);
-            });
-        };
-        local.cliRun();
-    }());
-}());
+local.cliDict = {};
+
+local.cliDict._default = function () {
+/*
+ * &lt;file/url&gt;
+ * will swagger-validate &lt;file/url&gt;
+ */
+    local.<span class="apidocCodeKeywordSpan">swaggerValidateFile</span>({
+        file: process.argv[2]
+    }, function (error) {
+        process.exit(Boolean(error));
+    });
+};
+
+// run the cli
 ...</pre></li>
     </ul>
 

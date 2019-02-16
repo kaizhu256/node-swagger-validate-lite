@@ -1,41 +1,65 @@
-<svg height="318" width="720" xmlns="http://www.w3.org/2000/svg">
-<rect height="318" fill="#555" width="720"></rect>
+<svg height="510" width="720" xmlns="http://www.w3.org/2000/svg">
+<rect height="510" fill="#555" width="720"></rect>
 <text fill="#7f7" font-family="Courier New" font-size="12" xml:space="preserve">
-<tspan x="10" y="26">2018-08-20 01:49:08 +0700u000a[npm publish] - npm publish 2018.8.19</tspan>
+<tspan x="10" y="26">2019-02-16 12:35:20 -0600</tspan>
 
-<tspan x="10" y="42">- migrate from modeJs -&gt; isBrowser</tspan>
+<tspan x="10" y="42">[npm publish] - npm publish 2019.2.12</tspan>
 
-<tspan x="10" y="58">- add validator semanticPaths3</tspan>
+<tspan x="10" y="58">- merge env var modeTest and utility2_modeTestRun -&gt; local.global.utility2_modeTest</tspan>
 
-<tspan x="10" y="74">- update build</tspan>
+<tspan x="10" y="74">- merge function onResetXxx -&gt; utility2_onReadyXxx</tspan>
 
-<tspan x="10" y="90"></tspan>
+<tspan x="10" y="90">- revamp bootstrap-mechanism before running tests</tspan>
 
-<tspan x="10" y="106">2018-06-19 10:33:40 -0500u000a[npm publish] - npm publish 2018.6.19</tspan>
+<tspan x="10" y="106"></tspan>
 
-<tspan x="10" y="122">- update build</tspan>
+<tspan x="10" y="122">2018-08-20 01:49:08 +0700</tspan>
 
-<tspan x="10" y="138"></tspan>
+<tspan x="10" y="138">[npm publish] - npm publish 2018.8.19</tspan>
 
-<tspan x="10" y="154">2018-04-11 01:29:07 +0800u000a[npm publish] - npm publish v2018.4.10</tspan>
+<tspan x="10" y="154">- migrate from modeJs -&gt; isBrowser</tspan>
 
-<tspan x="10" y="170">- add functions swaggerValidateDataParameters, swaggerValidateDataSchema</tspan>
+<tspan x="10" y="170">- add validator semanticPaths3</tspan>
 
-<tspan x="10" y="186">- fix build-ci for nodejs v9.x</tspan>
+<tspan x="10" y="186">- update build</tspan>
 
 <tspan x="10" y="202"></tspan>
 
-<tspan x="10" y="218">2018-01-23 09:06:32 +0700u000a[npm publish] - npm publish v2018.1.21</tspan>
+<tspan x="10" y="218">2018-06-19 10:33:40 -0500</tspan>
 
-<tspan x="10" y="234">- create initial app</tspan>
+<tspan x="10" y="234">[npm publish] - npm publish 2018.6.19</tspan>
 
-<tspan x="10" y="250"></tspan>
+<tspan x="10" y="250">- update build</tspan>
 
-<tspan x="10" y="266">2018-01-22 20:03:50 +0700u000ainitial app</tspan>
+<tspan x="10" y="266"></tspan>
 
-<tspan x="10" y="282"></tspan>
+<tspan x="10" y="282">2018-04-11 01:29:07 +0800</tspan>
 
-<tspan x="10" y="298">2014-03-26 02:31:50 +0700u000aadd blank README.md</tspan>
+<tspan x="10" y="298">[npm publish] - npm publish v2018.4.10</tspan>
+
+<tspan x="10" y="314">- add functions swaggerValidateDataParameters, swaggerValidateDataSchema</tspan>
+
+<tspan x="10" y="330">- fix build-ci for nodejs v9.x</tspan>
+
+<tspan x="10" y="346"></tspan>
+
+<tspan x="10" y="362">2018-01-23 09:06:32 +0700</tspan>
+
+<tspan x="10" y="378">[npm publish] - npm publish v2018.1.21</tspan>
+
+<tspan x="10" y="394">- create initial app</tspan>
+
+<tspan x="10" y="410"></tspan>
+
+<tspan x="10" y="426">2018-01-22 20:03:50 +0700</tspan>
+
+<tspan x="10" y="442">initial app</tspan>
+
+<tspan x="10" y="458"></tspan>
+
+<tspan x="10" y="474">2014-03-26 02:31:50 +0700</tspan>
+
+<tspan x="10" y="490">add blank README.md</tspan>
 
 </text>
 </svg>
