@@ -3,7 +3,7 @@
 <text fill="#7f7" font-family="Courier New" font-size="12" xml:space="preserve">
 <tspan x="10" y="26"></tspan>
 
-<tspan x="10" y="42">[MODE_BUILD=buildApidoc] - 2019-02-16T18:33:27.017Z - npm-testing /home/travis/build/kaizhu256/n\</tspan>
+<tspan x="10" y="42">[MODE_BUILD=buildApidoc] - 2019-02-16T18:44:03.509Z - npm-testing /home/travis/build/kaizhu256/n\</tspan>
 <tspan x="10" y="58">ode-swagger-validate-lite</tspan>
 
 <tspan x="10" y="74"></tspan>
@@ -13,7 +13,7 @@
 <tspan x="10" y="106">buildApidoc - merged test-report from file /home/travis/build/kaizhu256/node-swagger-validate-li\</tspan>
 <tspan x="10" y="122">te/tmp/build/test-report.json</tspan>
 
-<tspan x="10" y="138">&gt; http-server listening on port 36050</tspan>
+<tspan x="10" y="138">&gt; http-server listening on port 56062</tspan>
 
 <tspan x="10" y="154">db - dropping database ...</tspan>
 
@@ -48,7 +48,7 @@
 
 <tspan x="10" y="426"></tspan>
 
-<tspan x="10" y="442">testRunDefault - 196 ms - [node test-case 1 of 1 passed] - testCase_buildApidoc_default</tspan>
+<tspan x="10" y="442">testRunDefault - 151 ms - [node test-case 1 of 1 passed] - testCase_buildApidoc_default</tspan>
 
 <tspan x="10" y="458"></tspan>
 
@@ -61,11 +61,11 @@
 
 <tspan x="10" y="538">jslint - 0ms /home/travis/build/kaizhu256/node-swagger-validate-lite/package.json</tspan>
 
-<tspan x="10" y="554">jslint - 39ms /home/travis/build/kaizhu256/node-swagger-validate-lite/test.js</tspan>
+<tspan x="10" y="554">jslint - 42ms /home/travis/build/kaizhu256/node-swagger-validate-lite/test.js</tspan>
 
 <tspan x="10" y="570">local-function - unused (README.md) local.onEventDomDb</tspan>
 
-<tspan x="10" y="586">jslint - 183ms /home/travis/build/kaizhu256/node-swagger-validate-lite/README.md</tspan>
+<tspan x="10" y="586">jslint - 177ms /home/travis/build/kaizhu256/node-swagger-validate-lite/README.md</tspan>
 
 <tspan x="10" y="602"></tspan>
 
@@ -76,22 +76,22 @@
 
 <tspan x="10" y="666">-------------------------------------------------------</tspan>
 
-<tspan x="10" y="682">| test-report - buildApidoc - node - linux v11.10.0 - 2019-02-16T18:33:27.209Z</tspan>
+<tspan x="10" y="682">| test-report - buildApidoc - node - linux v11.10.0 - 2019-02-16T18:44:03.696Z</tspan>
 
-<tspan x="10" y="698">|     199 ms            0 failed        1 passed      |</tspan>
+<tspan x="10" y="698">|     152 ms            0 failed        1 passed      |</tspan>
 
 <tspan x="10" y="714">-------------------------------------------------------</tspan>
 
 <tspan x="10" y="730">| test-report - npmTest - browser - / - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTM\</tspan>
-<tspan x="10" y="746">L, like Gecko) Chrome/61.0.3163.100 Electron/2.0.16 Safari/537.36 - 2019-02-16T18:33:18.902Z</tspan>
+<tspan x="10" y="746">L, like Gecko) Chrome/61.0.3163.100 Electron/2.0.16 Safari/537.36 - 2019-02-16T18:43:55.417Z</tspan>
 
 <tspan x="10" y="762">|    1005 ms            0 failed        2 passed      |</tspan>
 
 <tspan x="10" y="778">-------------------------------------------------------</tspan>
 
-<tspan x="10" y="794">| test-report - npmTest - node - linux v11.10.0 - 2019-02-16T18:33:16.971Z</tspan>
+<tspan x="10" y="794">| test-report - npmTest - node - linux v11.10.0 - 2019-02-16T18:43:53.524Z</tspan>
 
-<tspan x="10" y="810">|    7368 ms            0 failed        7 passed      |</tspan>
+<tspan x="10" y="810">|    7313 ms            0 failed        7 passed      |</tspan>
 
 <tspan x="10" y="826">-------------------------------------------------------</tspan>
 
@@ -110,7 +110,7 @@
 
 <tspan x="10" y="954"></tspan>
 
-<tspan x="10" y="970">[MODE_BUILD=buildApidoc] - 2019-02-16T18:33:28.777Z - EXIT_CODE - 0</tspan>
+<tspan x="10" y="970">[MODE_BUILD=buildApidoc] - 2019-02-16T18:44:05.214Z - EXIT_CODE - 0</tspan>
 
 </text>
 </svg>
