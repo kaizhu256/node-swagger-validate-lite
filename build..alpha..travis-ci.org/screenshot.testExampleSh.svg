@@ -1,5 +1,5 @@
-<svg height="1054" width="720" xmlns="http://www.w3.org/2000/svg">
-<rect height="1054" fill="#555" width="720"></rect>
+<svg height="1070" width="720" xmlns="http://www.w3.org/2000/svg">
+<rect height="1070" fill="#555" width="720"></rect>
 <text fill="#7f7" font-family="Courier New" font-size="12" xml:space="preserve">
 <tspan x="10" y="26"></tspan>
 
@@ -31,7 +31,7 @@
 
 <tspan x="10" y="250">+ swagger-validate-lite@2019.2.12</tspan>
 
-<tspan x="10" y="266">added 1 package from 1 contributor and audited 1 package in 0.959s</tspan>
+<tspan x="10" y="266">added 1 package from 1 contributor and audited 1 package in 0.554s</tspan>
 
 <tspan x="10" y="282">found 0 vulnerabilities</tspan>
 
@@ -53,7 +53,7 @@
 
 <tspan x="10" y="426"></tspan>
 <tspan x="10" y="442">  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0</tspan>
-<tspan x="10" y="458">100 13689    0 13689    0     0   102k      0 --:--:-- --:--:-- --:--:--  102k</tspan>
+<tspan x="10" y="458">100 13689    0 13689    0     0  95137      0 --:--:-- --:--:-- --:--:-- 95727</tspan>
 
 <tspan x="10" y="474"></tspan>
 
@@ -82,47 +82,48 @@
 
 <tspan x="10" y="682"></tspan>
 
-<tspan x="10" y="698">example.sh: 1: eval: example.sh: 1: eval: undefined: not found</tspan>
+<tspan x="10" y="698">example.sh: 1: eval: example.sh: 1: eval: sed: -e expression #1, char 1: unterminated `s' comman\</tspan>
+<tspan x="10" y="714">d</tspan>
 
-<tspan x="10" y="714">example.sh: 1: eval: integer: not found/tmp/swagger.json: Permission denied</tspan>
+<tspan x="10" y="730">/tmp/swagger.json: Permission denied</tspan>
 
-<tspan x="10" y="730"></tspan>
+<tspan x="10" y="746">example.sh: 1: eval: undefined: not found</tspan>
 
-<tspan x="10" y="746">sed: -e expression #1, char 1: unterminated `s' command</tspan>
-
-<tspan x="10" y="762"></tspan>
+<tspan x="10" y="762">integer: not found</tspan>
 
 <tspan x="10" y="778"></tspan>
 
 <tspan x="10" y="794"></tspan>
 
-<tspan x="10" y="810">$ /tmp/node_modules/.bin/swagger-validate-lite /tmp/swagger.json</tspan>
+<tspan x="10" y="810"></tspan>
 
-<tspan x="10" y="826"></tspan>
+<tspan x="10" y="826">$ /tmp/node_modules/.bin/swagger-validate-lite /tmp/swagger.json</tspan>
 
 <tspan x="10" y="842"></tspan>
 
-<tspan x="10" y="858">testExampleSh - merged test-report from file /home/travis/build/kaizhu256/node-swagger-validate-\</tspan>
-<tspan x="10" y="874">lite/tmp/build/test-report.json</tspan>
+<tspan x="10" y="858"></tspan>
 
-<tspan x="10" y="890">swagger-validate - passed - /tmp/swagger.json</tspan>
+<tspan x="10" y="874">testExampleSh - merged test-report from file /home/travis/build/kaizhu256/node-swagger-validate-\</tspan>
+<tspan x="10" y="890">lite/tmp/build/test-report.json</tspan>
 
-<tspan x="10" y="906"></tspan>
+<tspan x="10" y="906">swagger-validate - passed - /tmp/swagger.json</tspan>
 
 <tspan x="10" y="922"></tspan>
 
 <tspan x="10" y="938"></tspan>
 
-<tspan x="10" y="954">$ /tmp/node_modules/.bin/swagger-validate-lite http://petstore.swagger.io/v2/swagger.json</tspan>
+<tspan x="10" y="954"></tspan>
 
-<tspan x="10" y="970"></tspan>
+<tspan x="10" y="970">$ /tmp/node_modules/.bin/swagger-validate-lite http://petstore.swagger.io/v2/swagger.json</tspan>
 
 <tspan x="10" y="986"></tspan>
 
-<tspan x="10" y="1002">testExampleSh - merged test-report from file /home/travis/build/kaizhu256/node-swagger-validate-\</tspan>
-<tspan x="10" y="1018">lite/tmp/build/test-report.json</tspan>
+<tspan x="10" y="1002"></tspan>
 
-<tspan x="10" y="1034">swagger-validate - passed - http://petstore.swagger.io/v2/swagger.json</tspan>
+<tspan x="10" y="1018">testExampleSh - merged test-report from file /home/travis/build/kaizhu256/node-swagger-validate-\</tspan>
+<tspan x="10" y="1034">lite/tmp/build/test-report.json</tspan>
+
+<tspan x="10" y="1050">swagger-validate - passed - http://petstore.swagger.io/v2/swagger.json</tspan>
 
 </text>
 </svg>
