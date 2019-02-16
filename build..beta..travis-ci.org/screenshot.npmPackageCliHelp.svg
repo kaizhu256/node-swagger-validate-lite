@@ -1,0 +1,49 @@
+<svg height="382" width="720" xmlns="http://www.w3.org/2000/svg">
+<rect height="382" fill="#555" width="720"></rect>
+<text fill="#7f7" font-family="Courier New" font-size="12" xml:space="preserve">
+<tspan x="10" y="26">swagger-validate-lite (2018.8.19)</tspan>
+
+<tspan x="10" y="42"></tspan>
+
+<tspan x="10" y="58">usage:</tspan>
+
+<tspan x="10" y="74">assets.utility2.rollup.js  &lt;arg1&gt;  &lt;arg2&gt;  ...</tspan>
+
+<tspan x="10" y="90"></tspan>
+
+<tspan x="10" y="106"># eval code</tspan>
+
+<tspan x="10" y="122">assets.utility2.rollup.js  --eval|-e  &lt;code&gt;</tspan>
+
+<tspan x="10" y="138"></tspan>
+
+<tspan x="10" y="154"># print help</tspan>
+
+<tspan x="10" y="170">assets.utility2.rollup.js  --help|-h|help</tspan>
+
+<tspan x="10" y="186"></tspan>
+
+<tspan x="10" y="202"># start interactive-mode</tspan>
+
+<tspan x="10" y="218">assets.utility2.rollup.js  --interactive|-i</tspan>
+
+<tspan x="10" y="234"></tspan>
+
+<tspan x="10" y="250"># print version</tspan>
+
+<tspan x="10" y="266">assets.utility2.rollup.js  --version|-v</tspan>
+
+<tspan x="10" y="282"></tspan>
+
+<tspan x="10" y="298"># swagger-validate &lt;file/url&gt;</tspan>
+
+<tspan x="10" y="314">assets.utility2.rollup.js  &lt;file/url&gt;</tspan>
+
+<tspan x="10" y="330"></tspan>
+
+<tspan x="10" y="346">example:</tspan>
+
+<tspan x="10" y="362">assets.utility2.rollup.js  --eval  'console.log("hello world")'</tspan>
+
+</text>
+</svg>

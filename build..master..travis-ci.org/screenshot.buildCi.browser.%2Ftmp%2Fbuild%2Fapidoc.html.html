@@ -1,0 +1,251 @@
+<html data-scrape="{
+    &quot;hrefDict&quot;: {
+        &quot;https://github.com/kaizhu256/node-swagger-validate-lite&quot;: &quot;swagger-validate-lite (v2018.1.21)&quot;,
+        &quot;https://github.com/kaizhu256/node-utility2&quot;: &quot;utility2&quot;
+    },
+    &quot;href&quot;: &quot;file:///home/travis/build/kaizhu256/node-swagger-validate-lite/tmp/build/apidoc.html&quot;,
+    &quot;url&quot;: &quot;file:///home/travis/build/kaizhu256/node-swagger-validate-lite/tmp/build/apidoc.html&quot;,
+    &quot;bodyTextContent&quot;: &quot;description and source-codeswaggerValidateFile = function (options, onError) {\n/*\n * this function will swagger-validate options.file\n */\n    local.onNext(options, function (error, data) {\n        switch (options.modeNext) {\n        case 1:\n            if (typeof options.data === 'string') {\n                options.onNext(null, options.data);\n                return;\n            }\n            // fetch url\n            if ((/^(?:http|https):\\/\\//).test(options.file)) {\n                local.ajax({ url: options.file }, function (error, data) {\n                    options.onNext(error, data &amp;&amp; data.responseText);\n                });\n                return;\n            }\n            // read file\n            local.fs.readFile(options.file, 'utf8', options.onNext);\n            break;\n        case 2:\n            // jslint\n            local.jslint.jslintAndPrint(data, options.file);\n            local.assert(\n                !local.jslint.errorText,\n                local.jslint.errorText.replace((/\\u001b\\[\\d+m/g), '')\n            );\n            // validate\n            local.swgg.validateBySwaggerJson(JSON.parse(data));\n            options.onNext();\n            break;\n        default:\n            onError(error, error\n                ? 'swagger-validate - failed - ' + options.file + '\\n\\n' + error.message\n                : 'swagger-validate - passed - ' + options.file);\n        }\n    });\n    options.modeNext = 0;\n    options.onNext();\n}\n    example usage...\n    }\n    local.cliDict = {};\n    local.cliDict._default = function () {\n    /*\n     * file/url\n     * swagger-validate file/url\n     */\n        local.swaggerValidateFile({ file: process.argv[2] }, function (error, data) {\n            console.error(data);\n            process.exit(error);\n        });\n    };\n    local.cliRun();\n    break;\n}\n...\n\n            description and source-codevalidateBySwaggerJson = function (swaggerJson) {\n/*\n * this function will validate swaggerJson\n */\n    var operation, operationIdDict, prefix, test, tmp;\n    operationIdDict = {};\n    swaggerJson = swaggerJson || {};\n    local.validateBySwaggerSchema({\n        data: swaggerJson,\n        modeSchema: true,\n        prefix: ['swaggerJson'],\n        schema: local.swaggerSchemaJson,\n        swaggerJson: swaggerJson\n    });\n    // validate swaggerJson.definitions[key].properties[ii].default\n    Object.keys(swaggerJson.definitions || {}).forEach(function (schemaName) {\n        tmp = local.validateBySwaggerSchema({\n            // dereference definition\n            modeDereference: true,\n            prefix: ['swaggerJson', 'definitions', schemaName],\n            schema: swaggerJson.definitions[schemaName],\n            swaggerJson: swaggerJson\n        });\n        Object.keys(tmp.properties || {}).forEach(function (key) {\n            local.validateBySwaggerSchema({\n                modeDefault: true,\n                prefix: ['swaggerJson', 'definitions', schemaName, 'properties', key],\n                schema: tmp.properties[key],\n                swaggerJson: swaggerJson\n            });\n        });\n    });\n    // validate swaggerJson.parameters[key].default\n    Object.keys(swaggerJson.parameters || []).forEach(function (key) {\n        local.validateBySwaggerSchema({\n            modeDefault: true,\n            prefix: ['swaggerJson', 'parameters', key],\n            schema: swaggerJson.parameters[key],\n            swaggerJson: swaggerJson\n        });\n    });\n    // validate swaggerJson.paths[key][key].parameters[ii].default\n    Object.keys(swaggerJson.paths).forEach(function (path) {\n        Object.keys(swaggerJson.paths[path]).forEach(function (method) {\n            prefix = ['swaggerJson', 'paths', path, method];\n            operation = local.validateBySwaggerSchema({\n                // dereference operation\n                modeDereference: true,\n                prefix: prefix,\n                schema: swaggerJson.paths[path][method],\n                swaggerJson: swaggerJson\n            });\n            // validate semanticUniqueOperationId\n            test = !operationIdDict[operation.operationId];\n            local.throwSwaggerError(!test &amp;&amp; {\n                data: operation.operationId,\n                errorType: 'semanticUniqueOperationId',\n                prefix: prefix\n            });\n            operationIdDict[operation.operationId] = true;\n            (operation.parameters || []).forEach(function (schemaP) {\n                local.validateBySwaggerSchema({\n                    modeDefault: true,\n                    prefix: prefix.concat(['parameters', schemaP.name]),\n                    schema: schemaP,\n                    swaggerJson: swaggerJson\n                });\n            });\n        });\n    });\n}\n    example usagen/a&quot;
+}"><head></head><body><div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    overflow-wrap: break-word;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a href="https://github.com/kaizhu256/node-swagger-validate-lite">swagger-validate-lite (v2018.1.21)</a>
+</h1>
+<h4>this zero-dependency package will provide a simple cli-tool to validate swagger.json</h4>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.swagger-validate-lite">module swagger-validate-lite</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.swagger-validate-lite.swaggerValidateFile">
+            function <span class="apidocSignatureSpan">swagger-validate-lite.</span>swaggerValidateFile
+            <span class="apidocSignatureSpan">(options, onError)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.swagger-validate-lite.validateBySwaggerJson">
+            function <span class="apidocSignatureSpan">swagger-validate-lite.</span>validateBySwaggerJson
+            <span class="apidocSignatureSpan">(swaggerJson)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.swagger-validate-lite" id="apidoc.module.swagger-validate-lite">module swagger-validate-lite</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.swagger-validate-lite.swaggerValidateFile" id="apidoc.element.swagger-validate-lite.swaggerValidateFile">
+        function <span class="apidocSignatureSpan">swagger-validate-lite.</span>swaggerValidateFile
+        <span class="apidocSignatureSpan">(options, onError)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">swaggerValidateFile = function (options, onError) {
+<span class="apidocCodeCommentSpan">/*
+ * this function will swagger-validate options.file
+ */
+</span>    local.onNext(options, function (error, data) {
+        switch (options.modeNext) {
+        case 1:
+            if (typeof options.data === 'string') {
+                options.onNext(null, options.data);
+                return;
+            }
+            // fetch url
+            if ((/^(?:http|https):\/\//).test(options.file)) {
+                local.ajax({ url: options.file }, function (error, data) {
+                    options.onNext(error, data &amp;&amp; data.responseText);
+                });
+                return;
+            }
+            // read file
+            local.fs.readFile(options.file, 'utf8', options.onNext);
+            break;
+        case 2:
+            // jslint
+            local.jslint.jslintAndPrint(data, options.file);
+            local.assert(
+                !local.jslint.errorText,
+                local.jslint.errorText.replace((/\u001b\[\d+m/g), '')
+            );
+            // validate
+            local.swgg.validateBySwaggerJson(JSON.parse(data));
+            options.onNext();
+            break;
+        default:
+            onError(error, error
+                ? 'swagger-validate - failed - ' + options.file + '\n\n' + error.message
+                : 'swagger-validate - passed - ' + options.file);
+        }
+    });
+    options.modeNext = 0;
+    options.onNext();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    }
+    local.cliDict = {};
+    local.cliDict._default = function () {
+    /*
+     * file/url
+     * swagger-validate file/url
+     */
+        local.<span class="apidocCodeKeywordSpan">swaggerValidateFile</span>({ file: process.argv[2] }, function (error, data) {
+            console.error(data);
+            process.exit(error);
+        });
+    };
+    local.cliRun();
+    break;
+}
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.swagger-validate-lite.validateBySwaggerJson" id="apidoc.element.swagger-validate-lite.validateBySwaggerJson">
+        function <span class="apidocSignatureSpan">swagger-validate-lite.</span>validateBySwaggerJson
+        <span class="apidocSignatureSpan">(swaggerJson)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">validateBySwaggerJson = function (swaggerJson) {
+<span class="apidocCodeCommentSpan">/*
+ * this function will validate swaggerJson
+ */
+</span>    var operation, operationIdDict, prefix, test, tmp;
+    operationIdDict = {};
+    swaggerJson = swaggerJson || {};
+    local.validateBySwaggerSchema({
+        data: swaggerJson,
+        modeSchema: true,
+        prefix: ['swaggerJson'],
+        schema: local.swaggerSchemaJson,
+        swaggerJson: swaggerJson
+    });
+    // validate swaggerJson.definitions[key].properties[ii].default
+    Object.keys(swaggerJson.definitions || {}).forEach(function (schemaName) {
+        tmp = local.validateBySwaggerSchema({
+            // dereference definition
+            modeDereference: true,
+            prefix: ['swaggerJson', 'definitions', schemaName],
+            schema: swaggerJson.definitions[schemaName],
+            swaggerJson: swaggerJson
+        });
+        Object.keys(tmp.properties || {}).forEach(function (key) {
+            local.validateBySwaggerSchema({
+                modeDefault: true,
+                prefix: ['swaggerJson', 'definitions', schemaName, 'properties', key],
+                schema: tmp.properties[key],
+                swaggerJson: swaggerJson
+            });
+        });
+    });
+    // validate swaggerJson.parameters[key].default
+    Object.keys(swaggerJson.parameters || []).forEach(function (key) {
+        local.validateBySwaggerSchema({
+            modeDefault: true,
+            prefix: ['swaggerJson', 'parameters', key],
+            schema: swaggerJson.parameters[key],
+            swaggerJson: swaggerJson
+        });
+    });
+    // validate swaggerJson.paths[key][key].parameters[ii].default
+    Object.keys(swaggerJson.paths).forEach(function (path) {
+        Object.keys(swaggerJson.paths[path]).forEach(function (method) {
+            prefix = ['swaggerJson', 'paths', path, method];
+            operation = local.validateBySwaggerSchema({
+                // dereference operation
+                modeDereference: true,
+                prefix: prefix,
+                schema: swaggerJson.paths[path][method],
+                swaggerJson: swaggerJson
+            });
+            // validate semanticUniqueOperationId
+            test = !operationIdDict[operation.operationId];
+            local.throwSwaggerError(!test &amp;&amp; {
+                data: operation.operationId,
+                errorType: 'semanticUniqueOperationId',
+                prefix: prefix
+            });
+            operationIdDict[operation.operationId] = true;
+            (operation.parameters || []).forEach(function (schemaP) {
+                local.validateBySwaggerSchema({
+                    modeDefault: true,
+                    prefix: prefix.concat(['parameters', schemaP.name]),
+                    schema: schemaP,
+                    swaggerJson: swaggerJson
+                });
+            });
+        });
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
+</body></html>

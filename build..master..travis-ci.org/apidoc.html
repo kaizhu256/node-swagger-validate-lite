@@ -1,0 +1,249 @@
+<div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    overflow-wrap: break-word;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a
+
+        href="https://github.com/kaizhu256/node-swagger-validate-lite"
+
+    >swagger-validate-lite (v2018.1.21)</a>
+</h1>
+<h4>this zero-dependency package will provide a simple cli-tool to validate swagger.json</h4>
+<div class="apidocSectionDiv"><a
+    href="#apidoc.tableOfContents"
+    id="apidoc.tableOfContents"
+><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.swagger-validate-lite">module swagger-validate-lite</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.swagger-validate-lite.swaggerValidateFile">
+            function <span class="apidocSignatureSpan">swagger-validate-lite.</span>swaggerValidateFile
+            <span class="apidocSignatureSpan">(options, onError)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.swagger-validate-lite.validateBySwaggerJson">
+            function <span class="apidocSignatureSpan">swagger-validate-lite.</span>validateBySwaggerJson
+            <span class="apidocSignatureSpan">(swaggerJson)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.swagger-validate-lite" id="apidoc.module.swagger-validate-lite">module swagger-validate-lite</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.swagger-validate-lite.swaggerValidateFile" id="apidoc.element.swagger-validate-lite.swaggerValidateFile">
+        function <span class="apidocSignatureSpan">swagger-validate-lite.</span>swaggerValidateFile
+        <span class="apidocSignatureSpan">(options, onError)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">swaggerValidateFile = function (options, onError) {
+<span class="apidocCodeCommentSpan">/*
+ * this function will swagger-validate options.file
+ */
+</span>    local.onNext(options, function (error, data) {
+        switch (options.modeNext) {
+        case 1:
+            if (typeof options.data === &#x27;string&#x27;) {
+                options.onNext(null, options.data);
+                return;
+            }
+            // fetch url
+            if ((/^(?:http|https):\/\//).test(options.file)) {
+                local.ajax({ url: options.file }, function (error, data) {
+                    options.onNext(error, data &#x26;&#x26; data.responseText);
+                });
+                return;
+            }
+            // read file
+            local.fs.readFile(options.file, &#x27;utf8&#x27;, options.onNext);
+            break;
+        case 2:
+            // jslint
+            local.jslint.jslintAndPrint(data, options.file);
+            local.assert(
+                !local.jslint.errorText,
+                local.jslint.errorText.replace((/\u001b\[\d+m/g), &#x27;&#x27;)
+            );
+            // validate
+            local.swgg.validateBySwaggerJson(JSON.parse(data));
+            options.onNext();
+            break;
+        default:
+            onError(error, error
+                ? &#x27;swagger-validate - failed - &#x27; + options.file + &#x27;\n\n&#x27; + error.message
+                : &#x27;swagger-validate - passed - &#x27; + options.file);
+        }
+    });
+    options.modeNext = 0;
+    options.onNext();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    }
+    local.cliDict = {};
+    local.cliDict._default = function () {
+    /*
+     * file/url
+     * swagger-validate file/url
+     */
+        local.<span class="apidocCodeKeywordSpan">swaggerValidateFile</span>({ file: process.argv[2] }, function (error, data) {
+            console.error(data);
+            process.exit(error);
+        });
+    };
+    local.cliRun();
+    break;
+}
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.swagger-validate-lite.validateBySwaggerJson" id="apidoc.element.swagger-validate-lite.validateBySwaggerJson">
+        function <span class="apidocSignatureSpan">swagger-validate-lite.</span>validateBySwaggerJson
+        <span class="apidocSignatureSpan">(swaggerJson)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">validateBySwaggerJson = function (swaggerJson) {
+<span class="apidocCodeCommentSpan">/*
+ * this function will validate swaggerJson
+ */
+</span>    var operation, operationIdDict, prefix, test, tmp;
+    operationIdDict = {};
+    swaggerJson = swaggerJson || {};
+    local.validateBySwaggerSchema({
+        data: swaggerJson,
+        modeSchema: true,
+        prefix: [&#x27;swaggerJson&#x27;],
+        schema: local.swaggerSchemaJson,
+        swaggerJson: swaggerJson
+    });
+    // validate swaggerJson.definitions[key].properties[ii].default
+    Object.keys(swaggerJson.definitions || {}).forEach(function (schemaName) {
+        tmp = local.validateBySwaggerSchema({
+            // dereference definition
+            modeDereference: true,
+            prefix: [&#x27;swaggerJson&#x27;, &#x27;definitions&#x27;, schemaName],
+            schema: swaggerJson.definitions[schemaName],
+            swaggerJson: swaggerJson
+        });
+        Object.keys(tmp.properties || {}).forEach(function (key) {
+            local.validateBySwaggerSchema({
+                modeDefault: true,
+                prefix: [&#x27;swaggerJson&#x27;, &#x27;definitions&#x27;, schemaName, &#x27;properties&#x27;, key],
+                schema: tmp.properties[key],
+                swaggerJson: swaggerJson
+            });
+        });
+    });
+    // validate swaggerJson.parameters[key].default
+    Object.keys(swaggerJson.parameters || []).forEach(function (key) {
+        local.validateBySwaggerSchema({
+            modeDefault: true,
+            prefix: [&#x27;swaggerJson&#x27;, &#x27;parameters&#x27;, key],
+            schema: swaggerJson.parameters[key],
+            swaggerJson: swaggerJson
+        });
+    });
+    // validate swaggerJson.paths[key][key].parameters[ii].default
+    Object.keys(swaggerJson.paths).forEach(function (path) {
+        Object.keys(swaggerJson.paths[path]).forEach(function (method) {
+            prefix = [&#x27;swaggerJson&#x27;, &#x27;paths&#x27;, path, method];
+            operation = local.validateBySwaggerSchema({
+                // dereference operation
+                modeDereference: true,
+                prefix: prefix,
+                schema: swaggerJson.paths[path][method],
+                swaggerJson: swaggerJson
+            });
+            // validate semanticUniqueOperationId
+            test = !operationIdDict[operation.operationId];
+            local.throwSwaggerError(!test &#x26;&#x26; {
+                data: operation.operationId,
+                errorType: &#x27;semanticUniqueOperationId&#x27;,
+                prefix: prefix
+            });
+            operationIdDict[operation.operationId] = true;
+            (operation.parameters || []).forEach(function (schemaP) {
+                local.validateBySwaggerSchema({
+                    modeDefault: true,
+                    prefix: prefix.concat([&#x27;parameters&#x27;, schemaP.name]),
+                    schema: schemaP,
+                    swaggerJson: swaggerJson
+                });
+            });
+        });
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>

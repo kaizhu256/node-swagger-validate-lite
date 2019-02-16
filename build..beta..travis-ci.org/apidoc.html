@@ -1,0 +1,440 @@
+<div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    overflow-wrap: break-word;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a
+
+        href="https://github.com/kaizhu256/node-swagger-validate-lite"
+
+    >swagger-validate-lite (2018.8.19)</a>
+</h1>
+<h4>this zero-dependency package will provide a simple cli-tool to validate swagger.json</h4>
+<div class="apidocSectionDiv"><a
+    href="#apidoc.tableOfContents"
+    id="apidoc.tableOfContents"
+><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.swagger-validate-lite">module swagger-validate-lite</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.swagger-validate-lite.swaggerValidate">
+            function <span class="apidocSignatureSpan">swagger-validate-lite.</span>swaggerValidate
+            <span class="apidocSignatureSpan">(swaggerJson)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.swagger-validate-lite.swaggerValidateDataParameters">
+            function <span class="apidocSignatureSpan">swagger-validate-lite.</span>swaggerValidateDataParameters
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.swagger-validate-lite.swaggerValidateDataSchema">
+            function <span class="apidocSignatureSpan">swagger-validate-lite.</span>swaggerValidateDataSchema
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.swagger-validate-lite.swaggerValidateFile">
+            function <span class="apidocSignatureSpan">swagger-validate-lite.</span>swaggerValidateFile
+            <span class="apidocSignatureSpan">(options, onError)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">swagger-validate-lite.</span>timeExit</span>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.swagger-validate-lite" id="apidoc.module.swagger-validate-lite">module swagger-validate-lite</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.swagger-validate-lite.swaggerValidate" id="apidoc.element.swagger-validate-lite.swaggerValidate">
+        function <span class="apidocSignatureSpan">swagger-validate-lite.</span>swaggerValidate
+        <span class="apidocSignatureSpan">(swaggerJson)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">swaggerValidate = function (swaggerJson) {
+<span class="apidocCodeCommentSpan">/*
+ * this function will validate the json-object swaggerJson
+ */
+</span>    var operation, operationIdDict, pathDict, prefix, test, tmp;
+    operationIdDict = {};
+    swaggerJson = swaggerJson || {};
+    local.swaggerValidateDataSchema({
+        data: swaggerJson,
+        modeSchema: true,
+        prefix: [&apos;swaggerJson&apos;],
+        schema: local.swaggerSchemaJson,
+        swaggerJson: swaggerJson
+    });
+    pathDict = {};
+    Object.keys(swaggerJson.paths).forEach(function (path) {
+        prefix = [&apos;swaggerJson&apos;, &apos;paths&apos;, path];
+        // validate semanticPaths1
+        test = path.indexOf(&apos;?&apos;) &lt; 0;
+        local.throwSwaggerError(!test &amp;&amp; {
+            errorType: &apos;semanticPaths1&apos;,
+            prefix: prefix
+        });
+        tmp = path.replace((/\{.*?\}/g), &apos;{}&apos;);
+        // validate semanticPaths2
+        test = !pathDict[tmp];
+        local.throwSwaggerError(!test &amp;&amp; {
+            errorType: &apos;semanticPaths2&apos;,
+            pathList: [pathDict[tmp], path],
+            prefix: prefix
+        });
+        pathDict[tmp] = path;
+        // validate semanticPaths3
+        tmp = {};
+        path.replace((/\{.*?\}/g), function (match0) {
+            test = !tmp[match0];
+            local.throwSwaggerError(!test &amp;&amp; {
+                errorType: &apos;semanticPaths3&apos;,
+                name: match0,
+                prefix: prefix
+            });
+            tmp[match0] = true;
+        });
+        // validate semanticPaths5
+        test = path.indexOf(&apos;{}&apos;) &lt; 0;
+        local.throwSwaggerError(!test &amp;&amp; {
+            errorType: &apos;semanticPaths5&apos;,
+            prefix: prefix
+        });
+    });
+    // validate swaggerJson.definitions[key].properties[ii].default
+    Object.keys(swaggerJson.definitions || {}).forEach(function (schemaName) {
+        tmp = local.swaggerValidateDataSchema({
+            // dereference definition
+            modeDereference: true,
+            prefix: [&apos;swaggerJson&apos;, &apos;definitions&apos;, schemaName],
+            schema: swaggerJson.definitions[schemaName],
+            swaggerJson: swaggerJson
+        });
+        Object.keys(tmp.properties || {}).forEach(function (key) {
+            local.swaggerValidateDataSchema({
+                modeDefault: true,
+                prefix: [&apos;swaggerJson&apos;, &apos;definitions&apos;, schemaName, &apos;properties&apos;, key],
+                schema: tmp.properties[key],
+                swaggerJson: swaggerJson
+            });
+        });
+    });
+    // validate swaggerJson.parameters[key].default
+    Object.keys(swaggerJson.parameters || []).forEach(function (key) {
+        local.swaggerValidateDataSchema({
+            modeDefault: true,
+            prefix: [&apos;swaggerJson&apos;, &apos;parameters&apos;, key],
+            schema: swaggerJson.parameters[key],
+            swaggerJson: swaggerJson
+        });
+    });
+    // validate swaggerJson.paths[key][key].parameters[ii].default
+    Object.keys(swaggerJson.paths).forEach(function (path) {
+        Object.keys(swaggerJson.paths[path]).forEach(function (method) {
+            prefix = [&apos;swaggerJson&apos;, &apos;paths&apos;, path, method];
+            operation = local.swaggerValidateDataSchema({
+                // dereference operation
+                modeDereference: true,
+                prefix: prefix,
+                schema: swaggerJson.paths[path][method],
+                swaggerJson: swaggerJson
+            });
+            // validate semanticOperationIds1
+            test = !operationIdDict[operation.operationId];
+            local.throwSwaggerError(!test &amp;&amp; {
+                data: operation.operationId,
+                errorType: &apos;semanticOperationIds1&apos;,
+                prefix: prefix.concat([&apos;operationId&apos;])
+            });
+            operationIdDict[operation.operationId] = true;
+            tmp = { in: {}, name: {}, path: {}, type: {} };
+            path...</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.swagger-validate-lite.swaggerValidateDataParameters" id="apidoc.element.swagger-validate-lite.swaggerValidateDataParameters">
+        function <span class="apidocSignatureSpan">swagger-validate-lite.</span>swaggerValidateDataParameters
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">swaggerValidateDataParameters = function (options) {
+<span class="apidocCodeCommentSpan">/*
+ * this function will validate the items in options.paramDict
+ * against the schemaP&apos;s in options.parameters
+ */
+</span>    var errorList;
+    errorList = [];
+    options.parameters.forEach(function (schemaP) {
+        local.tryCatchOnError(function () {
+            local.swaggerValidateDataSchema({
+                data: options.data[schemaP.name],
+                dataReadonlyRemove: [
+                    options.dataReadonlyRemove || {},
+                    schemaP.name,
+                    (options.dataReadonlyRemove || {})[schemaP.name]
+                ],
+                prefix: options.prefix.concat([schemaP.name]),
+                schema: schemaP,
+                swaggerJson: local.swaggerJson
+            });
+        }, function (errorCaught) {
+            errorList.push(errorCaught);
+            errorCaught.errorList = errorList;
+        });
+    });
+    return errorList;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.swagger-validate-lite.swaggerValidateDataSchema" id="apidoc.element.swagger-validate-lite.swaggerValidateDataSchema">
+        function <span class="apidocSignatureSpan">swagger-validate-lite.</span>swaggerValidateDataSchema
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">swaggerValidateDataSchema = function (options) {
+<span class="apidocCodeCommentSpan">       /*
+        * this function will validate options.data against the swagger options.schema
+        * http://json-schema.org/draft-04/json-schema-validation.html#rfc.section.5
+        */
+</span>           var $ref,
+               circularList,
+               data,
+               dataReadonlyRemove2,
+               ii,
+               list,
+               oneOf,
+               schema,
+               test,
+               tmp;
+           if (!options.schema) {
+               return;
+           }
+           data = options.data;
+           options.dataReadonlyRemove = options.dataReadonlyRemove || [{}, &apos;&apos;, null];
+           dataReadonlyRemove2 = options.dataReadonlyRemove[2] || {};
+           schema = options.schema;
+           circularList = [];
+           while (true) {
+               // dereference schema.schema
+               while (schema.schema) {
+                   schema = schema.schema;
+               }
+               // dereference schema.oneOf
+               oneOf = (data &amp;&amp; schema.oneOf) || [];
+               for (ii = 0; ii &lt; oneOf.length; ii += 1) {
+                   tmp = String(oneOf[ii] &amp;&amp; oneOf[ii].$ref)
+                       .replace(&apos;http://json-schema.org/draft-04/schema#&apos;, &apos;#&apos;);
+                   switch (tmp + &apos; &apos; + (!local.isNullOrUndefined(data.$ref) || data.in)) {
+                   case &apos;#/definitions/bodyParameter body&apos;:
+                   case &apos;#/definitions/formDataParameterSubSchema formData&apos;:
+                   case &apos;#/definitions/headerParameterSubSchema header&apos;:
+                   case &apos;#/definitions/jsonReference true&apos;:
+                   case &apos;#/definitions/pathParameterSubSchema path&apos;:
+                   case &apos;#/definitions/queryParameterSubSchema query&apos;:
+                       schema = local.swaggerSchemaJson.definitions[tmp.split(&apos;/&apos;)[2]];
+                       break;
+                   default:
+                       switch (tmp) {
+                       case &apos;#/definitions/bodyParameter&apos;:
+                       case &apos;#/definitions/jsonReference&apos;:
+                           schema = oneOf[ii ^ 1];
+                           break;
+                       }
+                   }
+                   if (!schema.oneOf) {
+                       break;
+                   }
+               }
+               // dereference schema.$ref
+               $ref = schema &amp;&amp; schema.$ref;
+               if (!$ref) {
+                   break;
+               }
+               test = circularList.indexOf($ref) &lt; 0;
+               local.throwSwaggerError(!test &amp;&amp; {
+                   data: data,
+                   errorType: &apos;schemaDereferenceCircular&apos;,
+                   prefix: options.prefix,
+                   schema: schema
+               });
+               circularList.push($ref);
+               // validate semanticWalker6
+               test = $ref.indexOf(&apos;#/&apos;) === 0 ||
+                   $ref.indexOf(&apos;http://json-schema.org/draft-04/schema#/&apos;) === 0;
+               local.throwSwaggerError(!test &amp;&amp; {
+                   data: $ref,
+                   errorType: &apos;semanticWalker6&apos;,
+                   prefix: options.prefix.concat([&apos;$ref&apos;])
+               });
+               switch (options.modeSchema &amp;&amp; $ref) {
+               case &apos;http://json-schema.org/draft-04/schema#/definitions/parameter&apos;:
+                   // validate semanticFormData1
+                   test = data.in !== &apos;formdata&apos;;
+                   local.throwSwaggerError(!test &amp;&amp; {
+                       data: data.in,
+                       errorType: &apos;semanticFormData1&apos;,
+                       prefix: options.prefix.concat([&apos;in&apos;])
+                   });
+                   // validate semanticFormData3
+                   test = data.type !== &apos;file&apos; || data.in === &ap...</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.swagger-validate-lite.swaggerValidateFile" id="apidoc.element.swagger-validate-lite.swaggerValidateFile">
+        function <span class="apidocSignatureSpan">swagger-validate-lite.</span>swaggerValidateFile
+        <span class="apidocSignatureSpan">(options, onError)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">swaggerValidateFile = function (options, onError) {
+<span class="apidocCodeCommentSpan">/*
+ * this function will validate the json-file options.file
+ */
+</span>    local.onNext(options, function (error, data) {
+        switch (options.modeNext) {
+        case 1:
+            if (typeof options.data === &apos;string&apos;) {
+                options.onNext(null, options.data);
+                return;
+            }
+            // fetch url
+            if ((/^(?:http|https):\/\//).test(options.file)) {
+                local.ajax({ url: options.file }, function (error, xhr) {
+                    options.onNext(error, xhr &amp;&amp; xhr.responseText);
+                });
+                return;
+            }
+            // read file
+            local.fs.readFile(options.file, &apos;utf8&apos;, options.onNext);
+            break;
+        case 2:
+            // jslint
+            local.jslint.jslintAndPrint(data, options.file);
+            local.assert(
+                !local.jslint.errorText,
+                local.jslint.errorText.replace((/\u001b\[\d*m/g), &apos;&apos;)
+            );
+            // validate
+            local.swgg.swaggerValidate(JSON.parse(data));
+            options.onNext();
+            break;
+        default:
+            console.error(error
+                ? &apos;\u001b[31mswagger-validate - failed - &apos; + options.file + &apos;\n&apos; +
+                    error.message + &apos;\u001b[39m&apos;
+                : &apos;swagger-validate - passed - &apos; + options.file);
+            onError(error);
+        }
+    });
+    options.modeNext = 0;
+    options.onNext();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+        }
+        local.cliDict = {};
+        local.cliDict._default = function () {
+        /*
+         * &lt;file/url&gt;
+         * # swagger-validate &lt;file/url&gt;
+         */
+            local.<span class="apidocCodeKeywordSpan">swaggerValidateFile</span>({ file: process.argv[2] }, function (error) {
+                process.exit(!!error);
+            });
+        };
+        local.cliRun();
+    }());
+}());
+...</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
