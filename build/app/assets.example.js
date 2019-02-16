@@ -111,6 +111,10 @@
 
 
 
+
+
+
+
 /*
 example.js
 
@@ -119,7 +123,7 @@ this script will run a web-demo of swagger-validate-lite
 instruction
     1. save this script as example.js
     2. run shell-command:
-        $ npm install kaizhu256/node-swagger-validate-lite#alpha && PORT=8081 node example.js
+        $ npm install swagger-validate-lite && PORT=8081 node example.js
     3. open a browser to http://127.0.0.1:8081 and play with web-demo
     4. edit this script to suit your needs
 */
