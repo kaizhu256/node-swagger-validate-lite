@@ -1,83 +1,89 @@
-<svg height="654" width="720" xmlns="http://www.w3.org/2000/svg">
-<rect height="654" fill="#555" width="720"></rect>
+<svg height="702" width="720" xmlns="http://www.w3.org/2000/svg">
+<rect height="702" fill="#555" width="720"></rect>
 <text fill="#7f7" font-family="Courier New" font-size="12" xml:space="preserve">
-<tspan x="10" y="26">2019-02-12 00:55:18 -0600</tspan>
+<tspan x="10" y="26">2019-02-16 12:28:06 -0600</tspan>
 
 <tspan x="10" y="42">build.update</tspan>
 
 <tspan x="10" y="58"></tspan>
 
-<tspan x="10" y="74">2019-02-12 00:39:15 -0600</tspan>
+<tspan x="10" y="74">2019-02-12 00:55:18 -0600</tspan>
 
 <tspan x="10" y="90">build.update</tspan>
 
 <tspan x="10" y="106"></tspan>
 
-<tspan x="10" y="122">2019-02-12 00:29:45 -0600</tspan>
+<tspan x="10" y="122">2019-02-12 00:39:15 -0600</tspan>
 
 <tspan x="10" y="138">build.update</tspan>
 
 <tspan x="10" y="154"></tspan>
 
-<tspan x="10" y="170">2019-02-12 00:19:56 -0600</tspan>
+<tspan x="10" y="170">2019-02-12 00:29:45 -0600</tspan>
 
-<tspan x="10" y="186">[npm publish] - npm publish 2019.2.12</tspan>
+<tspan x="10" y="186">build.update</tspan>
 
-<tspan x="10" y="202">- merge env var modeTest and utility2_modeTestRun -&gt; local.global.utility2_modeTest</tspan>
+<tspan x="10" y="202"></tspan>
 
-<tspan x="10" y="218">- merge function onResetXxx -&gt; utility2_onReadyXxx</tspan>
+<tspan x="10" y="218">2019-02-12 00:19:56 -0600</tspan>
 
-<tspan x="10" y="234">- revamp bootstrap-mechanism before running tests</tspan>
+<tspan x="10" y="234">[npm publish] - npm publish 2019.2.12</tspan>
 
-<tspan x="10" y="250"></tspan>
+<tspan x="10" y="250">- merge env var modeTest and utility2_modeTestRun -&gt; local.global.utility2_modeTest</tspan>
 
-<tspan x="10" y="266">2018-08-20 01:49:08 +0700</tspan>
+<tspan x="10" y="266">- merge function onResetXxx -&gt; utility2_onReadyXxx</tspan>
 
-<tspan x="10" y="282">[npm publish] - npm publish 2018.8.19</tspan>
+<tspan x="10" y="282">- revamp bootstrap-mechanism before running tests</tspan>
 
-<tspan x="10" y="298">- migrate from modeJs -&gt; isBrowser</tspan>
+<tspan x="10" y="298"></tspan>
 
-<tspan x="10" y="314">- add validator semanticPaths3</tspan>
+<tspan x="10" y="314">2018-08-20 01:49:08 +0700</tspan>
 
-<tspan x="10" y="330">- update build</tspan>
+<tspan x="10" y="330">[npm publish] - npm publish 2018.8.19</tspan>
 
-<tspan x="10" y="346"></tspan>
+<tspan x="10" y="346">- migrate from modeJs -&gt; isBrowser</tspan>
 
-<tspan x="10" y="362">2018-06-19 10:33:40 -0500</tspan>
+<tspan x="10" y="362">- add validator semanticPaths3</tspan>
 
-<tspan x="10" y="378">[npm publish] - npm publish 2018.6.19</tspan>
+<tspan x="10" y="378">- update build</tspan>
 
-<tspan x="10" y="394">- update build</tspan>
+<tspan x="10" y="394"></tspan>
 
-<tspan x="10" y="410"></tspan>
+<tspan x="10" y="410">2018-06-19 10:33:40 -0500</tspan>
 
-<tspan x="10" y="426">2018-04-11 01:29:07 +0800</tspan>
+<tspan x="10" y="426">[npm publish] - npm publish 2018.6.19</tspan>
 
-<tspan x="10" y="442">[npm publish] - npm publish v2018.4.10</tspan>
+<tspan x="10" y="442">- update build</tspan>
 
-<tspan x="10" y="458">- add functions swaggerValidateDataParameters, swaggerValidateDataSchema</tspan>
+<tspan x="10" y="458"></tspan>
 
-<tspan x="10" y="474">- fix build-ci for nodejs v9.x</tspan>
+<tspan x="10" y="474">2018-04-11 01:29:07 +0800</tspan>
 
-<tspan x="10" y="490"></tspan>
+<tspan x="10" y="490">[npm publish] - npm publish v2018.4.10</tspan>
 
-<tspan x="10" y="506">2018-01-23 09:06:32 +0700</tspan>
+<tspan x="10" y="506">- add functions swaggerValidateDataParameters, swaggerValidateDataSchema</tspan>
 
-<tspan x="10" y="522">[npm publish] - npm publish v2018.1.21</tspan>
+<tspan x="10" y="522">- fix build-ci for nodejs v9.x</tspan>
 
-<tspan x="10" y="538">- create initial app</tspan>
+<tspan x="10" y="538"></tspan>
 
-<tspan x="10" y="554"></tspan>
+<tspan x="10" y="554">2018-01-23 09:06:32 +0700</tspan>
 
-<tspan x="10" y="570">2018-01-22 20:03:50 +0700</tspan>
+<tspan x="10" y="570">[npm publish] - npm publish v2018.1.21</tspan>
 
-<tspan x="10" y="586">initial app</tspan>
+<tspan x="10" y="586">- create initial app</tspan>
 
 <tspan x="10" y="602"></tspan>
 
-<tspan x="10" y="618">2014-03-26 02:31:50 +0700</tspan>
+<tspan x="10" y="618">2018-01-22 20:03:50 +0700</tspan>
 
-<tspan x="10" y="634">add blank README.md</tspan>
+<tspan x="10" y="634">initial app</tspan>
+
+<tspan x="10" y="650"></tspan>
+
+<tspan x="10" y="666">2014-03-26 02:31:50 +0700</tspan>
+
+<tspan x="10" y="682">add blank README.md</tspan>
 
 </text>
 </svg>

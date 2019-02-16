@@ -4352,12 +4352,9 @@ local.ajax = function (option, onError) {
     var xhr;
     var xhrInit;
     // init local2
-    local2 = local.utility2 || {};
+    local2 = option.local2 || local.utility2 || {};
     // init function
-    ajaxProgressUpdate = local.functionOrNop(
-        option.ajaxProgressUpdate
-        || local2.ajaxProgressUpdate
-    );
+    ajaxProgressUpdate = local2.ajaxProgressUpdate || local.nop;
     bufferValidateAndCoerce = local2.bufferValidateAndCoerce || function (
         bff,
         mode
@@ -21392,12 +21389,9 @@ local.ajax = function (option, onError) {
     var xhr;
     var xhrInit;
     // init local2
-    local2 = local.utility2 || {};
+    local2 = option.local2 || local.utility2 || {};
     // init function
-    ajaxProgressUpdate = local.functionOrNop(
-        option.ajaxProgressUpdate
-        || local2.ajaxProgressUpdate
-    );
+    ajaxProgressUpdate = local2.ajaxProgressUpdate || local.nop;
     bufferValidateAndCoerce = local2.bufferValidateAndCoerce || function (
         bff,
         mode
@@ -21727,16 +21721,13 @@ local.ajaxProgressUpdate = function () {
  * this function will update ajaxProgress
  */
     var ajaxProgressDiv1;
-    ajaxProgressDiv1 = (
-        (local.isBrowser && document.querySelector(
-            "#ajaxProgressDiv1"
-        ))
-        || {
-            style: {
-                width: ""
-            }
+    ajaxProgressDiv1 = (local.isBrowser && document.querySelector(
+        "#ajaxProgressDiv1"
+    )) || {
+        style: {
+            width: ""
         }
-    );
+    };
     // init ajaxProgressDiv1StyleBackground
     local.ajaxProgressDiv1StyleBackground = (
         local.ajaxProgressDiv1StyleBackground
@@ -23473,7 +23464,19 @@ local.cryptoAesXxxCbcRawEncrypt = function (option, onError) {
     }).catch(onError);
 };
 
-local.dateUtcFromLocal = function (date) {
+local.dateGetWeek = function (date) {
+/*
+ * this function will return sunday-based week-of-month from <date>
+ */
+    date = new Date(date.slice(0, 10) + "T00:00:00Z");
+    return Math.ceil((date.getUTCDate() + new Date(
+        date.getUTCFullYear(),
+        date.getUTCMonth(),
+        1
+    ).getUTCDay()) / 7) - 1;
+};
+
+local.dateUtcFromLocal = function (date, timezoneOffset) {
 /*
  * this function will convert local-<date> to utc-date
  */
@@ -23483,10 +23486,15 @@ local.dateUtcFromLocal = function (date) {
     local.assertThrow((
         /^\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d(\.\d+?)?$/
     ).test(date), "invalid local-date " + date);
-    return new Date(date).toISOString();
+    if (!timezoneOffset) {
+        return new Date(date).toISOString();
+    }
+    return new Date(
+        new Date(date + "Z").getTime() + timezoneOffset * 60000
+    ).toISOString();
 };
 
-local.dateUtcToLocal = function (date) {
+local.dateUtcToLocal = function (date, timezoneOffset) {
 /*
  * this function will convert utc-<date> to local-date
  */
@@ -23496,8 +23504,9 @@ local.dateUtcToLocal = function (date) {
     local.assertThrow((
         /^\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d(\.\d+?)?Z$/
     ).test(date), "invalid utc-date " + date);
+    timezoneOffset = timezoneOffset || new Date(date).getTimezoneOffset();
     return new Date(
-        new Date(date).getTime() - new Date().getTimezoneOffset() * 60000
+        new Date(date).getTime() - timezoneOffset * 60000
     ).toISOString();
 };
 
