@@ -771,7 +771,11 @@ local.templateRender = function (template, dict, option) {
             );
         default:
             // recurse with partial
-            return match0[0] + local.templateRender(match0.slice(1), dict, option);
+            return match0[0] + local.templateRender(
+                match0.slice(1),
+                dict,
+                option
+            );
         }
     };
     // render partials
@@ -25860,7 +25864,11 @@ local.templateRender = function (template, dict, option) {
             );
         default:
             // recurse with partial
-            return match0[0] + local.templateRender(match0.slice(1), dict, option);
+            return match0[0] + local.templateRender(
+                match0.slice(1),
+                dict,
+                option
+            );
         }
     };
     // render partials
