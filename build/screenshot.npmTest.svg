@@ -3,7 +3,7 @@
 <text fill="#7f7" font-family="Courier New" font-size="12" xml:space="preserve">
 <tspan x="10" y="26"></tspan>
 
-<tspan x="10" y="42">[MODE_BUILD=npmTest] - 2019-02-16T18:43:53.290Z - npm-testing /home/travis/build/kaizhu256/node-\</tspan>
+<tspan x="10" y="42">[MODE_BUILD=npmTest] - 2019-02-16T18:51:39.820Z - npm-testing /home/travis/build/kaizhu256/node-\</tspan>
 <tspan x="10" y="58">swagger-validate-lite</tspan>
 
 <tspan x="10" y="74"></tspan>
@@ -18,7 +18,7 @@
 <tspan x="10" y="154">npmTest - merged test-report from file /home/travis/build/kaizhu256/node-swagger-validate-lite/t\</tspan>
 <tspan x="10" y="170">mp/build/test-report.json</tspan>
 
-<tspan x="10" y="186">&gt; http-server listening on port 39931</tspan>
+<tspan x="10" y="186">&gt; http-server listening on port 42351</tspan>
 
 <tspan x="10" y="202">db - dropping database ...</tspan>
 
@@ -27,97 +27,97 @@
 <tspan x="10" y="234">npmTest - merged test-report from file /home/travis/build/kaizhu256/node-swagger-validate-lite/t\</tspan>
 <tspan x="10" y="250">mp/build/test-report.json</tspan>
 
-<tspan x="10" y="266">jslint - 61ms /home/travis/build/kaizhu256/node-swagger-validate-lite/lib.swagger_validate.js</tspan>
+<tspan x="10" y="266">testRunDefault - 144 ms - [node test-case 1 of 7 passed] - testCase_buildApidoc_default</tspan>
 
-<tspan x="10" y="282">jslint - 1ms /home/travis/build/kaizhu256/node-swagger-validate-lite/npm_scripts.sh</tspan>
+<tspan x="10" y="282">jslint - 97ms /home/travis/build/kaizhu256/node-swagger-validate-lite/lib.swagger_validate.js</tspan>
 
-<tspan x="10" y="298">jslint - 0ms /home/travis/build/kaizhu256/node-swagger-validate-lite/package.json</tspan>
+<tspan x="10" y="298">testRunDefault - 179 ms - [node test-case 2 of 7 passed] - testCase_buildLib_default</tspan>
 
-<tspan x="10" y="314">jslint - 41ms /home/travis/build/kaizhu256/node-swagger-validate-lite/test.js</tspan>
+<tspan x="10" y="314">jslint - 4ms /home/travis/build/kaizhu256/node-swagger-validate-lite/npm_scripts.sh</tspan>
 
-<tspan x="10" y="330">local-function - unused (README.md) local.onEventDomDb</tspan>
+<tspan x="10" y="330">jslint - 1ms /home/travis/build/kaizhu256/node-swagger-validate-lite/package.json</tspan>
 
-<tspan x="10" y="346">testRunDefault - 130 ms - [node test-case 1 of 7 passed] - testCase_buildApidoc_default</tspan>
+<tspan x="10" y="346">testRunDefault - 188 ms - [node test-case 3 of 7 passed] - testCase_buildReadme_default</tspan>
 
-<tspan x="10" y="362">testRunDefault - 158 ms - [node test-case 2 of 7 passed] - testCase_buildLib_default</tspan>
+<tspan x="10" y="362">testRunDefault - 189 ms - [node test-case 4 of 7 passed] - testCase_buildTest_default</tspan>
 
-<tspan x="10" y="378">testRunDefault - 166 ms - [node test-case 3 of 7 passed] - testCase_buildReadme_default</tspan>
+<tspan x="10" y="378">testRunDefault - 189 ms - [node test-case 5 of 7 passed] - testCase_nop_default</tspan>
 
-<tspan x="10" y="394">testRunDefault - 170 ms - [node test-case 4 of 7 passed] - testCase_buildTest_default</tspan>
+<tspan x="10" y="394">jslint - 66ms /home/travis/build/kaizhu256/node-swagger-validate-lite/test.js</tspan>
 
-<tspan x="10" y="410">testRunDefault - 173 ms - [node test-case 5 of 7 passed] - testCase_nop_default</tspan>
+<tspan x="10" y="410">local-function - unused (README.md) local.onEventDomDb</tspan>
 
-<tspan x="10" y="426">jslint - 269ms /home/travis/build/kaizhu256/node-swagger-validate-lite/README.md</tspan>
+<tspan x="10" y="426">jslint - 443ms /home/travis/build/kaizhu256/node-swagger-validate-lite/README.md</tspan>
 
-<tspan x="10" y="442">http-server listening on port 54311</tspan>
+<tspan x="10" y="442">http-server listening on port 40866</tspan>
 
 <tspan x="10" y="458">Xlib:  extension "RANDR" missing on display ":99.0".</tspan>
 
-<tspan x="10" y="474">[6102:0216/184354.864847:ERROR:bus.cc(395)] Failed to connect to the bus: Could not parse server\</tspan>
+<tspan x="10" y="474">[6145:0216/185141.692182:ERROR:bus.cc(395)] Failed to connect to the bus: Could not parse server\</tspan>
 <tspan x="10" y="490"> address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")</tspan>
 
-<tspan x="10" y="506">[6102:0216/184354.880120:ERROR:bus.cc(395)] Failed to connect to the bus: Could not parse server\</tspan>
+<tspan x="10" y="506">[6145:0216/185141.703679:ERROR:bus.cc(395)] Failed to connect to the bus: Could not parse server\</tspan>
 <tspan x="10" y="522"> address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")</tspan>
 
-<tspan x="10" y="538">[6155:0216/184354.971046:ERROR:sandbox_linux.cc(344)] InitializeSandbox() called with multiple t\</tspan>
+<tspan x="10" y="538">[6207:0216/185141.805325:ERROR:sandbox_linux.cc(344)] InitializeSandbox() called with multiple t\</tspan>
 <tspan x="10" y="554">hreads in process gpu-process.</tspan>
 
-<tspan x="10" y="570">[6102:0216/184355.167261:INFO:CONSOLE(188)] "%cElectron Security Warning (Insecure Content-Secur\</tspan>
+<tspan x="10" y="570">[6145:0216/185142.015346:INFO:CONSOLE(188)] "%cElectron Security Warning (Insecure Content-Secur\</tspan>
 <tspan x="10" y="586">ity-Policy)", source: /home/travis/build/kaizhu256/node-swagger-validate-lite/node_modules/elect\</tspan>
 <tspan x="10" y="602">ron-lite/external/resources/electron.asar/renderer/security-warnings.js (188)</tspan>
 
-<tspan x="10" y="618">[6102:0216/184355.192552:INFO:CONSOLE(188)] "%cElectron Security Warning (Insecure Content-Secur\</tspan>
+<tspan x="10" y="618">[6145:0216/185142.020856:INFO:CONSOLE(188)] "%cElectron Security Warning (Insecure Content-Secur\</tspan>
 <tspan x="10" y="634">ity-Policy)", source: /home/travis/build/kaizhu256/node-swagger-validate-lite/node_modules/elect\</tspan>
 <tspan x="10" y="650">ron-lite/external/resources/electron.asar/renderer/security-warnings.js (188)</tspan>
 
-<tspan x="10" y="666">[6102:0216/184355.822504:INFO:CONSOLE(8)] "swagger-validate - failed - inputTextarea1.json</tspan>
+<tspan x="10" y="666">[6145:0216/185142.651163:INFO:CONSOLE(8)] "swagger-validate - failed - inputTextarea1.json</tspan>
 
 <tspan x="10" y="682">error.itemEnum - string swaggerJson["swagger"] = "this is an example error" can only have items \</tspan>
-<tspan x="10" y="698">from the list ["2.0"]", source: http://127.0.0.1:39931/assets.example.js (8)</tspan>
+<tspan x="10" y="698">from the list ["2.0"]", source: http://127.0.0.1:42351/assets.example.js (8)</tspan>
 
-<tspan x="10" y="714">[6102:0216/184355.833977:INFO:CONSOLE(8)] "swagger-validate - failed - inputTextarea1.json</tspan>
+<tspan x="10" y="714">[6145:0216/185142.660273:INFO:CONSOLE(8)] "db - dropping database ...", source: http://127.0.0.1\</tspan>
+<tspan x="10" y="730">:42351/assets.example.js (8)</tspan>
 
-<tspan x="10" y="730">error.itemEnum - string swaggerJson["swagger"] = "this is an example error" can only have items \</tspan>
-<tspan x="10" y="746">from the list ["2.0"]", source: http://127.0.0.1:39931/assets.example.js (8)</tspan>
+<tspan x="10" y="746">[6145:0216/185142.678407:INFO:CONSOLE(128)] "%cElectron Security Warning (Insecure Resources)", \</tspan>
+<tspan x="10" y="762">source: /home/travis/build/kaizhu256/node-swagger-validate-lite/node_modules/electron-lite/exter\</tspan>
+<tspan x="10" y="778">nal/resources/electron.asar/renderer/security-warnings.js (128)</tspan>
 
-<tspan x="10" y="762">[6102:0216/184355.841878:INFO:CONSOLE(8)] "db - dropping database ...", source: http://127.0.0.1\</tspan>
-<tspan x="10" y="778">:39931/assets.example.js (8)</tspan>
+<tspan x="10" y="794">[6145:0216/185142.679991:WARNING:quota_manager.cc(1629)] No storage quota provided in QuotaSetti\</tspan>
+<tspan x="10" y="810">ngs.</tspan>
 
-<tspan x="10" y="794">[6102:0216/184355.858334:INFO:CONSOLE(8)] "db - dropping database ...", source: http://127.0.0.1\</tspan>
-<tspan x="10" y="810">:39931/assets.example.js (8)</tspan>
+<tspan x="10" y="826">[6145:0216/185142.680691:INFO:CONSOLE(188)] "%cElectron Security Warning (Insecure Content-Secur\</tspan>
+<tspan x="10" y="842">ity-Policy)", source: /home/travis/build/kaizhu256/node-swagger-validate-lite/node_modules/elect\</tspan>
+<tspan x="10" y="858">ron-lite/external/resources/electron.asar/renderer/security-warnings.js (188)</tspan>
 
-<tspan x="10" y="826">[6102:0216/184355.862280:INFO:CONSOLE(128)] "%cElectron Security Warning (Insecure Resources)", \</tspan>
-<tspan x="10" y="842">source: /home/travis/build/kaizhu256/node-swagger-validate-lite/node_modules/electron-lite/exter\</tspan>
-<tspan x="10" y="858">nal/resources/electron.asar/renderer/security-warnings.js (128)</tspan>
+<tspan x="10" y="874">[6145:0216/185142.714000:INFO:CONSOLE(8)] "testRunDefault - 6 ms - [browser test-case 1 of 2 pas\</tspan>
+<tspan x="10" y="890">sed] - testCase_buildApidoc_default", source: http://127.0.0.1:42351/assets.example.js (8)</tspan>
 
-<tspan x="10" y="874">[6102:0216/184355.862921:INFO:CONSOLE(188)] "%cElectron Security Warning (Insecure Content-Secur\</tspan>
-<tspan x="10" y="890">ity-Policy)", source: /home/travis/build/kaizhu256/node-swagger-validate-lite/node_modules/elect\</tspan>
-<tspan x="10" y="906">ron-lite/external/resources/electron.asar/renderer/security-warnings.js (188)</tspan>
+<tspan x="10" y="906">[6145:0216/185142.714536:INFO:CONSOLE(8)] "swagger-validate - failed - inputTextarea1.json</tspan>
 
-<tspan x="10" y="922">[6102:0216/184355.865101:WARNING:quota_manager.cc(1629)] No storage quota provided in QuotaSetti\</tspan>
-<tspan x="10" y="938">ngs.</tspan>
+<tspan x="10" y="922">error.itemEnum - string swaggerJson["swagger"] = "this is an example error" can only have items \</tspan>
+<tspan x="10" y="938">from the list ["2.0"]", source: http://127.0.0.1:42351/assets.example.js (8)</tspan>
 
-<tspan x="10" y="954">[6102:0216/184355.894750:INFO:CONSOLE(128)] "%cElectron Security Warning (Insecure Resources)", \</tspan>
-<tspan x="10" y="970">source: /home/travis/build/kaizhu256/node-swagger-validate-lite/node_modules/electron-lite/exter\</tspan>
-<tspan x="10" y="986">nal/resources/electron.asar/renderer/security-warnings.js (128)</tspan>
+<tspan x="10" y="954">[6145:0216/185142.730106:INFO:CONSOLE(8)] "testRunDefault - 22 ms - [browser test-case 2 of 2 pa\</tspan>
+<tspan x="10" y="970">ssed] - testCase_nop_default", source: http://127.0.0.1:42351/assets.example.js (8)</tspan>
 
-<tspan x="10" y="1002">[6102:0216/184355.896102:INFO:CONSOLE(188)] "%cElectron Security Warning (Insecure Content-Secur\</tspan>
-<tspan x="10" y="1018">ity-Policy)", source: /home/travis/build/kaizhu256/node-swagger-validate-lite/node_modules/elect\</tspan>
-<tspan x="10" y="1034">ron-lite/external/resources/electron.asar/renderer/security-warnings.js (188)</tspan>
+<tspan x="10" y="986">[6145:0216/185142.743944:INFO:CONSOLE(8)] "db - dropping database ...", source: http://127.0.0.1\</tspan>
+<tspan x="10" y="1002">:42351/assets.example.js (8)</tspan>
 
-<tspan x="10" y="1050">[6102:0216/184355.911813:INFO:CONSOLE(8)] "testRunDefault - 6 ms - [browser test-case 1 of 2 pas\</tspan>
-<tspan x="10" y="1066">sed] - testCase_buildApidoc_default", source: http://127.0.0.1:39931/assets.example.js (8)</tspan>
+<tspan x="10" y="1018">[6145:0216/185142.762384:INFO:CONSOLE(128)] "%cElectron Security Warning (Insecure Resources)", \</tspan>
+<tspan x="10" y="1034">source: /home/travis/build/kaizhu256/node-swagger-validate-lite/node_modules/electron-lite/exter\</tspan>
+<tspan x="10" y="1050">nal/resources/electron.asar/renderer/security-warnings.js (128)</tspan>
 
-<tspan x="10" y="1082">[6102:0216/184355.921181:INFO:CONSOLE(8)] "testRunDefault - 6 ms - [browser test-case 1 of 2 pas\</tspan>
-<tspan x="10" y="1098">sed] - testCase_buildApidoc_default", source: http://127.0.0.1:39931/assets.example.js (8)</tspan>
+<tspan x="10" y="1066">[6145:0216/185142.762976:INFO:CONSOLE(188)] "%cElectron Security Warning (Insecure Content-Secur\</tspan>
+<tspan x="10" y="1082">ity-Policy)", source: /home/travis/build/kaizhu256/node-swagger-validate-lite/node_modules/elect\</tspan>
+<tspan x="10" y="1098">ron-lite/external/resources/electron.asar/renderer/security-warnings.js (188)</tspan>
 
-<tspan x="10" y="1114">[6102:0216/184355.924961:INFO:CONSOLE(8)] "testRunDefault - 19 ms - [browser test-case 2 of 2 pa\</tspan>
-<tspan x="10" y="1130">ssed] - testCase_nop_default", source: http://127.0.0.1:39931/assets.example.js (8)</tspan>
+<tspan x="10" y="1114">[6145:0216/185142.790808:INFO:CONSOLE(8)] "testRunDefault - 6 ms - [browser test-case 1 of 2 pas\</tspan>
+<tspan x="10" y="1130">sed] - testCase_buildApidoc_default", source: http://127.0.0.1:42351/assets.example.js (8)</tspan>
 
-<tspan x="10" y="1146">[6102:0216/184355.932958:INFO:CONSOLE(8)] "testRunDefault - 18 ms - [browser test-case 2 of 2 pa\</tspan>
-<tspan x="10" y="1162">ssed] - testCase_nop_default", source: http://127.0.0.1:39931/assets.example.js (8)</tspan>
+<tspan x="10" y="1146">[6145:0216/185142.805112:INFO:CONSOLE(8)] "testRunDefault - 21 ms - [browser test-case 2 of 2 pa\</tspan>
+<tspan x="10" y="1162">ssed] - testCase_nop_default", source: http://127.0.0.1:42351/assets.example.js (8)</tspan>
 
-<tspan x="10" y="1178">[6102:0216/184356.930273:INFO:CONSOLE(8)] "----------|-----------|-----------|-----------|------\</tspan>
+<tspan x="10" y="1178">[6145:0216/185143.736012:INFO:CONSOLE(8)] "----------|-----------|-----------|-----------|------\</tspan>
 <tspan x="10" y="1194">-----|</tspan>
 
 <tspan x="10" y="1210">File      |   % Stmts |% Branches |   % Funcs |   % Lines |</tspan>
@@ -130,12 +130,12 @@
 
 <tspan x="10" y="1274">----------|-----------|-----------|-----------|-----------|</tspan>
 
-<tspan x="10" y="1290">", source: http://127.0.0.1:39931/assets.example.js (8)</tspan>
+<tspan x="10" y="1290">", source: http://127.0.0.1:42351/assets.example.js (8)</tspan>
 
-<tspan x="10" y="1306">[6102:0216/184356.936057:INFO:CONSOLE(8)] "created coverage file /tmp/build/coverage.html/index.\</tspan>
-<tspan x="10" y="1322">html", source: http://127.0.0.1:39931/assets.example.js (8)</tspan>
+<tspan x="10" y="1306">[6145:0216/185143.742812:INFO:CONSOLE(8)] "created coverage file /tmp/build/coverage.html/index.\</tspan>
+<tspan x="10" y="1322">html", source: http://127.0.0.1:42351/assets.example.js (8)</tspan>
 
-<tspan x="10" y="1338">[6102:0216/184356.944331:INFO:CONSOLE(8)] "----------|-----------|-----------|-----------|------\</tspan>
+<tspan x="10" y="1338">[6145:0216/185143.809753:INFO:CONSOLE(8)] "----------|-----------|-----------|-----------|------\</tspan>
 <tspan x="10" y="1354">-----|</tspan>
 
 <tspan x="10" y="1370">File      |   % Stmts |% Branches |   % Funcs |   % Lines |</tspan>
@@ -148,23 +148,23 @@
 
 <tspan x="10" y="1434">----------|-----------|-----------|-----------|-----------|</tspan>
 
-<tspan x="10" y="1450">", source: http://127.0.0.1:39931/assets.example.js (8)</tspan>
+<tspan x="10" y="1450">", source: http://127.0.0.1:42351/assets.example.js (8)</tspan>
 
-<tspan x="10" y="1466">[6102:0216/184356.951659:INFO:CONSOLE(8)] "created coverage file /tmp/build/coverage.html/index.\</tspan>
-<tspan x="10" y="1482">html", source: http://127.0.0.1:39931/assets.example.js (8)</tspan>
+<tspan x="10" y="1466">[6145:0216/185143.827877:INFO:CONSOLE(8)] "created coverage file /tmp/build/coverage.html/index.\</tspan>
+<tspan x="10" y="1482">html", source: http://127.0.0.1:42351/assets.example.js (8)</tspan>
 
-<tspan x="10" y="1498">testRunDefault - 5013 ms - testCase pending - testCase_buildApp_default, testCase_webpage_defaul\</tspan>
+<tspan x="10" y="1498">testRunDefault - 5017 ms - testCase pending - testCase_buildApp_default, testCase_webpage_defaul\</tspan>
 <tspan x="10" y="1514">t ...</tspan>
 
-<tspan x="10" y="1530">testRunDefault - 5668 ms - [node test-case 6 of 7 passed] - testCase_buildApp_default</tspan>
+<tspan x="10" y="1530">testRunDefault - 5900 ms - [node test-case 6 of 7 passed] - testCase_buildApp_default</tspan>
 
-<tspan x="10" y="1546">[6102:0216/184400.850899:INFO:CONSOLE(8)] "null", source: http://127.0.0.1:39931/assets.example.\</tspan>
+<tspan x="10" y="1546">[6145:0216/185147.669505:INFO:CONSOLE(8)] "null", source: http://127.0.0.1:42351/assets.example.\</tspan>
 <tspan x="10" y="1562">js (8)</tspan>
 
-<tspan x="10" y="1578">[6102:0216/184401.021784:INFO:CONSOLE(8)] "Error: ENOENT: no such file or directory, rename '/ho\</tspan>
-<tspan x="10" y="1594">me/travis/build/kaizhu256/node-swagger-validate-lite/tmp/electron.168f79f39e10.d2ffa7edc1e25.htm\</tspan>
+<tspan x="10" y="1578">[6145:0216/185147.833901:INFO:CONSOLE(8)] "Error: ENOENT: no such file or directory, rename '/ho\</tspan>
+<tspan x="10" y="1594">me/travis/build/kaizhu256/node-swagger-validate-lite/tmp/electron.168f7a658920.7f8c5232165c7.htm\</tspan>
 <tspan x="10" y="1610">l' -&gt; '/home/travis/build/kaizhu256/node-swagger-validate-lite/tmp/electron.html'", source: http\</tspan>
-<tspan x="10" y="1626">://127.0.0.1:39931/assets.example.js (8)</tspan>
+<tspan x="10" y="1626">://127.0.0.1:42351/assets.example.js (8)</tspan>
 
 <tspan x="10" y="1642"></tspan>
 
@@ -186,7 +186,7 @@
 <tspan x="10" y="1802">browserTest - created screenshot file /home/travis/build/kaizhu256/node-swagger-validate-lite/tm\</tspan>
 <tspan x="10" y="1818">p/build/screenshot.npmTest.browser.%2F.html</tspan>
 
-<tspan x="10" y="1834">testRunDefault - 7313 ms - [node test-case 7 of 7 passed] - testCase_webpage_default</tspan>
+<tspan x="10" y="1834">testRunDefault - 7530 ms - [node test-case 7 of 7 passed] - testCase_webpage_default</tspan>
 
 <tspan x="10" y="1850">-------------------------------|-----------|-----------|-----------|-----------|</tspan>
 
@@ -223,15 +223,15 @@
 <tspan x="10" y="2122">-------------------------------------------------------</tspan>
 
 <tspan x="10" y="2138">| test-report - npmTest - browser - / - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTM\</tspan>
-<tspan x="10" y="2154">L, like Gecko) Chrome/61.0.3163.100 Electron/2.0.16 Safari/537.36 - 2019-02-16T18:43:55.417Z</tspan>
+<tspan x="10" y="2154">L, like Gecko) Chrome/61.0.3163.100 Electron/2.0.16 Safari/537.36 - 2019-02-16T18:51:42.244Z</tspan>
 
 <tspan x="10" y="2170">|    1005 ms            0 failed        2 passed      |</tspan>
 
 <tspan x="10" y="2186">-------------------------------------------------------</tspan>
 
-<tspan x="10" y="2202">| test-report - npmTest - node - linux v11.10.0 - 2019-02-16T18:43:53.524Z</tspan>
+<tspan x="10" y="2202">| test-report - npmTest - node - linux v11.10.0 - 2019-02-16T18:51:40.055Z</tspan>
 
-<tspan x="10" y="2218">|    7313 ms            0 failed        7 passed      |</tspan>
+<tspan x="10" y="2218">|    7531 ms            0 failed        7 passed      |</tspan>
 
 <tspan x="10" y="2234">-------------------------------------------------------</tspan>
 
@@ -250,7 +250,7 @@
 
 <tspan x="10" y="2362"></tspan>
 
-<tspan x="10" y="2378">[MODE_BUILD=npmTest] - 2019-02-16T18:44:02.375Z - EXIT_CODE - 0</tspan>
+<tspan x="10" y="2378">[MODE_BUILD=npmTest] - 2019-02-16T18:51:49.188Z - EXIT_CODE - 0</tspan>
 
 </text>
 </svg>
