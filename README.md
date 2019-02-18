@@ -60,9 +60,7 @@ this zero-dependency package will provide a simple cli-tool to validate swagger.
 
 #### changelog 2019.2.12
 - npm publish 2019.2.12
-- merge env var modeTest and utility2_modeTestRun -> local.global.utility2_modeTest
-- merge function onResetXxx -> utility2_onReadyXxx
-- revamp bootstrap-mechanism before running tests
+- update build
 - none
 
 #### this package requires
