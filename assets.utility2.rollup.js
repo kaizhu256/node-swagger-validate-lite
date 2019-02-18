@@ -34321,9 +34321,9 @@ utility2-comment -->\\n\\\n\
 <button class=\"button\" data-onevent=\"testRunBrowser\" data-onevent-reset-output=\"1\" id=\"jslintAutofixButton1\">jslint autofix</button><br>\\n\\\n\
 <pre class= \"colorError\" id=\"outputJslintPre1\" tabindex=\"0\"></pre>\\n\\\n\
 <label>instrumented-code</label>\\n\\\n\
-<pre class=\"readonly textarea\" id=\"outputCode1\"></pre>\\n\\\n\
+<pre class=\"readonly textarea\" id=\"outputCode1\" tabindex=\"0\"></pre>\\n\\\n\
 <label>stderr and stdout</label>\\n\\\n\
-<pre class=\"onevent-reset-output readonly textarea\" id=\"outputStdout1\"></pre>\\n\\\n\
+<pre class=\"onevent-reset-output readonly textarea\" id=\"outputStdout1\" tabindex=\"0\"></pre>\\n\\\n\
 <div id=\"testReportDiv1\"></div>\\n\\\n\
 <div id=\"coverageReportDiv1\"></div>\\n\\\n\
 <!-- utility2-comment\\n\\\n\
@@ -34858,9 +34858,9 @@ pre {\n\
 <button class=\"button\" data-onevent=\"testRunBrowser\" data-onevent-reset-output=\"1\" id=\"jslintAutofixButton1\">jslint autofix</button><br>\n\
 <pre class= \"colorError\" id=\"outputJslintPre1\" tabindex=\"0\"></pre>\n\
 <label>instrumented-code</label>\n\
-<pre class=\"readonly textarea\" id=\"outputCode1\"></pre>\n\
+<pre class=\"readonly textarea\" id=\"outputCode1\" tabindex=\"0\"></pre>\n\
 <label>stderr and stdout</label>\n\
-<pre class=\"onevent-reset-output readonly textarea\" id=\"outputStdout1\"></pre>\n\
+<pre class=\"onevent-reset-output readonly textarea\" id=\"outputStdout1\" tabindex=\"0\"></pre>\n\
 <div id=\"testReportDiv1\"></div>\n\
 <div id=\"coverageReportDiv1\"></div>\n\
 \n\
